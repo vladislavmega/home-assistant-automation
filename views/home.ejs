@@ -1,0 +1,18 @@
+<html lang="uk" class="<%=status%>">
+<head>
+    <title>Перемілля чи є світло</title>
+    <link rel="icon" href="/favicon.png">
+    <link rel="stylesheet" href="/css/reset.css"/>
+    <link rel="stylesheet" href="/css/home.css"/>
+</head>
+<body class="<%= status %>">
+    <div class="center" id="state">
+        <% if(status === 'available'){ %>
+            <h1>Є СВІТЛО <br /><span class="since" style="font-size: 20px">З <%= lastChange %></span></h1>
+        <% } else{ %>
+            <h1>НЕМАЄ СВІТЛА <br /><span class="since" style="font-size: 20px">З <%= lastChange %></span></h1>
+        <% } %>
+    </div>
+    <script src="/javascripts/ping.js"></script>
+</body>
+</html>

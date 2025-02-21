@@ -1,0 +1,36 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+body {
+
+}
+
+.available {
+  color: #ffffff;
+  background: linear-gradient(#48d420, #41961b);
+}
+
+.na {
+  color: #f0f0f0;
+  background: linear-gradient(#9c2424, #661414);
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  font-size: 150px;
+  font-weight: bold;
+}
+
+.since {
+  font-size: 70px;
+}
