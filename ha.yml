@@ -1,0 +1,70 @@
+title: Home
+hide_toolbar: true
+hide_sidebar: true
+cards:
+  - type: vertical-stack
+    cards:
+      - type: iframe
+        url: http://192.168.88.12:7227/home
+        aspect_ratio: 40%
+      - type: history-graph
+        entities:
+          - entity: switch.detektor_dtek
+        logarithmic_scale: false
+      - type: vertical-stack
+        cards:
+          - type: entities
+            entities:
+              - entity: sensor.kukhnia_th2_temperature
+                name: Температура кухня
+              - entity: sensor.kukhnia_th2_humidity
+                name: Вологість кухня
+              - entity: sensor.gostova_th2_temperature
+                name: Температура гостьова
+              - entity: sensor.gostova_th2_humidity
+                name: Вологість гостьова
+              - entity: sensor.temperatura_i_vologist_drugii_poverkh_temperature
+                name: Температура другий
+              - entity: sensor.temperatura_i_vologist_drugii_poverkh_humidity
+                name: Вологість другий
+  - type: vertical-stack
+    cards:
+      - type: entities
+        entities:
+          - entity: binary_sensor.m_kiiv_air
+            secondary_info: last-changed
+        title: ПОВІТРЯНА ТРИВОГА
+        state_color: true
+        show_header_toggle: false
+      - type: iframe
+        url: https://alerts.in.ua/?kiosk&showThreats&showWarnings
+        aspect_ration: 50
+      - type: history-graph
+        entities:
+          - entity: binary_sensor.m_kiiv_air
+      - type: entities
+        entities:
+          - switch.boiler
+          - switch.boiler_drugii
+        state_color: true
+        show_header_toggle: false
+  - type: vertical-stack
+    cards:
+      - type: vertical-stack
+        cards:
+          - show_current: false
+            show_forecast: true
+            type: weather-forecast
+            entity: weather.forecast_home
+            forecast_type: hourly
+            name: " "
+  - type: markdown
+    content: "# КОТЕЛ ВКЛЮЧЕНО "
+    visibility:
+      - condition: state
+        entity: switch.detektor_dtek_socket_1
+        state: "on"
+  - type: iframe
+    url: http://192.168.88.12:7227/phonecamera
+    aspect_ratio: 110%
+badges: []

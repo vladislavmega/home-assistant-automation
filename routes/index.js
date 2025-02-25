@@ -55,4 +55,39 @@ router.get('/state', function (req, res, next) {
     });
 });
 
+router.get('/phonecamera', function (req, res, next) {
+    res.render('phonecamera', {
+
+    })
+})
+
+router.get('/phonecamera/params', async function (req, res, next) {
+    const url = `http://192.168.88.18/parameters`
+    try {
+        const response = await fetch(url);
+        if (!response.ok) {
+            throw new Error(`Response status: ${response.status}`);
+        }
+        const json = await response.json();
+        res.send(json)
+    } catch (error) {
+        res.send(error.message)
+    }
+})
+
+router.get('/phonecamera/torch/:value', async function (req, res, next) {
+    console.log(req.params.value);
+    const url = `http://192.168.88.18/parameters?torch=${req.params.value}`
+    try {
+        const response = await fetch(url);
+        if (!response.ok) {
+            throw new Error(`Response status: ${response.status}`);
+        }
+        const json = await response.json();
+        res.send(json)
+    } catch (error) {
+        res.send(error.message)
+    }
+})
+
 module.exports = router;

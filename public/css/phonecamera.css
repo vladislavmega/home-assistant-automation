@@ -1,0 +1,49 @@
+body {
+
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+#stream {
+    max-width: 100%;
+    width: 100%;
+}
+
+#toggleButtonWrapper {
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+    text-align: center;
+}
+
+#toggleButton {
+    font-size: 25px;
+    margin: 0 auto;
+    display: inline-block;
+    background: gray;
+    padding: 20px 40px;
+    color: white;
+    border-radius: 15px;
+    border: 2px solid white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#toggleButton.active {
+    background: #41961b;
+}
+
+#toggleButton #on {
+    display: none;
+}
+
+#toggleButton #off {
+    display: inline-block;
+}
+
+#toggleButton.active #on {
+    display: inline-block;
+}
+
+#toggleButton.active #off {
+    display: none;
+}
