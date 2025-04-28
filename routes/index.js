@@ -42,8 +42,12 @@ router.get('/', function (req, res, next) {
 });
 
 router.get('/home', function (req, res, next) {
+    console.log(req.query)
+    const yellow = (req.query?.yellow === '1') ? 'yellow' : ''
+
     res.render('home', {
         ...state,
+        yellow,
         lastChange: moment(state.lastChange).format('HH:mm DD-MM')
     });
 });

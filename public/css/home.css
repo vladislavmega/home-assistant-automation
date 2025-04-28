@@ -15,6 +15,11 @@ body, html {
   background: linear-gradient(#48d420, #41961b);
 }
 
+.yellow .available {
+  color: #ffffff;
+  background: rgb(255, 196, 0);
+}
+
 .na {
   color: #f0f0f0;
   background: linear-gradient(#9c2424, #661414);

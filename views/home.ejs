@@ -1,4 +1,4 @@
-<html lang="uk" class="<%=status%>">
+<html lang="uk" class="<%=status%> <%= yellow %>">
 <head>
     <title>Перемілля чи є світло</title>
     <link rel="icon" href="/favicon.png">
@@ -8,7 +8,7 @@
 <body class="<%= status %>">
     <div class="center" id="state">
         <% if(status === 'available'){ %>
-            <h1>Є СВІТЛО <br /><span class="since" style="font-size: 20px">З <%= lastChange %></span></h1>
+            <h1>Є ДТЕК <br /><span class="since" style="font-size: 20px">З <%= lastChange %></span></h1>
         <% } else{ %>
             <h1>НЕМАЄ СВІТЛА <br /><span class="since" style="font-size: 20px">З <%= lastChange %></span></h1>
         <% } %>

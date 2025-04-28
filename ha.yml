@@ -5,8 +5,19 @@ cards:
   - type: vertical-stack
     cards:
       - type: iframe
-        url: http://192.168.88.12:7227/home
+        url: https://prml.kyiv.ua/home
         aspect_ratio: 40%
+        visibility:
+          - condition: state
+            entity: switch.detektor_dtek
+            state: "on"
+      - type: iframe
+        url: https://prml.kyiv.ua/home?yellow=1
+        aspect_ratio: 40%
+        visibility:
+          - condition: state
+            entity: switch.detektor_dtek
+            state_not: "on"
       - type: history-graph
         entities:
           - entity: switch.detektor_dtek
@@ -64,7 +75,6 @@ cards:
       - condition: state
         entity: switch.detektor_dtek_socket_1
         state: "on"
-  - type: iframe
-    url: http://192.168.88.12:7227/phonecamera
-    aspect_ratio: 110%
+  - type: picture-entity
+    entity: camera.192_168_88_18
 badges: []
