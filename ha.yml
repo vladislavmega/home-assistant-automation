@@ -1,80 +1,209 @@
-title: Home
-hide_toolbar: true
-hide_sidebar: true
-cards:
-  - type: vertical-stack
+views:
+  - title: Home
+    theme: Liquid Glass
+    hide_toolbar: true
+    hide_sidebar: true
     cards:
-      - type: iframe
-        url: https://prml.kyiv.ua/home
-        aspect_ratio: 40%
-        visibility:
-          - condition: state
-            entity: switch.detektor_dtek
-            state: "on"
-      - type: iframe
-        url: https://prml.kyiv.ua/home?yellow=1
-        aspect_ratio: 40%
-        visibility:
-          - condition: state
-            entity: switch.detektor_dtek
-            state_not: "on"
-      - type: history-graph
-        entities:
-          - entity: switch.detektor_dtek
-        logarithmic_scale: false
+      - type: vertical-stack
+        cards:
+          - type: iframe
+            url: https://light.cherrypink.toys/home
+            aspect_ratio: 40%
+            visibility:
+              - condition: state
+                entity: switch.optika
+                state: 'on'
+          - type: iframe
+            url: https://light.cherrypink.toys/home?yellow=1
+            aspect_ratio: 40%
+            visibility:
+              - condition: state
+                entity: switch.optika
+                state_not: 'on'
+          - type: history-graph
+            entities:
+              - entity: switch.optika
+            logarithmic_scale: false
+          - type: vertical-stack
+            cards:
+              - type: entities
+                entities:
+                  - entity: sensor.kukhnia_th2_temperature
+                    name: Температура кухня
+                  - entity: sensor.kukhnia_th2_humidity
+                    name: Вологість кухня
+                  - entity: sensor.gostova_th2_temperature
+                    name: Температура гостьова
+                  - entity: sensor.gostova_th2_humidity
+                    name: Вологість гостьова
+                  - entity: sensor.temperatura_i_vologist_drugii_poverkh_temperature
+                    name: Температура другий
+                  - entity: sensor.temperatura_i_vologist_drugii_poverkh_humidity
+                    name: Вологість другий
       - type: vertical-stack
         cards:
           - type: entities
             entities:
-              - entity: sensor.kukhnia_th2_temperature
-                name: Температура кухня
-              - entity: sensor.kukhnia_th2_humidity
-                name: Вологість кухня
-              - entity: sensor.gostova_th2_temperature
-                name: Температура гостьова
-              - entity: sensor.gostova_th2_humidity
-                name: Вологість гостьова
-              - entity: sensor.temperatura_i_vologist_drugii_poverkh_temperature
-                name: Температура другий
-              - entity: sensor.temperatura_i_vologist_drugii_poverkh_humidity
-                name: Вологість другий
-  - type: vertical-stack
-    cards:
-      - type: entities
-        entities:
-          - entity: binary_sensor.m_kiiv_air
-            secondary_info: last-changed
-        title: ПОВІТРЯНА ТРИВОГА
-        state_color: true
-        show_header_toggle: false
-      - type: iframe
-        url: https://alerts.in.ua/?kiosk&showThreats&showWarnings
-        aspect_ration: 50
-      - type: history-graph
-        entities:
-          - entity: binary_sensor.m_kiiv_air
-      - type: entities
-        entities:
-          - switch.boiler
-          - switch.boiler_drugii
-        state_color: true
-        show_header_toggle: false
-  - type: vertical-stack
+              - entity: binary_sensor.m_kiiv_air
+                secondary_info: last-changed
+            title: ПОВІТРЯНА ТРИВОГА
+            state_color: true
+            show_header_toggle: false
+          - type: iframe
+            url: https://alerts.in.ua/?kiosk&showThreats&showWarnings
+            aspect_ration: 50
+          - type: history-graph
+            entities:
+              - entity: binary_sensor.m_kiiv_air
+          - type: entities
+            entities:
+              - switch.boiler
+              - switch.boiler_drugii
+            state_color: true
+            show_header_toggle: false
+      - type: vertical-stack
+        cards:
+          - type: vertical-stack
+            cards:
+              - show_current: false
+                show_forecast: true
+                type: weather-forecast
+                entity: weather.forecast_home
+                forecast_type: hourly
+                name: ' '
+      - type: vertical-stack
+        cards:
+          - square: false
+            type: grid
+            columns: 2
+            cards:
+              - show_name: true
+                show_icon: true
+                type: button
+                name: електро
+                entity: switch.detektor_dtek_socket_1
+                icon: mdi:power
+                show_state: false
+                tap_action:
+                  action: toggle
+              - show_name: true
+                show_icon: true
+                type: button
+                name: дрова
+                entity: switch.tverdopalivnii_socket_1
+                icon: mdi:power
+                show_state: false
+                tap_action:
+                  action: toggle
+          - type: grid
+            columns: 3
+            square: false
+            cards:
+              - show_name: true
+                show_icon: true
+                type: button
+                name: перший
+                entity: switch.boiler_drugii_socket_1
+                icon: mdi:power
+                show_state: false
+                tap_action:
+                  action: toggle
+              - show_name: true
+                show_icon: true
+                type: button
+                name: другий
+                entity: switch.drugii_klapan_socket_1
+                icon: mdi:power
+                show_state: false
+                tap_action:
+                  action: toggle
+              - show_name: true
+                show_icon: true
+                type: button
+                name: підлога
+                entity: switch.teplii_pol_socket_1
+                icon: mdi:power
+                show_state: false
+                tap_action:
+                  action: toggle
+    badges: []
+  - title: testpanel
+    path: testpanel
     cards:
       - type: vertical-stack
         cards:
-          - show_current: false
-            show_forecast: true
-            type: weather-forecast
-            entity: weather.forecast_home
-            forecast_type: hourly
-            name: " "
-  - type: markdown
-    content: "# КОТЕЛ ВКЛЮЧЕНО "
-    visibility:
-      - condition: state
-        entity: switch.detektor_dtek_socket_1
-        state: "on"
-  - type: picture-entity
-    entity: camera.192_168_88_18
-badges: []
+          - square: false
+            type: grid
+            columns: 2
+            cards:
+              - show_name: true
+                show_icon: true
+                type: button
+                name: електро
+                entity: switch.detektor_dtek_socket_1
+                icon: mdi:power
+                show_state: false
+                tap_action:
+                  action: toggle
+              - show_name: true
+                show_icon: true
+                type: button
+                name: дрова
+                entity: switch.tverdopalivnii_socket_1
+                icon: mdi:power
+                show_state: false
+                tap_action:
+                  action: toggle
+          - type: grid
+            columns: 3
+            square: false
+            cards:
+              - show_name: true
+                show_icon: true
+                type: button
+                name: перший
+                entity: switch.boiler_drugii_socket_1
+                icon: mdi:power
+                show_state: false
+                tap_action:
+                  action: toggle
+              - show_name: true
+                show_icon: true
+                type: button
+                name: другий
+                entity: switch.drugii_klapan_socket_1
+                icon: mdi:power
+                show_state: false
+                tap_action:
+                  action: toggle
+              - show_name: true
+                show_icon: true
+                type: button
+                name: підлога
+                entity: switch.teplii_pol_socket_1
+                icon: mdi:power
+                show_state: false
+                tap_action:
+                  action: toggle
+      - type: history-graph
+        entities:
+          - entity: switch.detektor_dtek
+        logarithmic_scale: false
+      - type: entities
+        entities:
+          - entity: switch.optika_auto_off_enabled
+            name: Auto off enabled
+          - entity: switch.optika_auto_update_enabled
+            name: Auto update enabled
+          - entity: switch.optika_led
+            name: LED
+          - entity: number.optika_turn_off_in
+            name: Turn off in
+        title: детектор дтек
+    badges:
+      - type: entity
+        entity: switch.boiler
+      - type: entity
+        entity: switch.boiler_drugii
+    type: masonry
+    theme: Liquid Glass
