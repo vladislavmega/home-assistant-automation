@@ -59,12 +59,6 @@ views:
           - type: history-graph
             entities:
               - entity: binary_sensor.m_kiiv_air
-          - type: entities
-            entities:
-              - switch.boiler
-              - switch.boiler_drugii
-            state_color: true
-            show_header_toggle: false
       - type: vertical-stack
         cards:
           - type: vertical-stack
@@ -84,7 +78,7 @@ views:
               - show_name: true
                 show_icon: true
                 type: button
-                name: електро
+                name: ЕЛЕКТРО
                 entity: switch.detektor_dtek_socket_1
                 icon: mdi:power
                 show_state: false
@@ -93,7 +87,7 @@ views:
               - show_name: true
                 show_icon: true
                 type: button
-                name: дрова
+                name: ДРОВА
                 entity: switch.tverdopalivnii_socket_1
                 icon: mdi:power
                 show_state: false
@@ -106,7 +100,7 @@ views:
               - show_name: true
                 show_icon: true
                 type: button
-                name: перший
+                name: ПЕРШИЙ
                 entity: switch.boiler_drugii_socket_1
                 icon: mdi:power
                 show_state: false
@@ -115,7 +109,7 @@ views:
               - show_name: true
                 show_icon: true
                 type: button
-                name: другий
+                name: ДРУГИЙ
                 entity: switch.drugii_klapan_socket_1
                 icon: mdi:power
                 show_state: false
@@ -124,8 +118,50 @@ views:
               - show_name: true
                 show_icon: true
                 type: button
-                name: підлога
+                name: ПІДЛОГА
                 entity: switch.teplii_pol_socket_1
+                icon: mdi:power
+                show_state: false
+                tap_action:
+                  action: toggle
+      - type: vertical-stack
+        cards:
+          - square: false
+            type: grid
+            columns: 4
+            cards:
+              - show_name: true
+                show_icon: true
+                type: button
+                name: БОЙЛЕР 1
+                entity: switch.boiler
+                icon: mdi:power
+                show_state: false
+                tap_action:
+                  action: toggle
+              - show_name: true
+                show_icon: true
+                type: button
+                name: БОЙЛЕР 2
+                entity: switch.boiler_drugii
+                icon: mdi:power
+                show_state: false
+                tap_action:
+                  action: toggle
+              - show_name: true
+                show_icon: true
+                type: button
+                name: ГАРАЖ 1
+                entity: switch.poliv_3
+                icon: mdi:power
+                show_state: false
+                tap_action:
+                  action: toggle
+              - show_name: true
+                show_icon: true
+                type: button
+                name: ГАРАЖ 2
+                entity: switch.poliv_1
                 icon: mdi:power
                 show_state: false
                 tap_action:
@@ -133,81 +169,6 @@ views:
     badges: []
   - title: testpanel
     path: testpanel
-    cards:
-      - type: vertical-stack
-        cards:
-          - square: false
-            type: grid
-            columns: 2
-            cards:
-              - show_name: true
-                show_icon: true
-                type: button
-                name: електро
-                entity: switch.detektor_dtek_socket_1
-                icon: mdi:power
-                show_state: false
-                tap_action:
-                  action: toggle
-              - show_name: true
-                show_icon: true
-                type: button
-                name: дрова
-                entity: switch.tverdopalivnii_socket_1
-                icon: mdi:power
-                show_state: false
-                tap_action:
-                  action: toggle
-          - type: grid
-            columns: 3
-            square: false
-            cards:
-              - show_name: true
-                show_icon: true
-                type: button
-                name: перший
-                entity: switch.boiler_drugii_socket_1
-                icon: mdi:power
-                show_state: false
-                tap_action:
-                  action: toggle
-              - show_name: true
-                show_icon: true
-                type: button
-                name: другий
-                entity: switch.drugii_klapan_socket_1
-                icon: mdi:power
-                show_state: false
-                tap_action:
-                  action: toggle
-              - show_name: true
-                show_icon: true
-                type: button
-                name: підлога
-                entity: switch.teplii_pol_socket_1
-                icon: mdi:power
-                show_state: false
-                tap_action:
-                  action: toggle
-      - type: history-graph
-        entities:
-          - entity: switch.detektor_dtek
-        logarithmic_scale: false
-      - type: entities
-        entities:
-          - entity: switch.optika_auto_off_enabled
-            name: Auto off enabled
-          - entity: switch.optika_auto_update_enabled
-            name: Auto update enabled
-          - entity: switch.optika_led
-            name: LED
-          - entity: number.optika_turn_off_in
-            name: Turn off in
-        title: детектор дтек
-      - type: entities
-        entities:
-          - sensor.gostova_th2_humidity
-          - sensor.gostova_th2_temperature
     badges:
       - type: entity
         entity: switch.boiler
