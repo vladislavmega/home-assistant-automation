@@ -1,6 +1,10 @@
+kiosk_mode:
+  mobile_settings:
+    hide_header: true
+    custom_width: 1025
 views:
   - title: Home
-    theme: Liquid Glass
+    theme: Nordic Blue Dark
     hide_toolbar: true
     hide_sidebar: true
     cards:
@@ -200,10 +204,14 @@ views:
           - entity: number.optika_turn_off_in
             name: Turn off in
         title: детектор дтек
+      - type: entities
+        entities:
+          - sensor.gostova_th2_humidity
+          - sensor.gostova_th2_temperature
     badges:
       - type: entity
         entity: switch.boiler
       - type: entity
         entity: switch.boiler_drugii
     type: masonry
-    theme: Liquid Glass
+    theme: Nordic Blue Dark
