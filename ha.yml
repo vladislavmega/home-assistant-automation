@@ -28,24 +28,17 @@ views:
             entities:
               - entity: switch.optika
             logarithmic_scale: false
-          - type: vertical-stack
-            cards:
-              - type: entities
-                entities:
-                  - entity: sensor.kukhnia_th2_temperature
-                    name: Температура кухня
-                  - entity: sensor.kukhnia_th2_humidity
-                    name: Вологість кухня
-                  - entity: sensor.gostova_th2_temperature
-                    name: Температура гостьова
-                  - entity: sensor.gostova_th2_humidity
-                    name: Вологість гостьова
-                  - entity: sensor.temperatura_i_vologist_drugii_poverkh_temperature
-                    name: Температура другий
-                  - entity: sensor.temperatura_i_vologist_drugii_poverkh_humidity
-                    name: Вологість другий
       - type: vertical-stack
         cards:
+          - clock_style: analog
+            clock_size: large
+            show_seconds: true
+            no_background: false
+            border: true
+            ticks: minute
+            face_style: numbers_upright
+            type: clock
+            seconds_motion: continuous
           - type: entities
             entities:
               - entity: binary_sensor.m_kiiv_air
@@ -63,7 +56,7 @@ views:
         cards:
           - type: vertical-stack
             cards:
-              - show_current: false
+              - show_current: true
                 show_forecast: true
                 type: weather-forecast
                 entity: weather.forecast_home
@@ -124,48 +117,128 @@ views:
                 show_state: false
                 tap_action:
                   action: toggle
+          - type: vertical-stack
+            cards:
+              - square: false
+                type: grid
+                columns: 4
+                cards:
+                  - show_name: true
+                    show_icon: true
+                    type: button
+                    name: БОЙЛЕР1
+                    entity: switch.boiler
+                    icon: mdi:power
+                    show_state: false
+                    tap_action:
+                      action: toggle
+                  - show_name: true
+                    show_icon: true
+                    type: button
+                    name: БОЙЛЕР2
+                    entity: switch.boiler_drugii
+                    icon: mdi:power
+                    show_state: false
+                    tap_action:
+                      action: toggle
+                  - show_name: true
+                    show_icon: true
+                    type: button
+                    name: ГАРАЖ1
+                    entity: switch.poliv_3
+                    icon: mdi:power
+                    show_state: false
+                    tap_action:
+                      action: toggle
+                  - show_name: true
+                    show_icon: true
+                    type: button
+                    name: ГАРАЖ2
+                    entity: switch.poliv_1
+                    icon: mdi:power
+                    show_state: false
+                    tap_action:
+                      action: toggle
       - type: vertical-stack
         cards:
           - square: false
             type: grid
-            columns: 4
+            columns: 2
             cards:
-              - show_name: true
-                show_icon: true
-                type: button
-                name: БОЙЛЕР 1
-                entity: switch.boiler
-                icon: mdi:power
-                show_state: false
-                tap_action:
-                  action: toggle
-              - show_name: true
-                show_icon: true
-                type: button
-                name: БОЙЛЕР 2
-                entity: switch.boiler_drugii
-                icon: mdi:power
-                show_state: false
-                tap_action:
-                  action: toggle
-              - show_name: true
-                show_icon: true
-                type: button
-                name: ГАРАЖ 1
-                entity: switch.poliv_3
-                icon: mdi:power
-                show_state: false
-                tap_action:
-                  action: toggle
-              - show_name: true
-                show_icon: true
-                type: button
-                name: ГАРАЖ 2
-                entity: switch.poliv_1
-                icon: mdi:power
-                show_state: false
-                tap_action:
-                  action: toggle
+              - type: entities
+                entities:
+                  - entity: sensor.kukhnia_th2_temperature
+                    secondary_info: none
+                    name: ' '
+                  - entity: sensor.kukhnia_th2_humidity
+                    secondary_info: none
+                    name: ' '
+                show_header_toggle: false
+                state_color: false
+                title: кухня
+              - type: entities
+                entities:
+                  - entity: sensor.gostova_th2_temperature
+                    secondary_info: none
+                    name: ' '
+                  - entity: sensor.gostova_th2_humidity
+                    secondary_info: none
+                    name: ' '
+                show_header_toggle: false
+                state_color: false
+                title: гостьова
+          - square: false
+            type: grid
+            columns: 2
+            cards:
+              - type: entities
+                entities:
+                  - entity: sensor.mama_th2_temperature
+                    secondary_info: none
+                    name: ' '
+                  - entity: sensor.mama_th2_humidity
+                    secondary_info: none
+                    name: ' '
+                show_header_toggle: false
+                state_color: false
+                title: мама
+              - type: entities
+                entities:
+                  - entity: sensor.drugii_th2_temperature
+                    secondary_info: none
+                    name: ' '
+                  - entity: sensor.drugii_th2_humidity
+                    secondary_info: none
+                    name: ' '
+                show_header_toggle: false
+                state_color: false
+                title: другий
+          - square: false
+            type: grid
+            columns: 2
+            cards:
+              - type: entities
+                entities:
+                  - entity: sensor.drugii_th2_temperature
+                    secondary_info: none
+                    name: ' '
+                  - entity: sensor.drugii_th2_humidity
+                    secondary_info: none
+                    name: ' '
+                show_header_toggle: false
+                state_color: false
+                title: другий
+              - type: entities
+                entities:
+                  - entity: sensor.drugii_th2_temperature
+                    secondary_info: none
+                    name: ' '
+                  - entity: sensor.drugii_th2_humidity
+                    secondary_info: none
+                    name: ' '
+                show_header_toggle: false
+                state_color: false
+                title: другий
     badges: []
   - title: testpanel
     path: testpanel
@@ -176,3 +249,78 @@ views:
         entity: switch.boiler_drugii
     type: masonry
     theme: Nordic Blue Dark
+    cards:
+      - square: false
+        type: grid
+        columns: 3
+        cards:
+          - type: entities
+            entities:
+              - entity: sensor.kukhnia_th2_temperature
+                secondary_info: none
+                name: ' '
+              - entity: sensor.kukhnia_th2_humidity
+                secondary_info: none
+                name: ' '
+            show_header_toggle: false
+            state_color: false
+            title: кухня
+          - type: entities
+            entities:
+              - entity: sensor.gostova_th2_temperature
+                secondary_info: none
+                name: ' '
+              - entity: sensor.gostova_th2_humidity
+                secondary_info: none
+                name: ' '
+            show_header_toggle: false
+            state_color: false
+            title: гостьова
+          - type: entities
+            entities:
+              - entity: sensor.mama_th2_temperature
+                secondary_info: none
+                name: ' '
+              - entity: sensor.mama_th2_humidity
+                secondary_info: none
+                name: ' '
+            show_header_toggle: false
+            state_color: false
+            title: мама
+      - square: false
+        type: grid
+        columns: 3
+        cards:
+          - type: entities
+            entities:
+              - entity: sensor.drugii_th2_temperature
+                secondary_info: none
+                name: ' '
+              - entity: sensor.drugii_th2_humidity
+                secondary_info: none
+                name: ' '
+            show_header_toggle: false
+            state_color: false
+            title: другий
+          - type: entities
+            entities:
+              - entity: sensor.drugii_th2_temperature
+                secondary_info: none
+                name: ' '
+              - entity: sensor.drugii_th2_humidity
+                secondary_info: none
+                name: ' '
+            show_header_toggle: false
+            state_color: false
+            title: другий
+          - type: entities
+            entities:
+              - entity: sensor.drugii_th2_temperature
+                secondary_info: none
+                name: ' '
+              - entity: sensor.drugii_th2_humidity
+                secondary_info: none
+                name: ' '
+            show_header_toggle: false
+            state_color: false
+            title: другий
