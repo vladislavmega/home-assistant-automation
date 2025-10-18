@@ -39,16 +39,15 @@ views:
             face_style: numbers_upright
             type: clock
             seconds_motion: continuous
+          - type: iframe
+            url: https://alerts.in.ua/?kiosk&showThreats&showWarnings
+            aspect_ration: 50
           - type: entities
             entities:
               - entity: binary_sensor.m_kiiv_air
                 secondary_info: last-changed
-            title: ПОВІТРЯНА ТРИВОГА
             state_color: true
             show_header_toggle: false
-          - type: iframe
-            url: https://alerts.in.ua/?kiosk&showThreats&showWarnings
-            aspect_ration: 50
           - type: history-graph
             entities:
               - entity: binary_sensor.m_kiiv_air
@@ -80,7 +79,7 @@ views:
               - show_name: true
                 show_icon: true
                 type: button
-                name: ДРОВА
+                name: Дрова
                 entity: switch.tverdopalivnii_socket_1
                 icon: mdi:power
                 show_state: false
@@ -93,7 +92,7 @@ views:
               - show_name: true
                 show_icon: true
                 type: button
-                name: ПЕРШИЙ
+                name: Перший
                 entity: switch.boiler_drugii_socket_1
                 icon: mdi:power
                 show_state: false
@@ -102,7 +101,7 @@ views:
               - show_name: true
                 show_icon: true
                 type: button
-                name: ДРУГИЙ
+                name: Другий
                 entity: switch.drugii_klapan_socket_1
                 icon: mdi:power
                 show_state: false
@@ -111,7 +110,7 @@ views:
               - show_name: true
                 show_icon: true
                 type: button
-                name: ПІДЛОГА
+                name: Підлога
                 entity: switch.teplii_pol_socket_1
                 icon: mdi:power
                 show_state: false
@@ -121,12 +120,12 @@ views:
             cards:
               - square: false
                 type: grid
-                columns: 4
+                columns: 3
                 cards:
                   - show_name: true
                     show_icon: true
                     type: button
-                    name: БОЙЛЕР1
+                    name: Бойлер 1
                     entity: switch.boiler
                     icon: mdi:power
                     show_state: false
@@ -135,7 +134,7 @@ views:
                   - show_name: true
                     show_icon: true
                     type: button
-                    name: БОЙЛЕР2
+                    name: Бойлер 2
                     entity: switch.boiler_drugii
                     icon: mdi:power
                     show_state: false
@@ -144,7 +143,16 @@ views:
                   - show_name: true
                     show_icon: true
                     type: button
-                    name: ГАРАЖ1
+                    name: Оптика
+                    entity: switch.faust
+                    icon: mdi:power
+                    show_state: false
+                    tap_action:
+                      action: toggle
+                  - show_name: true
+                    show_icon: true
+                    type: button
+                    name: Гараж 1
                     entity: switch.poliv_3
                     icon: mdi:power
                     show_state: false
@@ -153,8 +161,35 @@ views:
                   - show_name: true
                     show_icon: true
                     type: button
-                    name: ГАРАЖ2
+                    name: Гараж 2
                     entity: switch.poliv_1
+                    icon: mdi:power
+                    show_state: false
+                    tap_action:
+                      action: toggle
+                  - show_name: true
+                    show_icon: true
+                    type: button
+                    name: ДТЕК
+                    entity: switch.podacha_dtek
+                    icon: mdi:power
+                    show_state: false
+                    tap_action:
+                      action: toggle
+                  - show_name: true
+                    show_icon: true
+                    type: button
+                    name: Гольф
+                    entity: switch.garazhavto_socket_1
+                    icon: mdi:power
+                    show_state: false
+                    tap_action:
+                      action: toggle
+                  - show_name: true
+                    show_icon: true
+                    type: button
+                    name: Кіслотник
+                    entity: switch.kislotnik
                     icon: mdi:power
                     show_state: false
                     tap_action:
@@ -324,3 +359,19 @@ views:
             show_header_toggle: false
             state_color: false
             title: другий
+      - type: entities
+        entities:
+          - entity: switch.podacha_dtek_auto_off_enabled
+            name: Auto-off enabled
+          - entity: switch.podacha_dtek_auto_update_enabled
+            name: Auto-update enabled
+          - entity: switch.podacha_dtek_led
+            name: LED
+          - entity: number.podacha_dtek_turn_off_in
+            name: Turn off in
+        title: подача дтек
+      - type: entities
+        entities:
+          - entity: sensor.garazhavto_total_energy
+            name: Total energy
+        title: Гаражавто
