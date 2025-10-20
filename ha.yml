@@ -210,7 +210,7 @@ views:
                     name: ' '
                 show_header_toggle: false
                 state_color: false
-                title: кухня
+                title: Кухня
               - type: entities
                 entities:
                   - entity: sensor.gostova_th2_temperature
@@ -221,7 +221,7 @@ views:
                     name: ' '
                 show_header_toggle: false
                 state_color: false
-                title: гостьова
+                title: Гостьова
           - square: false
             type: grid
             columns: 2
@@ -236,7 +236,7 @@ views:
                     name: ' '
                 show_header_toggle: false
                 state_color: false
-                title: мама
+                title: Мама
               - type: entities
                 entities:
                   - entity: sensor.drugii_th2_temperature
@@ -247,7 +247,7 @@ views:
                     name: ' '
                 show_header_toggle: false
                 state_color: false
-                title: другий
+                title: Другий
           - square: false
             type: grid
             columns: 2
@@ -262,7 +262,7 @@ views:
                     name: ' '
                 show_header_toggle: false
                 state_color: false
-                title: другий
+                title: Другий
               - type: entities
                 entities:
                   - entity: sensor.drugii_th2_temperature
@@ -273,7 +273,7 @@ views:
                     name: ' '
                 show_header_toggle: false
                 state_color: false
-                title: другий
+                title: Другий
     badges: []
   - title: testpanel
     path: testpanel
