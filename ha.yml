@@ -101,8 +101,8 @@ views:
               - show_name: true
                 show_icon: true
                 type: button
-                name: Другий
-                entity: switch.drugii_klapan_socket_1
+                name: Гостьова
+                entity: switch.boiler_klapan_socket_1
                 icon: mdi:power
                 show_state: false
                 tap_action:
@@ -112,6 +112,15 @@ views:
                 type: button
                 name: Підлога
                 entity: switch.teplii_pol_socket_1
+                icon: mdi:power
+                show_state: false
+                tap_action:
+                  action: toggle
+              - show_name: true
+                show_icon: true
+                type: button
+                name: Другий
+                entity: switch.drugii_klapan_socket_1
                 icon: mdi:power
                 show_state: false
                 tap_action:
@@ -254,26 +263,15 @@ views:
             cards:
               - type: entities
                 entities:
-                  - entity: sensor.drugii_th2_temperature
+                  - entity: sensor.temperatura_i_vologist_drugii_poverkh_temperature
                     secondary_info: none
                     name: ' '
-                  - entity: sensor.drugii_th2_humidity
-                    secondary_info: none
-                    name: ' '
-                show_header_toggle: false
-                state_color: false
-                title: Другий
-              - type: entities
-                entities:
-                  - entity: sensor.drugii_th2_temperature
-                    secondary_info: none
-                    name: ' '
-                  - entity: sensor.drugii_th2_humidity
+                  - entity: sensor.temperatura_i_vologist_drugii_poverkh_humidity
                     secondary_info: none
                     name: ' '
                 show_header_toggle: false
                 state_color: false
-                title: Другий
+                title: Дитяча
     badges: []
   - title: testpanel
     path: testpanel
@@ -361,17 +359,26 @@ views:
             title: другий
       - type: entities
         entities:
-          - entity: switch.podacha_dtek_auto_off_enabled
-            name: Auto-off enabled
-          - entity: switch.podacha_dtek_auto_update_enabled
-            name: Auto-update enabled
-          - entity: switch.podacha_dtek_led
-            name: LED
-          - entity: number.podacha_dtek_turn_off_in
-            name: Turn off in
-        title: подача дтек
-      - type: entities
-        entities:
           - entity: sensor.garazhavto_total_energy
             name: Total energy
         title: Гаражавто
+      - type: entities
+        entities:
+          - entity: sensor.temperatura_i_vologist_drugii_poverkh_humidity
+            name: Humidity
+          - entity: sensor.temperatura_i_vologist_drugii_poverkh_temperature
+            name: Temperature
+        title: Th дитяча
+      - type: entities
+        entities:
+          - entity: sensor.yasno_group_4_2_electricity
+            name: Electricity
+          - entity: sensor.yasno_group_4_2_next_connectivity
+            name: Next Connectivity
+          - entity: sensor.yasno_group_4_2_next_outage
+            name: Next Outage
+          - entity: sensor.yasno_group_4_2_next_possible_outage
+            name: Next Possible Outage
+          - entity: calendar.yasno_group_4_2_outages_calendar
+            name: Outages Calendar
+        title: Yasno Group 4.2
