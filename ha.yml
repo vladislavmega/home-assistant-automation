@@ -51,6 +51,12 @@ views:
           - type: history-graph
             entities:
               - entity: binary_sensor.m_kiiv_air
+          - type: entities
+            entities:
+              - entity: sensor.yasno_group_4_2_next_connectivity
+                name: Підключення
+              - entity: sensor.yasno_group_4_2_next_outage
+                name: Відключення
       - type: vertical-stack
         cards:
           - type: vertical-stack
@@ -362,6 +368,12 @@ views:
           - entity: sensor.garazhavto_total_energy
             name: Total energy
         title: Гаражавто
+      - type: history-graph
+        entities:
+          - entity: switch.optika
+          - entity: sensor.yasno_group_4_2_next_outage
+        logarithmic_scale: false
+        hours_to_show: 12
       - type: entities
         entities:
           - entity: sensor.temperatura_i_vologist_drugii_poverkh_humidity
@@ -371,14 +383,78 @@ views:
         title: Th дитяча
       - type: entities
         entities:
-          - entity: sensor.yasno_group_4_2_electricity
-            name: Electricity
           - entity: sensor.yasno_group_4_2_next_connectivity
-            name: Next Connectivity
+            name: Наступне підключення
           - entity: sensor.yasno_group_4_2_next_outage
-            name: Next Outage
+            name: Наступне відключення
           - entity: sensor.yasno_group_4_2_next_possible_outage
-            name: Next Possible Outage
-          - entity: calendar.yasno_group_4_2_outages_calendar
-            name: Outages Calendar
-        title: Yasno Group 4.2
+            name: Наступне можливе відключення
+      - type: vertical-stack
+        cards:
+          - square: false
+            type: grid
+            columns: 2
+            cards:
+              - type: entities
+                entities:
+                  - entity: sensor.kukhnia_th2_temperature
+                    secondary_info: none
+                    name: ' '
+                  - entity: sensor.kukhnia_th2_humidity
+                    secondary_info: none
+                    name: ' '
+                show_header_toggle: false
+                state_color: false
+                title: Кухня
+              - type: entities
+                entities:
+                  - entity: sensor.gostova_th2_temperature
+                    secondary_info: none
+                    name: ' '
+                  - entity: sensor.gostova_th2_humidity
+                    secondary_info: none
+                    name: ' '
+                show_header_toggle: false
+                state_color: false
+                title: Гостьова
+          - square: false
+            type: grid
+            columns: 2
+            cards:
+              - type: entities
+                entities:
+                  - entity: sensor.mama_th2_temperature
+                    secondary_info: none
+                    name: ' '
+                  - entity: sensor.mama_th2_humidity
+                    secondary_info: none
+                    name: ' '
+                show_header_toggle: false
+                state_color: false
+                title: Мама
+              - type: entities
+                entities:
+                  - entity: sensor.drugii_th2_temperature
+                    secondary_info: none
+                    name: ' '
+                  - entity: sensor.drugii_th2_humidity
+                    secondary_info: none
+                    name: ' '
+                show_header_toggle: false
+                state_color: false
+                title: Другий
+          - square: false
+            type: grid
+            columns: 2
+            cards:
+              - type: entities
+                entities:
+                  - entity: sensor.temperatura_i_vologist_drugii_poverkh_temperature
+                    secondary_info: none
+                    name: ' '
+                  - entity: sensor.temperatura_i_vologist_drugii_poverkh_humidity
+                    secondary_info: none
+                    name: ' '
+                show_header_toggle: false
+                state_color: false
+                title: Дитяча
