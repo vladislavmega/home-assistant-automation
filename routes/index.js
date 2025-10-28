@@ -3,13 +3,55 @@ const moment = require('moment');
 const express = require('express');
 const router = express.Router();
 
+moment.locale('uk');
+
 const state = {
     status: 'na',
-    lastChange: new Date()
+    lastChange: new Date(),
+    nextConnectivity: 'unknown',
+    nextOutage: 'unknown',
+    nextPossibleOutage: 'unknown',
 }
 
-const getStatus = () => {
-    axios
+const getState = () => {
+    let nextEvent = '';
+
+    if (state.status === 'available') {
+        nextEvent = state.nextOutage;
+    } else if (state.status === 'na') {
+        nextEvent = state.nextConnectivity;
+    } else {
+        nextEvent = 'unknown';
+    }
+
+    // hide shit
+    if (nextEvent === 'unknown') { 
+        nextEvent = '';
+    } else {
+        const eventName = (state.status === 'available') ? 'Відключення' : 'Підключення';
+        nextEvent = `${eventName} ${moment(nextEvent).fromNow()}`;
+    }
+
+    return {
+        ...state,
+        nextEvent,
+    };
+};
+
+const HA_URL = "http://homeassistant.local:8123"; // або http://192.168.1.x:8123
+const TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJkZGVlOWMzNGIxMDA0Y2I3ODRkZDQxZTI3ZDQ5YWQ4MiIsImlhdCI6MTc2MTM5MTUzMiwiZXhwIjoyMDc2NzUxNTMyfQ.4M4ej7q2OxwJEtyQ1GVjO-yULdq7G8hXLhml_DV6j60"
+
+async function getEntityState(entityId) {
+    return await axios.get(`${HA_URL}/api/states/${entityId}`, {
+      headers: {
+        Authorization: `Bearer ${TOKEN}`,
+        "Content-Type": "application/json",
+      },
+    })
+}
+
+const getStatus = async () => {
+    await axios
         .get(`http://192.168.88.25`, {
             timeout: 1000 * 5,
         })
@@ -25,18 +67,41 @@ const getStatus = () => {
             }
             state.status = 'na';
         })
+
+    await getEntityState('sensor.yasno_group_4_2_next_connectivity')
+        .then((response) => {
+            state.nextConnectivity = response.data.state;
+        })
+
+    await getEntityState('sensor.yasno_group_4_2_next_outage')
+        .then((response) => {
+            state.nextOutage = response.data.state;
+        })
+
+    await getEntityState('sensor.yasno_group_4_2_next_possible_outage')
+        .then((response) => {
+            state.nextPossibleOutage = response.data.state;
+        })
+        console.log('done')
+
+    // - entity: sensor.yasno_group_4_2_next_connectivity
+    //         name: Наступне підключення
+    //       - entity: sensor.yasno_group_4_2_next_outage
+    //         name: Наступне відключення
+    //       - entity: sensor.yasno_group_4_2_next_possible_outage
+    //         name: Наступне можливе відключення
 }
 
-setInterval(() => {
-    getStatus();
+setInterval(async () => {
+    // getEntityState('592b54f71af7da09a48919a7cbcc8143')
+    await getStatus();
 }, 60000);
-
 
 getStatus();
 /* GET home page. */
 router.get('/', function (req, res, next) {
     res.render('index', {
-        ...state,
+        ...getState(),
         lastChange: moment(state.lastChange).format('HH:mm DD-MM')
     });
 });
@@ -46,7 +111,7 @@ router.get('/home', function (req, res, next) {
     const yellow = (req.query?.yellow === '1') ? 'yellow' : ''
 
     res.render('home', {
-        ...state,
+        ...getState(),
         yellow,
         lastChange: moment(state.lastChange).format('HH:mm DD-MM')
     });
@@ -54,44 +119,38 @@ router.get('/home', function (req, res, next) {
 
 router.get('/state', function (req, res, next) {
     res.send({
-        ...state,
+        ...getState(),
         lastChange: moment(state.lastChange).format('HH:mm DD-MM')
     });
 });
 
-router.get('/phonecamera', function (req, res, next) {
-    res.render('phonecamera', {
+// router.get('/phonecamera/params', async function (req, res, next) {
+//     const url = `http://192.168.88.18/parameters`
+//     try {
+//         const response = await fetch(url);
+//         if (!response.ok) {
+//             throw new Error(`Response status: ${response.status}`);
+//         }
+//         const json = await response.json();
+//         res.send(json)
+//     } catch (error) {
+//         res.send(error.message)
+//     }
+// })
 
-    })
-})
-
-router.get('/phonecamera/params', async function (req, res, next) {
-    const url = `http://192.168.88.18/parameters`
-    try {
-        const response = await fetch(url);
-        if (!response.ok) {
-            throw new Error(`Response status: ${response.status}`);
-        }
-        const json = await response.json();
-        res.send(json)
-    } catch (error) {
-        res.send(error.message)
-    }
-})
-
-router.get('/phonecamera/torch/:value', async function (req, res, next) {
-    console.log(req.params.value);
-    const url = `http://192.168.88.18/parameters?torch=${req.params.value}`
-    try {
-        const response = await fetch(url);
-        if (!response.ok) {
-            throw new Error(`Response status: ${response.status}`);
-        }
-        const json = await response.json();
-        res.send(json)
-    } catch (error) {
-        res.send(error.message)
-    }
-})
+// router.get('/phonecamera/torch/:value', async function (req, res, next) {
+//     console.log(req.params.value);
+//     const url = `http://192.168.88.18/parameters?torch=${req.params.value}`
+//     try {
+//         const response = await fetch(url);
+//         if (!response.ok) {
+//             throw new Error(`Response status: ${response.status}`);
+//         }
+//         const json = await response.json();
+//         res.send(json)
+//     } catch (error) {
+//         res.send(error.message)
+//     }
+// })
 
 module.exports = router;

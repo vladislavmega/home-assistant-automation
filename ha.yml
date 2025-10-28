@@ -116,6 +116,15 @@ views:
               - show_name: true
                 show_icon: true
                 type: button
+                name: Кухня
+                entity: switch.generator_tumanu_socket_1
+                icon: mdi:power
+                show_state: false
+                tap_action:
+                  action: toggle
+              - show_name: true
+                show_icon: true
+                type: button
                 name: Підлога
                 entity: switch.teplii_pol_socket_1
                 icon: mdi:power

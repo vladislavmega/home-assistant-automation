@@ -8,10 +8,17 @@
 <body class="<%= status %>">
     <div class="center" id="state">
         <% if(status === 'available'){ %>
-            <h1>Є ДТЕК <br /><span class="since" style="font-size: 20px">З <%= lastChange %></span></h1>
+            <h1>Є ДТЕК <br />
+                <span class="since" style="font-size: 20px">З <%= lastChange %></span><br />
+                <span style="font-size: 18px"><%= nextEvent %></span>
+            </h1>
         <% } else{ %>
-            <h1>НЕМАЄ СВІТЛА <br /><span class="since" style="font-size: 20px">З <%= lastChange %></span></h1>
+            <h1>НЕМА ДТЕК <br />
+                <span class="since" style="font-size: 20px">З <%= lastChange %></span><br />
+                <span style="font-size: 18px"><%= nextEvent %></span>
+            </h1>
         <% } %>
+            
     </div>
     <script src="/javascripts/ping.js"></script>
 </body>

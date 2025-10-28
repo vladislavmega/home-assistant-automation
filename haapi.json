@@ -1,0 +1,5156 @@
+[
+	{
+		"entity_id": "update.home_assistant_supervisor_update",
+		"state": "off",
+		"attributes": {
+			"auto_update": true,
+			"display_precision": 0,
+			"installed_version": "2025.10.0",
+			"in_progress": false,
+			"latest_version": "2025.10.0",
+			"release_summary": null,
+			"release_url": "https://github.com/home-assistant/supervisor/releases/tag/2025.10.0",
+			"skipped_version": null,
+			"title": "Home Assistant Supervisor",
+			"update_percentage": null,
+			"entity_picture": "https://brands.home-assistant.io/hassio/icon.png",
+			"friendly_name": "Home Assistant Supervisor Update",
+			"supported_features": 1
+		},
+		"last_changed": "2025-10-25T10:09:30.568041+00:00",
+		"last_reported": "2025-10-25T10:09:30.568041+00:00",
+		"last_updated": "2025-10-25T10:09:30.568041+00:00",
+		"context": {
+			"id": "01K8DDGFE8T90ADBZ0P8DZPBSM",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "update.home_assistant_core_update",
+		"state": "on",
+		"attributes": {
+			"auto_update": false,
+			"display_precision": 0,
+			"installed_version": "2025.10.2",
+			"in_progress": false,
+			"latest_version": "2025.10.4",
+			"release_summary": null,
+			"release_url": "https://www.home-assistant.io/latest-release-notes/",
+			"skipped_version": null,
+			"title": "Home Assistant Core",
+			"update_percentage": null,
+			"entity_picture": "https://brands.home-assistant.io/homeassistant/icon.png",
+			"friendly_name": "Home Assistant Core Update",
+			"supported_features": 11
+		},
+		"last_changed": "2025-10-25T10:09:30.568392+00:00",
+		"last_reported": "2025-10-25T10:09:30.568392+00:00",
+		"last_updated": "2025-10-25T10:09:30.568392+00:00",
+		"context": {
+			"id": "01K8DDGFE80JW4AS6TV2ASMAC6",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "update.aircast_update",
+		"state": "on",
+		"attributes": {
+			"auto_update": false,
+			"display_precision": 0,
+			"installed_version": "4.2.4",
+			"in_progress": false,
+			"latest_version": "5.0.0",
+			"release_summary": null,
+			"release_url": null,
+			"skipped_version": null,
+			"title": "AirCast",
+			"update_percentage": null,
+			"entity_picture": "/api/hassio/addons/a0d7b954_aircast/icon",
+			"friendly_name": "AirCast Update",
+			"supported_features": 25
+		},
+		"last_changed": "2025-10-25T10:09:30.568639+00:00",
+		"last_reported": "2025-10-25T10:09:30.568639+00:00",
+		"last_updated": "2025-10-25T10:09:30.568639+00:00",
+		"context": {
+			"id": "01K8DDGFE8KQFJWVVDF43DT5T5",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "update.file_editor_update",
+		"state": "off",
+		"attributes": {
+			"auto_update": false,
+			"display_precision": 0,
+			"installed_version": "5.8.0",
+			"in_progress": false,
+			"latest_version": "5.8.0",
+			"release_summary": null,
+			"release_url": null,
+			"skipped_version": null,
+			"title": "File editor",
+			"update_percentage": null,
+			"entity_picture": "/api/hassio/addons/core_configurator/icon",
+			"friendly_name": "File editor Update",
+			"supported_features": 25
+		},
+		"last_changed": "2025-10-25T10:09:30.568874+00:00",
+		"last_reported": "2025-10-25T10:09:30.568874+00:00",
+		"last_updated": "2025-10-25T10:09:30.568874+00:00",
+		"context": {
+			"id": "01K8DDGFE86Y8V4YWF0REG55V8",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "update.filebrowser_update",
+		"state": "on",
+		"attributes": {
+			"auto_update": false,
+			"display_precision": 0,
+			"installed_version": "2.44.1",
+			"in_progress": false,
+			"latest_version": "2.44.2",
+			"release_summary": null,
+			"release_url": null,
+			"skipped_version": null,
+			"title": "Filebrowser",
+			"update_percentage": null,
+			"entity_picture": "/api/hassio/addons/db21ed7f_filebrowser/icon",
+			"friendly_name": "Filebrowser Update",
+			"supported_features": 25
+		},
+		"last_changed": "2025-10-25T10:09:30.569090+00:00",
+		"last_reported": "2025-10-25T10:09:30.569090+00:00",
+		"last_updated": "2025-10-25T10:09:30.569090+00:00",
+		"context": {
+			"id": "01K8DDGFE9QMTGH0SMHJ1V0S5S",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "update.home_assistant_operating_system_update",
+		"state": "on",
+		"attributes": {
+			"auto_update": false,
+			"display_precision": 0,
+			"installed_version": "14.2",
+			"in_progress": false,
+			"latest_version": "15.2",
+			"release_summary": null,
+			"release_url": "https://github.com/home-assistant/operating-system/releases/tag/15.2",
+			"skipped_version": null,
+			"title": "Home Assistant Operating System",
+			"update_percentage": null,
+			"entity_picture": "https://brands.home-assistant.io/homeassistant/icon.png",
+			"friendly_name": "Home Assistant Operating System Update",
+			"supported_features": 11
+		},
+		"last_changed": "2025-10-25T10:09:30.569344+00:00",
+		"last_reported": "2025-10-25T10:09:30.569344+00:00",
+		"last_updated": "2025-10-25T10:09:30.569344+00:00",
+		"context": {
+			"id": "01K8DDGFE9XK4KZ4ZJGCZ2SJGR",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "conversation.home_assistant",
+		"state": "unknown",
+		"attributes": {
+			"friendly_name": "Home Assistant",
+			"supported_features": 1
+		},
+		"last_changed": "2025-10-25T10:09:34.887931+00:00",
+		"last_reported": "2025-10-25T10:09:34.887931+00:00",
+		"last_updated": "2025-10-25T10:09:34.887931+00:00",
+		"context": {
+			"id": "01K8DDGKN7951R2ETPF5S47SFG",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "event.backup_automatic_backup",
+		"state": "unknown",
+		"attributes": {
+			"event_types": [
+				"completed",
+				"failed",
+				"in_progress"
+			],
+			"event_type": null,
+			"friendly_name": "Backup Automatic backup"
+		},
+		"last_changed": "2025-10-25T10:09:34.953598+00:00",
+		"last_reported": "2025-10-25T10:09:34.953598+00:00",
+		"last_updated": "2025-10-25T10:09:34.953598+00:00",
+		"context": {
+			"id": "01K8DDGKQ9ND52MYNC383MM197",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.backup_backup_manager_state",
+		"state": "idle",
+		"attributes": {
+			"options": [
+				"idle",
+				"create_backup",
+				"blocked",
+				"receive_backup",
+				"restore_backup"
+			],
+			"device_class": "enum",
+			"friendly_name": "Backup Backup Manager state"
+		},
+		"last_changed": "2025-10-25T10:09:54.184088+00:00",
+		"last_reported": "2025-10-25T10:09:54.184088+00:00",
+		"last_updated": "2025-10-25T10:09:54.184088+00:00",
+		"context": {
+			"id": "01K8DDH6G8XGQ5PMPTKHWKWX1E",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.backup_next_scheduled_automatic_backup",
+		"state": "unknown",
+		"attributes": {
+			"device_class": "timestamp",
+			"friendly_name": "Backup Next scheduled automatic backup"
+		},
+		"last_changed": "2025-10-25T10:09:34.955098+00:00",
+		"last_reported": "2025-10-25T10:09:34.955098+00:00",
+		"last_updated": "2025-10-25T10:09:34.955098+00:00",
+		"context": {
+			"id": "01K8DDGKQBDZR30EGQA58D6DY7",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.backup_last_successful_automatic_backup",
+		"state": "unknown",
+		"attributes": {
+			"device_class": "timestamp",
+			"friendly_name": "Backup Last successful automatic backup"
+		},
+		"last_changed": "2025-10-25T10:09:34.955422+00:00",
+		"last_reported": "2025-10-25T10:09:34.955422+00:00",
+		"last_updated": "2025-10-25T10:09:34.955422+00:00",
+		"context": {
+			"id": "01K8DDGKQBYFPBAMK38K7GHG0W",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.backup_last_attempted_automatic_backup",
+		"state": "unknown",
+		"attributes": {
+			"device_class": "timestamp",
+			"friendly_name": "Backup Last attempted automatic backup"
+		},
+		"last_changed": "2025-10-25T10:09:34.957553+00:00",
+		"last_reported": "2025-10-25T10:09:34.957553+00:00",
+		"last_updated": "2025-10-25T10:09:34.957553+00:00",
+		"context": {
+			"id": "01K8DDGKQDB8SKYTJ0H4N5X2TG",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "zone.home",
+		"state": "1",
+		"attributes": {
+			"latitude": 50.37369115916454,
+			"longitude": 30.676054358482364,
+			"radius": 100,
+			"passive": false,
+			"persons": [
+				"person.vladyslav"
+			],
+			"editable": true,
+			"icon": "mdi:home",
+			"friendly_name": "Home"
+		},
+		"last_changed": "2025-10-25T17:42:29.570091+00:00",
+		"last_reported": "2025-10-25T17:42:29.570091+00:00",
+		"last_updated": "2025-10-25T17:42:29.570091+00:00",
+		"context": {
+			"id": "01K8E7DXE2FGG29MSKESWHFXF6",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "person.vladyslav",
+		"state": "home",
+		"attributes": {
+			"editable": true,
+			"id": "vladyslav",
+			"device_trackers": [
+				"device_tracker.ipad_vladislav",
+				"device_tracker.iphonevlad",
+				"device_tracker.tetiana_iphone",
+				"device_tracker.iphonevlad2",
+				"device_tracker.tetiana_iphone2",
+				"device_tracker.iphonevlad3"
+			],
+			"latitude": 50.37379820539253,
+			"longitude": 30.67610916708863,
+			"gps_accuracy": 14,
+			"source": "device_tracker.iphonevlad3",
+			"user_id": "68e3345e74274392ba9ee1c69b6a83f2",
+			"friendly_name": "vladyslav"
+		},
+		"last_changed": "2025-10-25T17:42:29.569275+00:00",
+		"last_reported": "2025-10-27T07:41:13.974839+00:00",
+		"last_updated": "2025-10-27T07:41:13.974839+00:00",
+		"context": {
+			"id": "01K8J9TDBP542M9AVSQFD58WND",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sun.sun",
+		"state": "above_horizon",
+		"attributes": {
+			"next_dawn": "2025-10-28T04:07:00.723739+00:00",
+			"next_dusk": "2025-10-27T15:16:00.358208+00:00",
+			"next_midnight": "2025-10-27T21:41:02+00:00",
+			"next_noon": "2025-10-27T09:41:08+00:00",
+			"next_rising": "2025-10-28T04:41:33.042282+00:00",
+			"next_setting": "2025-10-27T14:41:37.089940+00:00",
+			"elevation": 22.05,
+			"azimuth": 149.96,
+			"rising": true,
+			"friendly_name": "Sun"
+		},
+		"last_changed": "2025-10-27T04:39:52.394405+00:00",
+		"last_reported": "2025-10-27T07:47:23.291194+00:00",
+		"last_updated": "2025-10-27T07:47:23.291194+00:00",
+		"context": {
+			"id": "01K8JA5P0V50N3AFJ73694VKXV",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.sun_next_dawn",
+		"state": "2025-10-28T04:07:00+00:00",
+		"attributes": {
+			"device_class": "timestamp",
+			"friendly_name": "Sun Next dawn"
+		},
+		"last_changed": "2025-10-27T04:05:25.795661+00:00",
+		"last_reported": "2025-10-27T04:05:25.795661+00:00",
+		"last_updated": "2025-10-27T04:05:25.795661+00:00",
+		"context": {
+			"id": "01K8HXF8N3SXNK55EKBH2XC4G0",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.sun_next_dusk",
+		"state": "2025-10-27T15:16:00+00:00",
+		"attributes": {
+			"device_class": "timestamp",
+			"friendly_name": "Sun Next dusk"
+		},
+		"last_changed": "2025-10-26T15:17:46.130514+00:00",
+		"last_reported": "2025-10-26T15:17:46.130514+00:00",
+		"last_updated": "2025-10-26T15:17:46.130514+00:00",
+		"context": {
+			"id": "01K8GHHMGJHQ15ZW4Q7HDX5096",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.sun_next_midnight",
+		"state": "2025-10-27T21:41:02+00:00",
+		"attributes": {
+			"device_class": "timestamp",
+			"friendly_name": "Sun Next midnight"
+		},
+		"last_changed": "2025-10-26T21:41:07.004529+00:00",
+		"last_reported": "2025-10-26T21:41:07.004529+00:00",
+		"last_updated": "2025-10-26T21:41:07.004529+00:00",
+		"context": {
+			"id": "01K8H7FJ9WDV9FXF4S1NQGJ307",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.sun_next_noon",
+		"state": "2025-10-27T09:41:08+00:00",
+		"attributes": {
+			"device_class": "timestamp",
+			"friendly_name": "Sun Next noon"
+		},
+		"last_changed": "2025-10-26T09:41:14.003909+00:00",
+		"last_reported": "2025-10-26T09:41:14.003909+00:00",
+		"last_updated": "2025-10-26T09:41:14.003909+00:00",
+		"context": {
+			"id": "01K8FY9DMK45CTMZG3FYGV1WW0",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.sun_next_rising",
+		"state": "2025-10-28T04:41:33+00:00",
+		"attributes": {
+			"device_class": "timestamp",
+			"friendly_name": "Sun Next rising"
+		},
+		"last_changed": "2025-10-27T04:39:52.395192+00:00",
+		"last_reported": "2025-10-27T04:39:52.395192+00:00",
+		"last_updated": "2025-10-27T04:39:52.395192+00:00",
+		"context": {
+			"id": "01K8HZEATBDG4R5A8W21P796TF",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.sun_next_setting",
+		"state": "2025-10-27T14:41:37+00:00",
+		"attributes": {
+			"device_class": "timestamp",
+			"friendly_name": "Sun Next setting"
+		},
+		"last_changed": "2025-10-26T14:43:28.496326+00:00",
+		"last_reported": "2025-10-26T14:43:28.496326+00:00",
+		"last_updated": "2025-10-26T14:43:28.496326+00:00",
+		"context": {
+			"id": "01K8GFJV3GSP280AJPFWKPVFMW",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "camera.192_168_88_18",
+		"state": "unavailable",
+		"attributes": {
+			"entity_picture": "/api/camera_proxy/camera.192_168_88_18?token=a0b5ac1a9a838ea8dd781587f3846c1de358042c5f3e226ad07e72349570de2c",
+			"friendly_name": "192_168_88_18",
+			"supported_features": 2
+		},
+		"last_changed": "2025-10-27T07:34:13.661393+00:00",
+		"last_reported": "2025-10-27T07:44:39.310262+00:00",
+		"last_updated": "2025-10-27T07:44:39.310262+00:00",
+		"context": {
+			"id": "01K8JA0NWE19Y701SX1DA0CRA0",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "media_player.televizor_u_spalni_2",
+		"state": "idle",
+		"attributes": {
+			"volume_level": 0.46666666865348816,
+			"is_volume_muted": false,
+			"media_content_type": "video",
+			"media_position_updated_at": "2025-10-27T05:33:15.413055+00:00",
+			"app_id": "AndroidNativeApp",
+			"app_name": "MX Player",
+			"entity_picture_local": null,
+			"friendly_name": "Телевізор у спальні",
+			"supported_features": 152461
+		},
+		"last_changed": "2025-10-26T20:38:13.649065+00:00",
+		"last_reported": "2025-10-27T05:33:15.413327+00:00",
+		"last_updated": "2025-10-27T05:33:15.413327+00:00",
+		"context": {
+			"id": "01K8J2G2RNF19V75QJS7N287S2",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "automation.nova_avtomatizatsiia",
+		"state": "off",
+		"attributes": {
+			"id": "1751882262931",
+			"last_triggered": "2025-07-21T11:30:00.123217+00:00",
+			"mode": "single",
+			"current": 0,
+			"friendly_name": "Генератор туману"
+		},
+		"last_changed": "2025-10-25T10:09:38.218614+00:00",
+		"last_reported": "2025-10-25T10:09:38.218614+00:00",
+		"last_updated": "2025-10-25T10:09:38.218614+00:00",
+		"context": {
+			"id": "01K8DDGPXA2Z5JQ70QPPN5AVX1",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "tts.google_en_com",
+		"state": "unknown",
+		"attributes": {
+			"friendly_name": "Google Translate en com"
+		},
+		"last_changed": "2025-10-25T10:09:38.287299+00:00",
+		"last_reported": "2025-10-25T10:09:38.287299+00:00",
+		"last_updated": "2025-10-25T10:09:38.287299+00:00",
+		"context": {
+			"id": "01K8DDGPZFDJ62MX7S6JAYYCH6",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "update.yasno_outages_update",
+		"state": "off",
+		"attributes": {
+			"auto_update": false,
+			"display_precision": 0,
+			"installed_version": "v0.3.7",
+			"in_progress": false,
+			"latest_version": "v0.3.7",
+			"release_summary": null,
+			"release_url": "https://github.com/denysdovhan/ha-yasno-outages/releases/v0.3.7",
+			"skipped_version": null,
+			"title": null,
+			"update_percentage": null,
+			"entity_picture": "https://brands.home-assistant.io/_/yasno_outages/icon.png",
+			"friendly_name": "Yasno Outages update",
+			"supported_features": 23
+		},
+		"last_changed": "2025-10-25T10:09:38.297622+00:00",
+		"last_reported": "2025-10-25T10:09:38.297622+00:00",
+		"last_updated": "2025-10-25T10:09:38.297622+00:00",
+		"context": {
+			"id": "01K8DDGPZSHMNQ2QSFPF2HT0FS",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "update.nordic_theme_update",
+		"state": "off",
+		"attributes": {
+			"auto_update": false,
+			"display_precision": 0,
+			"installed_version": "v2.1.0",
+			"in_progress": false,
+			"latest_version": "v2.1.0",
+			"release_summary": null,
+			"release_url": "https://github.com/coltondick/nordic-theme-main/releases/v2.1.0",
+			"skipped_version": null,
+			"title": null,
+			"update_percentage": null,
+			"friendly_name": "Nordic Theme update",
+			"supported_features": 23
+		},
+		"last_changed": "2025-10-25T10:09:38.298177+00:00",
+		"last_reported": "2025-10-25T10:09:38.298177+00:00",
+		"last_updated": "2025-10-25T10:09:38.298177+00:00",
+		"context": {
+			"id": "01K8DDGPZTE5VTXE6GY4FCZ9B2",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "update.kiosk_mode_update",
+		"state": "on",
+		"attributes": {
+			"auto_update": false,
+			"display_precision": 0,
+			"installed_version": "v8.0.1",
+			"in_progress": false,
+			"latest_version": "v9.0.0",
+			"release_summary": null,
+			"release_url": "https://github.com/NemesisRE/kiosk-mode/releases/v9.0.0",
+			"skipped_version": null,
+			"title": null,
+			"update_percentage": null,
+			"friendly_name": "Kiosk Mode update",
+			"supported_features": 23
+		},
+		"last_changed": "2025-10-25T10:09:38.298679+00:00",
+		"last_reported": "2025-10-25T10:09:38.298679+00:00",
+		"last_updated": "2025-10-25T10:09:38.298679+00:00",
+		"context": {
+			"id": "01K8DDGPZTTDXS573W794VFRAM",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "update.hacs_update",
+		"state": "off",
+		"attributes": {
+			"auto_update": false,
+			"display_precision": 0,
+			"installed_version": "2.0.5",
+			"in_progress": false,
+			"latest_version": "2.0.5",
+			"release_summary": null,
+			"release_url": "https://github.com/hacs/integration/releases/2.0.5",
+			"skipped_version": null,
+			"title": null,
+			"update_percentage": null,
+			"entity_picture": "https://brands.home-assistant.io/_/hacs/icon.png",
+			"friendly_name": "HACS update",
+			"supported_features": 23
+		},
+		"last_changed": "2025-10-25T10:09:38.299011+00:00",
+		"last_reported": "2025-10-25T10:09:38.299011+00:00",
+		"last_updated": "2025-10-25T10:09:38.299011+00:00",
+		"context": {
+			"id": "01K8DDGPZVTJ3AW9GQ99N3DSGV",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "binary_sensor.iphonevlad_focus",
+		"state": "off",
+		"attributes": {
+			"icon": "mdi:moon-waning-crescent",
+			"friendly_name": "iPhonevlad Focus"
+		},
+		"last_changed": "2025-10-25T10:09:38.411238+00:00",
+		"last_reported": "2025-10-25T10:09:38.411238+00:00",
+		"last_updated": "2025-10-25T10:09:38.411238+00:00",
+		"context": {
+			"id": "01K8DDGQ3BBNXFBBFD0EGP95JJ",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "device_tracker.iphonevlad",
+		"state": "home",
+		"attributes": {
+			"source_type": "gps",
+			"battery_level": 25,
+			"latitude": 50.373870849609375,
+			"longitude": 30.676127685098894,
+			"gps_accuracy": 15,
+			"altitude": 93.94999694824219,
+			"vertical_accuracy": 21,
+			"friendly_name": "iPhonevlad"
+		},
+		"last_changed": "2025-10-25T10:09:38.413254+00:00",
+		"last_reported": "2025-10-25T10:09:38.413254+00:00",
+		"last_updated": "2025-10-25T10:09:38.413254+00:00",
+		"context": {
+			"id": "01K8DDGQ3DRAYXCDNTK0QG0Z76",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.iphonevlad_battery_level",
+		"state": "10",
+		"attributes": {
+			"unit_of_measurement": "%",
+			"device_class": "battery",
+			"icon": "mdi:battery-10",
+			"friendly_name": "iPhonevlad Battery Level"
+		},
+		"last_changed": "2025-10-25T10:09:38.414881+00:00",
+		"last_reported": "2025-10-25T10:09:38.414881+00:00",
+		"last_updated": "2025-10-25T10:09:38.414881+00:00",
+		"context": {
+			"id": "01K8DDGQ3EV604THTAACHFHGCQ",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.iphonevlad_storage",
+		"state": "6.40",
+		"attributes": {
+			"Available": "3,01 ГБ",
+			"Available (Important)": "8,25 ГБ",
+			"Available (Opportunistic)": "4,09 ГБ",
+			"Total": "63,93 ГБ",
+			"unit_of_measurement": "% available",
+			"icon": "mdi:database",
+			"friendly_name": "iPhonevlad Storage"
+		},
+		"last_changed": "2025-10-25T10:09:38.415215+00:00",
+		"last_reported": "2025-10-25T10:09:38.415215+00:00",
+		"last_updated": "2025-10-25T10:09:38.415215+00:00",
+		"context": {
+			"id": "01K8DDGQ3FEEQYPYFDCA8F3YRN",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.iphonevlad_sim_1",
+		"state": "--",
+		"attributes": {
+			"Allows VoIP": true,
+			"Carrier ID": "0000000100000001",
+			"Carrier Name": "--",
+			"Current Radio Technology": "Long-Term Evolution (LTE)",
+			"ISO Country Code": "--",
+			"Mobile Country Code": "65535",
+			"Mobile Network Code": "65535",
+			"icon": "mdi:sim",
+			"friendly_name": "iPhonevlad SIM 1"
+		},
+		"last_changed": "2025-10-25T10:09:38.415463+00:00",
+		"last_reported": "2025-10-25T10:09:38.415463+00:00",
+		"last_updated": "2025-10-25T10:09:38.415463+00:00",
+		"context": {
+			"id": "01K8DDGQ3F50ET35SE725C1VQR",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.iphonevlad_battery_state",
+		"state": "Not Charging",
+		"attributes": {
+			"Low Power Mode": true,
+			"icon": "mdi:battery-10",
+			"friendly_name": "iPhonevlad Battery State"
+		},
+		"last_changed": "2025-10-25T10:09:38.415701+00:00",
+		"last_reported": "2025-10-25T10:09:38.415701+00:00",
+		"last_updated": "2025-10-25T10:09:38.415701+00:00",
+		"context": {
+			"id": "01K8DDGQ3FBHMGP326BZJNNBVX",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.iphonevlad_ssid",
+		"state": "Not Connected",
+		"attributes": {
+			"icon": "mdi:wifi-off",
+			"friendly_name": "iPhonevlad SSID"
+		},
+		"last_changed": "2025-10-25T10:09:38.416052+00:00",
+		"last_reported": "2025-10-25T10:09:38.416052+00:00",
+		"last_updated": "2025-10-25T10:09:38.416052+00:00",
+		"context": {
+			"id": "01K8DDGQ3GCTE9EG1ZPS21GP0Q",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.iphonevlad_sim_2",
+		"state": "--",
+		"attributes": {
+			"Allows VoIP": true,
+			"Carrier ID": "0000000100000002",
+			"Carrier Name": "--",
+			"ISO Country Code": "--",
+			"Mobile Country Code": "65535",
+			"Mobile Network Code": "65535",
+			"icon": "mdi:sim",
+			"friendly_name": "iPhonevlad SIM 2"
+		},
+		"last_changed": "2025-10-25T10:09:38.416293+00:00",
+		"last_reported": "2025-10-25T10:09:38.416293+00:00",
+		"last_updated": "2025-10-25T10:09:38.416293+00:00",
+		"context": {
+			"id": "01K8DDGQ3GPAAT025Z647MPN4A",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.iphonevlad_bssid",
+		"state": "Not Connected",
+		"attributes": {
+			"icon": "mdi:wifi-off",
+			"friendly_name": "iPhonevlad BSSID"
+		},
+		"last_changed": "2025-10-25T10:09:38.416521+00:00",
+		"last_reported": "2025-10-25T10:09:38.416521+00:00",
+		"last_updated": "2025-10-25T10:09:38.416521+00:00",
+		"context": {
+			"id": "01K8DDGQ3GS4KXTRKBZXAHV5AV",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.iphonevlad_geocoded_location",
+		"state": "Київ Київ\n02088\nУкраїна",
+		"attributes": {
+			"Administrative Area": "Київ",
+			"Areas Of Interest": "N/A",
+			"Country": "Україна",
+			"Inland Water": "N/A",
+			"ISO Country Code": "UA",
+			"Locality": "Київ",
+			"Location": [
+				50.373870849609375,
+				30.676127685098894
+			],
+			"Name": "02088",
+			"Ocean": "N/A",
+			"Postal Code": "02088",
+			"Sub Administrative Area": "N/A",
+			"Sub Locality": "N/A",
+			"Sub Thoroughfare": "N/A",
+			"Thoroughfare": "N/A",
+			"Time Zone": "Europe/Kiev",
+			"Zones": [
+				"Home"
+			],
+			"icon": "mdi:map",
+			"friendly_name": "iPhonevlad Geocoded Location"
+		},
+		"last_changed": "2025-10-25T10:09:38.416754+00:00",
+		"last_reported": "2025-10-25T10:09:38.416754+00:00",
+		"last_updated": "2025-10-25T10:09:38.416754+00:00",
+		"context": {
+			"id": "01K8DDGQ3G5K3XVTSQFVTC6YSC",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.iphonevlad_last_update_trigger",
+		"state": "Periodic",
+		"attributes": {
+			"icon": "mdi:cellphone-wireless",
+			"friendly_name": "iPhonevlad Last Update Trigger"
+		},
+		"last_changed": "2025-10-25T10:09:38.417079+00:00",
+		"last_reported": "2025-10-25T10:09:38.417079+00:00",
+		"last_updated": "2025-10-25T10:09:38.417079+00:00",
+		"context": {
+			"id": "01K8DDGQ3HJ9T49TXRFXCEHJ32",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.iphonevlad_connection_type",
+		"state": "Wi-Fi",
+		"attributes": {
+			"icon": "mdi:wifi",
+			"friendly_name": "iPhonevlad Connection Type"
+		},
+		"last_changed": "2025-10-25T10:09:38.417305+00:00",
+		"last_reported": "2025-10-25T10:09:38.417305+00:00",
+		"last_updated": "2025-10-25T10:09:38.417305+00:00",
+		"context": {
+			"id": "01K8DDGQ3H09RCJJ3SJTNZ784Q",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.iphonevlad_activity",
+		"state": "Walking",
+		"attributes": {
+			"Confidence": "High",
+			"Types": [
+				"Walking"
+			],
+			"icon": "mdi:walk",
+			"friendly_name": "iPhonevlad Activity"
+		},
+		"last_changed": "2025-10-25T10:09:38.417547+00:00",
+		"last_reported": "2025-10-25T10:09:38.417547+00:00",
+		"last_updated": "2025-10-25T10:09:38.417547+00:00",
+		"context": {
+			"id": "01K8DDGQ3HNJ4SAWFFA57SZC0S",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.iphonevlad_distance",
+		"state": "14",
+		"attributes": {
+			"unit_of_measurement": "m",
+			"icon": "mdi:hiking",
+			"friendly_name": "iPhonevlad Distance"
+		},
+		"last_changed": "2025-10-25T10:09:38.417841+00:00",
+		"last_reported": "2025-10-25T10:09:38.417841+00:00",
+		"last_updated": "2025-10-25T10:09:38.417841+00:00",
+		"context": {
+			"id": "01K8DDGQ3HVEGNFWW5F7KX39VB",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.iphonevlad_floors_ascended",
+		"state": "0",
+		"attributes": {
+			"unit_of_measurement": "floors",
+			"icon": "mdi:stairs-up",
+			"friendly_name": "iPhonevlad Floors Ascended"
+		},
+		"last_changed": "2025-10-25T10:09:38.418113+00:00",
+		"last_reported": "2025-10-25T10:09:38.418113+00:00",
+		"last_updated": "2025-10-25T10:09:38.418113+00:00",
+		"context": {
+			"id": "01K8DDGQ3JM7SJXRKPQ03BZVTT",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.iphonevlad_floors_descended",
+		"state": "0",
+		"attributes": {
+			"unit_of_measurement": "floors",
+			"icon": "mdi:stairs-down",
+			"friendly_name": "iPhonevlad Floors Descended"
+		},
+		"last_changed": "2025-10-25T10:09:38.418353+00:00",
+		"last_reported": "2025-10-25T10:09:38.418353+00:00",
+		"last_updated": "2025-10-25T10:09:38.418353+00:00",
+		"context": {
+			"id": "01K8DDGQ3JRHHF62R057TEWZZY",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.iphonevlad_steps",
+		"state": "19",
+		"attributes": {
+			"unit_of_measurement": "steps",
+			"icon": "mdi:walk",
+			"friendly_name": "iPhonevlad Steps"
+		},
+		"last_changed": "2025-10-25T10:09:38.418581+00:00",
+		"last_reported": "2025-10-25T10:09:38.418581+00:00",
+		"last_updated": "2025-10-25T10:09:38.418581+00:00",
+		"context": {
+			"id": "01K8DDGQ3J614MNT5WKQKYWFW9",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.iphonevlad_average_active_pace",
+		"state": "1",
+		"attributes": {
+			"unit_of_measurement": "m/s",
+			"icon": "mdi:speedometer",
+			"friendly_name": "iPhonevlad Average Active Pace"
+		},
+		"last_changed": "2025-10-25T10:09:38.418874+00:00",
+		"last_reported": "2025-10-25T10:09:38.418874+00:00",
+		"last_updated": "2025-10-25T10:09:38.418874+00:00",
+		"context": {
+			"id": "01K8DDGQ3J35RM0X8TC49PAQ62",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "binary_sensor.tetiana_iphone_focus",
+		"state": "off",
+		"attributes": {
+			"icon": "mdi:moon-waning-crescent",
+			"friendly_name": "Tetiana iPhone Focus"
+		},
+		"last_changed": "2025-10-25T10:09:38.419588+00:00",
+		"last_reported": "2025-10-25T10:09:38.419588+00:00",
+		"last_updated": "2025-10-25T10:09:38.419588+00:00",
+		"context": {
+			"id": "01K8DDGQ3KHGZZEKQ95GMA1NNB",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "device_tracker.tetiana_iphone",
+		"state": "home",
+		"attributes": {
+			"source_type": "gps",
+			"battery_level": 25,
+			"latitude": 50.373809814453125,
+			"longitude": 30.676239393553445,
+			"gps_accuracy": 8,
+			"altitude": 93.466064453125,
+			"vertical_accuracy": 18,
+			"friendly_name": "Tetiana iPhone"
+		},
+		"last_changed": "2025-10-25T10:09:38.420187+00:00",
+		"last_reported": "2025-10-25T10:09:38.420187+00:00",
+		"last_updated": "2025-10-25T10:09:38.420187+00:00",
+		"context": {
+			"id": "01K8DDGQ3MB17XWD0K9DSK4892",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.tetiana_iphone_battery_level",
+		"state": "65",
+		"attributes": {
+			"unit_of_measurement": "%",
+			"device_class": "battery",
+			"icon": "mdi:battery-60",
+			"friendly_name": "Tetiana iPhone Battery Level"
+		},
+		"last_changed": "2025-10-25T10:09:38.421353+00:00",
+		"last_reported": "2025-10-25T10:09:38.421353+00:00",
+		"last_updated": "2025-10-25T10:09:38.421353+00:00",
+		"context": {
+			"id": "01K8DDGQ3NGMP81YY629M7S9WF",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.tetiana_iphone_battery_state",
+		"state": "Not Charging",
+		"attributes": {
+			"Low Power Mode": false,
+			"icon": "mdi:battery-60",
+			"friendly_name": "Tetiana iPhone Battery State"
+		},
+		"last_changed": "2025-10-25T10:09:38.421629+00:00",
+		"last_reported": "2025-10-25T10:09:38.421629+00:00",
+		"last_updated": "2025-10-25T10:09:38.421629+00:00",
+		"context": {
+			"id": "01K8DDGQ3N1XNKBWG639Y2CQKT",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.tetiana_iphone_storage",
+		"state": "19.35",
+		"attributes": {
+			"Available": "8,75 ГБ",
+			"Available (Important)": "15,98 ГБ",
+			"Available (Opportunistic)": "12,37 ГБ",
+			"Total": "63,93 ГБ",
+			"unit_of_measurement": "% available",
+			"icon": "mdi:database",
+			"friendly_name": "Tetiana iPhone Storage"
+		},
+		"last_changed": "2025-10-25T10:09:38.422095+00:00",
+		"last_reported": "2025-10-25T10:09:38.422095+00:00",
+		"last_updated": "2025-10-25T10:09:38.422095+00:00",
+		"context": {
+			"id": "01K8DDGQ3P3YBAA929EDP1YZ2J",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.tetiana_iphone_ssid",
+		"state": "Not Connected",
+		"attributes": {
+			"icon": "mdi:wifi-off",
+			"friendly_name": "Tetiana iPhone SSID"
+		},
+		"last_changed": "2025-10-25T10:09:38.422364+00:00",
+		"last_reported": "2025-10-25T10:09:38.422364+00:00",
+		"last_updated": "2025-10-25T10:09:38.422364+00:00",
+		"context": {
+			"id": "01K8DDGQ3PVB4TH2Q65WXN68KM",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.tetiana_iphone_bssid",
+		"state": "Not Connected",
+		"attributes": {
+			"icon": "mdi:wifi-off",
+			"friendly_name": "Tetiana iPhone BSSID"
+		},
+		"last_changed": "2025-10-25T10:09:38.422690+00:00",
+		"last_reported": "2025-10-25T10:09:38.422690+00:00",
+		"last_updated": "2025-10-25T10:09:38.422690+00:00",
+		"context": {
+			"id": "01K8DDGQ3PSD368CDFWHB3AFWG",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.tetiana_iphone_sim_1",
+		"state": "--",
+		"attributes": {
+			"Allows VoIP": true,
+			"Carrier ID": "0000000100000001",
+			"Carrier Name": "--",
+			"ISO Country Code": "--",
+			"Mobile Country Code": "65535",
+			"Mobile Network Code": "65535",
+			"icon": "mdi:sim",
+			"friendly_name": "Tetiana iPhone SIM 1"
+		},
+		"last_changed": "2025-10-25T10:09:38.424271+00:00",
+		"last_reported": "2025-10-25T10:09:38.424271+00:00",
+		"last_updated": "2025-10-25T10:09:38.424271+00:00",
+		"context": {
+			"id": "01K8DDGQ3R93DNMWP89FWVQGWB",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.tetiana_iphone_sim_2",
+		"state": "--",
+		"attributes": {
+			"Allows VoIP": true,
+			"Carrier ID": "0000000100000002",
+			"Carrier Name": "--",
+			"ISO Country Code": "--",
+			"Mobile Country Code": "65535",
+			"Mobile Network Code": "65535",
+			"icon": "mdi:sim",
+			"friendly_name": "Tetiana iPhone SIM 2"
+		},
+		"last_changed": "2025-10-25T10:09:38.427059+00:00",
+		"last_reported": "2025-10-25T10:09:38.427059+00:00",
+		"last_updated": "2025-10-25T10:09:38.427059+00:00",
+		"context": {
+			"id": "01K8DDGQ3VXT78SJ2P3PWR3ENJ",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.tetiana_iphone_geocoded_location",
+		"state": "Київ Київ\n02088\nУкраїна",
+		"attributes": {
+			"Administrative Area": "Київ",
+			"Areas Of Interest": "N/A",
+			"Country": "Україна",
+			"Inland Water": "N/A",
+			"ISO Country Code": "UA",
+			"Locality": "Київ",
+			"Location": [
+				50.373809814453125,
+				30.676239393553445
+			],
+			"Name": "02088",
+			"Ocean": "N/A",
+			"Postal Code": "02088",
+			"Sub Administrative Area": "N/A",
+			"Sub Locality": "N/A",
+			"Sub Thoroughfare": "N/A",
+			"Thoroughfare": "N/A",
+			"Time Zone": "Europe/Kiev",
+			"Zones": [
+				"Home"
+			],
+			"icon": "mdi:map",
+			"friendly_name": "Tetiana iPhone Geocoded Location"
+		},
+		"last_changed": "2025-10-25T10:09:38.428048+00:00",
+		"last_reported": "2025-10-25T10:09:38.428048+00:00",
+		"last_updated": "2025-10-25T10:09:38.428048+00:00",
+		"context": {
+			"id": "01K8DDGQ3WMY8Z50NZ6Q8GDNBP",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.tetiana_iphone_last_update_trigger",
+		"state": "Launch",
+		"attributes": {
+			"icon": "mdi:cellphone-wireless",
+			"friendly_name": "Tetiana iPhone Last Update Trigger"
+		},
+		"last_changed": "2025-10-25T10:09:38.428619+00:00",
+		"last_reported": "2025-10-25T10:09:38.428619+00:00",
+		"last_updated": "2025-10-25T10:09:38.428619+00:00",
+		"context": {
+			"id": "01K8DDGQ3W85P20W3GQTGN03D0",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.tetiana_iphone_connection_type",
+		"state": "Wi-Fi",
+		"attributes": {
+			"icon": "mdi:wifi",
+			"friendly_name": "Tetiana iPhone Connection Type"
+		},
+		"last_changed": "2025-10-25T10:09:38.429060+00:00",
+		"last_reported": "2025-10-25T10:09:38.429060+00:00",
+		"last_updated": "2025-10-25T10:09:38.429060+00:00",
+		"context": {
+			"id": "01K8DDGQ3XT34C7DRX2RZ701ZY",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.tetiana_iphone_activity",
+		"state": "Walking",
+		"attributes": {
+			"Confidence": "High",
+			"Types": [
+				"Walking"
+			],
+			"icon": "mdi:walk",
+			"friendly_name": "Tetiana iPhone Activity"
+		},
+		"last_changed": "2025-10-25T10:09:38.429305+00:00",
+		"last_reported": "2025-10-25T10:09:38.429305+00:00",
+		"last_updated": "2025-10-25T10:09:38.429305+00:00",
+		"context": {
+			"id": "01K8DDGQ3XZFWVDA1PZ7JKXRGC",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.tetiana_iphone_distance",
+		"state": "0",
+		"attributes": {
+			"unit_of_measurement": "m",
+			"icon": "mdi:hiking",
+			"friendly_name": "Tetiana iPhone Distance"
+		},
+		"last_changed": "2025-10-25T10:09:38.429549+00:00",
+		"last_reported": "2025-10-25T10:09:38.429549+00:00",
+		"last_updated": "2025-10-25T10:09:38.429549+00:00",
+		"context": {
+			"id": "01K8DDGQ3XNHCDF2HN20J82MKK",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.tetiana_iphone_floors_ascended",
+		"state": "0",
+		"attributes": {
+			"unit_of_measurement": "floors",
+			"icon": "mdi:stairs-up",
+			"friendly_name": "Tetiana iPhone Floors Ascended"
+		},
+		"last_changed": "2025-10-25T10:09:38.429907+00:00",
+		"last_reported": "2025-10-25T10:09:38.429907+00:00",
+		"last_updated": "2025-10-25T10:09:38.429907+00:00",
+		"context": {
+			"id": "01K8DDGQ3XQ4EHECHYNA48P0SR",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.tetiana_iphone_floors_descended",
+		"state": "0",
+		"attributes": {
+			"unit_of_measurement": "floors",
+			"icon": "mdi:stairs-down",
+			"friendly_name": "Tetiana iPhone Floors Descended"
+		},
+		"last_changed": "2025-10-25T10:09:38.430176+00:00",
+		"last_reported": "2025-10-25T10:09:38.430176+00:00",
+		"last_updated": "2025-10-25T10:09:38.430176+00:00",
+		"context": {
+			"id": "01K8DDGQ3YC3VZH2M7FQAT0TQD",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.tetiana_iphone_steps",
+		"state": "0",
+		"attributes": {
+			"unit_of_measurement": "steps",
+			"icon": "mdi:walk",
+			"friendly_name": "Tetiana iPhone Steps"
+		},
+		"last_changed": "2025-10-25T10:09:38.430418+00:00",
+		"last_reported": "2025-10-25T10:09:38.430418+00:00",
+		"last_updated": "2025-10-25T10:09:38.430418+00:00",
+		"context": {
+			"id": "01K8DDGQ3YSYYC7ZXA7T37J0E8",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.tetiana_iphone_average_active_pace",
+		"state": "1",
+		"attributes": {
+			"unit_of_measurement": "m/s",
+			"icon": "mdi:speedometer",
+			"friendly_name": "Tetiana iPhone Average Active Pace"
+		},
+		"last_changed": "2025-10-25T10:09:38.430654+00:00",
+		"last_reported": "2025-10-25T10:09:38.430654+00:00",
+		"last_updated": "2025-10-25T10:09:38.430654+00:00",
+		"context": {
+			"id": "01K8DDGQ3YD6R66A2WM5H93G2Z",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "binary_sensor.iphonevlad2_focus",
+		"state": "off",
+		"attributes": {
+			"icon": "mdi:moon-waning-crescent",
+			"friendly_name": "iPhonevlad2 Focus"
+		},
+		"last_changed": "2025-10-25T10:09:38.431569+00:00",
+		"last_reported": "2025-10-25T10:09:38.431569+00:00",
+		"last_updated": "2025-10-25T10:09:38.431569+00:00",
+		"context": {
+			"id": "01K8DDGQ3ZC1SKSJ2G0ST7ZM2X",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "device_tracker.iphonevlad2",
+		"state": "home",
+		"attributes": {
+			"source_type": "gps",
+			"battery_level": 60,
+			"latitude": 50.373707766485104,
+			"longitude": 30.676303699226857,
+			"gps_accuracy": 2,
+			"altitude": 89.71905959304422,
+			"course": 23,
+			"speed": 0,
+			"vertical_accuracy": 3,
+			"friendly_name": "iPhonevlad2"
+		},
+		"last_changed": "2025-10-25T10:09:38.432887+00:00",
+		"last_reported": "2025-10-25T10:09:38.432887+00:00",
+		"last_updated": "2025-10-25T10:09:38.432887+00:00",
+		"context": {
+			"id": "01K8DDGQ40VY9DH681JVZJFSHK",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.iphonevlad2_battery_level",
+		"state": "80",
+		"attributes": {
+			"unit_of_measurement": "%",
+			"device_class": "battery",
+			"icon": "mdi:battery-80",
+			"friendly_name": "iPhonevlad2 Battery Level"
+		},
+		"last_changed": "2025-10-25T10:09:38.436337+00:00",
+		"last_reported": "2025-10-25T10:09:38.436337+00:00",
+		"last_updated": "2025-10-25T10:09:38.436337+00:00",
+		"context": {
+			"id": "01K8DDGQ44CPMWH1MV9XAFF46X",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.iphonevlad2_storage",
+		"state": "23.63",
+		"attributes": {
+			"Available": "18,99 ГБ",
+			"Available (Important)": "65,45 ГБ",
+			"Available (Opportunistic)": "30,22 ГБ",
+			"Total": "127,87 ГБ",
+			"unit_of_measurement": "% available",
+			"icon": "mdi:database",
+			"friendly_name": "iPhonevlad2 Storage"
+		},
+		"last_changed": "2025-10-25T10:09:38.436911+00:00",
+		"last_reported": "2025-10-25T10:09:38.436911+00:00",
+		"last_updated": "2025-10-25T10:09:38.436911+00:00",
+		"context": {
+			"id": "01K8DDGQ445ZYD5YDVFDXGYDFQ",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.iphonevlad2_battery_state",
+		"state": "Not Charging",
+		"attributes": {
+			"Low Power Mode": false,
+			"icon": "mdi:battery-80",
+			"friendly_name": "iPhonevlad2 Battery State"
+		},
+		"last_changed": "2025-10-25T10:09:38.437234+00:00",
+		"last_reported": "2025-10-25T10:09:38.437234+00:00",
+		"last_updated": "2025-10-25T10:09:38.437234+00:00",
+		"context": {
+			"id": "01K8DDGQ45Z12W3MHRGGCCYD9E",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.iphonevlad2_sim_1",
+		"state": "--",
+		"attributes": {
+			"Allows VoIP": true,
+			"Carrier ID": "0000000100000001",
+			"Carrier Name": "--",
+			"Current Radio Technology": "Long-Term Evolution (LTE)",
+			"ISO Country Code": "--",
+			"Mobile Country Code": "65535",
+			"Mobile Network Code": "65535",
+			"icon": "mdi:sim",
+			"friendly_name": "iPhonevlad2 SIM 1"
+		},
+		"last_changed": "2025-10-25T10:09:38.437478+00:00",
+		"last_reported": "2025-10-25T10:09:38.437478+00:00",
+		"last_updated": "2025-10-25T10:09:38.437478+00:00",
+		"context": {
+			"id": "01K8DDGQ450X13XVK4Q6J90DFQ",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.iphonevlad2_ssid",
+		"state": "Not Connected",
+		"attributes": {
+			"icon": "mdi:wifi-off",
+			"friendly_name": "iPhonevlad2 SSID"
+		},
+		"last_changed": "2025-10-25T10:09:38.437847+00:00",
+		"last_reported": "2025-10-25T10:09:38.437847+00:00",
+		"last_updated": "2025-10-25T10:09:38.437847+00:00",
+		"context": {
+			"id": "01K8DDGQ4536RDT4JG2T9R749M",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.iphonevlad2_bssid",
+		"state": "Not Connected",
+		"attributes": {
+			"icon": "mdi:wifi-off",
+			"friendly_name": "iPhonevlad2 BSSID"
+		},
+		"last_changed": "2025-10-25T10:09:38.438071+00:00",
+		"last_reported": "2025-10-25T10:09:38.438071+00:00",
+		"last_updated": "2025-10-25T10:09:38.438071+00:00",
+		"context": {
+			"id": "01K8DDGQ46FQ2N09DZYH5W1D18",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.iphonevlad2_connection_type",
+		"state": "Wi-Fi",
+		"attributes": {
+			"icon": "mdi:wifi",
+			"friendly_name": "iPhonevlad2 Connection Type"
+		},
+		"last_changed": "2025-10-25T10:09:38.438291+00:00",
+		"last_reported": "2025-10-25T10:09:38.438291+00:00",
+		"last_updated": "2025-10-25T10:09:38.438291+00:00",
+		"context": {
+			"id": "01K8DDGQ460PN17NCXQHBDDD06",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.iphonevlad2_sim_2",
+		"state": "--",
+		"attributes": {
+			"Allows VoIP": true,
+			"Carrier ID": "0000000100000002",
+			"Carrier Name": "--",
+			"ISO Country Code": "--",
+			"Mobile Country Code": "65535",
+			"Mobile Network Code": "65535",
+			"icon": "mdi:sim",
+			"friendly_name": "iPhonevlad2 SIM 2"
+		},
+		"last_changed": "2025-10-25T10:09:38.438502+00:00",
+		"last_reported": "2025-10-25T10:09:38.438502+00:00",
+		"last_updated": "2025-10-25T10:09:38.438502+00:00",
+		"context": {
+			"id": "01K8DDGQ46XE291QB6GPK6GPYC",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.iphonevlad2_geocoded_location",
+		"state": "Київ Київ\n02088\nУкраїна",
+		"attributes": {
+			"Administrative Area": "Київ",
+			"Areas Of Interest": "N/A",
+			"Country": "Україна",
+			"Inland Water": "N/A",
+			"ISO Country Code": "UA",
+			"Locality": "Київ",
+			"Location": [
+				50.373707766485104,
+				30.676303699226857
+			],
+			"Name": "02088",
+			"Ocean": "N/A",
+			"Postal Code": "02088",
+			"Sub Administrative Area": "N/A",
+			"Sub Locality": "N/A",
+			"Sub Thoroughfare": "N/A",
+			"Thoroughfare": "N/A",
+			"Time Zone": "Europe/Kiev",
+			"Zones": [
+				"Home"
+			],
+			"icon": "mdi:map",
+			"friendly_name": "iPhonevlad2 Geocoded Location"
+		},
+		"last_changed": "2025-10-25T10:09:38.438820+00:00",
+		"last_reported": "2025-10-25T10:09:38.438820+00:00",
+		"last_updated": "2025-10-25T10:09:38.438820+00:00",
+		"context": {
+			"id": "01K8DDGQ46Z1ZDYQ382H09RQ9V",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.iphonevlad2_last_update_trigger",
+		"state": "Signaled",
+		"attributes": {
+			"icon": "mdi:cellphone-wireless",
+			"friendly_name": "iPhonevlad2 Last Update Trigger"
+		},
+		"last_changed": "2025-10-25T10:09:38.439061+00:00",
+		"last_reported": "2025-10-25T10:09:38.439061+00:00",
+		"last_updated": "2025-10-25T10:09:38.439061+00:00",
+		"context": {
+			"id": "01K8DDGQ473BPGVZKYEAWN2KA1",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.iphonevlad2_activity",
+		"state": "Unknown",
+		"attributes": {
+			"Confidence": "High",
+			"Types": [
+				"Unknown"
+			],
+			"icon": "mdi:help-circle",
+			"friendly_name": "iPhonevlad2 Activity"
+		},
+		"last_changed": "2025-10-25T10:09:38.439276+00:00",
+		"last_reported": "2025-10-25T10:09:38.439276+00:00",
+		"last_updated": "2025-10-25T10:09:38.439276+00:00",
+		"context": {
+			"id": "01K8DDGQ47438W6FAHD8E251W0",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.iphonevlad2_distance",
+		"state": "1502",
+		"attributes": {
+			"unit_of_measurement": "m",
+			"icon": "mdi:hiking",
+			"friendly_name": "iPhonevlad2 Distance"
+		},
+		"last_changed": "2025-10-25T10:09:38.439577+00:00",
+		"last_reported": "2025-10-25T10:09:38.439577+00:00",
+		"last_updated": "2025-10-25T10:09:38.439577+00:00",
+		"context": {
+			"id": "01K8DDGQ477CHYFVPVJ57GB95M",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.iphonevlad2_floors_ascended",
+		"state": "6",
+		"attributes": {
+			"unit_of_measurement": "floors",
+			"icon": "mdi:stairs-up",
+			"friendly_name": "iPhonevlad2 Floors Ascended"
+		},
+		"last_changed": "2025-10-25T10:09:38.439795+00:00",
+		"last_reported": "2025-10-25T10:09:38.439795+00:00",
+		"last_updated": "2025-10-25T10:09:38.439795+00:00",
+		"context": {
+			"id": "01K8DDGQ47EC0YEV84ECH1Q2CB",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.iphonevlad2_floors_descended",
+		"state": "7",
+		"attributes": {
+			"unit_of_measurement": "floors",
+			"icon": "mdi:stairs-down",
+			"friendly_name": "iPhonevlad2 Floors Descended"
+		},
+		"last_changed": "2025-10-25T10:09:38.440008+00:00",
+		"last_reported": "2025-10-25T10:09:38.440008+00:00",
+		"last_updated": "2025-10-25T10:09:38.440008+00:00",
+		"context": {
+			"id": "01K8DDGQ48G1WM0FYC499CWK56",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.iphonevlad2_steps",
+		"state": "2208",
+		"attributes": {
+			"unit_of_measurement": "steps",
+			"icon": "mdi:walk",
+			"friendly_name": "iPhonevlad2 Steps"
+		},
+		"last_changed": "2025-10-25T10:09:38.440225+00:00",
+		"last_reported": "2025-10-25T10:09:38.440225+00:00",
+		"last_updated": "2025-10-25T10:09:38.440225+00:00",
+		"context": {
+			"id": "01K8DDGQ48B9ZDQP5AB1P8YFJG",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.iphonevlad2_average_active_pace",
+		"state": "1",
+		"attributes": {
+			"unit_of_measurement": "m/s",
+			"icon": "mdi:speedometer",
+			"friendly_name": "iPhonevlad2 Average Active Pace"
+		},
+		"last_changed": "2025-10-25T10:09:38.441192+00:00",
+		"last_reported": "2025-10-25T10:09:38.441192+00:00",
+		"last_updated": "2025-10-25T10:09:38.441192+00:00",
+		"context": {
+			"id": "01K8DDGQ49VAWW47R955VTEZRS",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.iphonevlad2_app_version",
+		"state": "2025.2",
+		"attributes": {
+			"icon": "mdi:cellphone",
+			"friendly_name": "iPhonevlad2 App Version"
+		},
+		"last_changed": "2025-10-25T10:09:38.441449+00:00",
+		"last_reported": "2025-10-25T10:09:38.441449+00:00",
+		"last_updated": "2025-10-25T10:09:38.441449+00:00",
+		"context": {
+			"id": "01K8DDGQ49SZX04W6F9K6G3WNE",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.iphonevlad2_location_permission",
+		"state": "Authorized when in use",
+		"attributes": {
+			"icon": "mdi:map",
+			"friendly_name": "iPhonevlad2 Location permission"
+		},
+		"last_changed": "2025-10-25T10:09:38.441674+00:00",
+		"last_reported": "2025-10-25T10:09:38.441674+00:00",
+		"last_updated": "2025-10-25T10:09:38.441674+00:00",
+		"context": {
+			"id": "01K8DDGQ49C6JT6VPW0P6871PH",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.iphonevlad2_audio_output",
+		"state": "Built-in Speaker",
+		"attributes": {
+			"icon": "mdi:volume-high",
+			"friendly_name": "iPhonevlad2 Audio Output"
+		},
+		"last_changed": "2025-10-25T10:09:38.442060+00:00",
+		"last_reported": "2025-10-25T10:09:38.442060+00:00",
+		"last_updated": "2025-10-25T10:09:38.442060+00:00",
+		"context": {
+			"id": "01K8DDGQ4A3142T34HJ5T3XMHA",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "binary_sensor.iphonevlad3_focus",
+		"state": "off",
+		"attributes": {
+			"icon": "mdi:moon-waning-crescent",
+			"friendly_name": "iPhonevlad3 Focus"
+		},
+		"last_changed": "2025-10-25T10:09:38.442776+00:00",
+		"last_reported": "2025-10-25T10:09:38.442776+00:00",
+		"last_updated": "2025-10-25T10:09:38.442776+00:00",
+		"context": {
+			"id": "01K8DDGQ4AQGC3MJW5MY5DXP38",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "device_tracker.iphonevlad3",
+		"state": "home",
+		"attributes": {
+			"source_type": "gps",
+			"battery_level": 85,
+			"latitude": 50.37379820539253,
+			"longitude": 30.67610916708863,
+			"gps_accuracy": 14,
+			"altitude": 95.16794844693031,
+			"vertical_accuracy": 30,
+			"friendly_name": "iPhonevlad3"
+		},
+		"last_changed": "2025-10-27T07:41:13.974327+00:00",
+		"last_reported": "2025-10-27T07:41:13.974327+00:00",
+		"last_updated": "2025-10-27T07:41:13.974327+00:00",
+		"context": {
+			"id": "01K8J9TDBP7C1SQ2JEYR0GZGDZ",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.iphonevlad3_activity",
+		"state": "Stationary",
+		"attributes": {
+			"Confidence": "High",
+			"Types": [
+				"Stationary"
+			],
+			"icon": "mdi:human-male",
+			"friendly_name": "iPhonevlad3 Activity"
+		},
+		"last_changed": "2025-10-27T07:46:14.608331+00:00",
+		"last_reported": "2025-10-27T07:46:14.608331+00:00",
+		"last_updated": "2025-10-27T07:46:14.608331+00:00",
+		"context": {
+			"id": "01K8JA3JYG4TS1TNJ1HCB0WF9G",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.iphonevlad3_connection_type",
+		"state": "Wi-Fi",
+		"attributes": {
+			"icon": "mdi:wifi",
+			"friendly_name": "iPhonevlad3 Connection Type"
+		},
+		"last_changed": "2025-10-25T13:20:42.358205+00:00",
+		"last_reported": "2025-10-25T13:20:42.358205+00:00",
+		"last_updated": "2025-10-25T13:20:42.358205+00:00",
+		"context": {
+			"id": "01K8DREJBPKX5647RHA6NJJGTZ",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.iphonevlad3_bssid",
+		"state": "d4:ca:6d:99:92:54",
+		"attributes": {
+			"icon": "mdi:wifi-star",
+			"friendly_name": "iPhonevlad3 BSSID"
+		},
+		"last_changed": "2025-10-27T07:41:13.997372+00:00",
+		"last_reported": "2025-10-27T07:41:13.997372+00:00",
+		"last_updated": "2025-10-27T07:41:13.997372+00:00",
+		"context": {
+			"id": "01K8J9TDCDMASFTXKWRE3ZJEWY",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.iphonevlad3_battery_state",
+		"state": "Not Charging",
+		"attributes": {
+			"Low Power Mode": false,
+			"icon": "mdi:battery-80",
+			"friendly_name": "iPhonevlad3 Battery State"
+		},
+		"last_changed": "2025-10-27T06:32:17.941321+00:00",
+		"last_reported": "2025-10-27T07:41:13.996533+00:00",
+		"last_updated": "2025-10-27T07:41:13.996533+00:00",
+		"context": {
+			"id": "01K8J9TDCC1B3BKH0M95GWQ1JD",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.iphonevlad3_distance",
+		"state": "189",
+		"attributes": {
+			"unit_of_measurement": "m",
+			"icon": "mdi:hiking",
+			"friendly_name": "iPhonevlad3 Distance"
+		},
+		"last_changed": "2025-10-27T07:41:13.995364+00:00",
+		"last_reported": "2025-10-27T07:41:13.995364+00:00",
+		"last_updated": "2025-10-27T07:41:13.995364+00:00",
+		"context": {
+			"id": "01K8J9TDCBSXAE0ZPTQ7HRVD9F",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.iphonevlad3_steps",
+		"state": "268",
+		"attributes": {
+			"unit_of_measurement": "steps",
+			"icon": "mdi:walk",
+			"friendly_name": "iPhonevlad3 Steps"
+		},
+		"last_changed": "2025-10-27T07:41:13.995928+00:00",
+		"last_reported": "2025-10-27T07:41:13.995928+00:00",
+		"last_updated": "2025-10-27T07:41:13.995928+00:00",
+		"context": {
+			"id": "01K8J9TDCBRZ8TKWCQ592XW0KF",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.iphonevlad3_ssid",
+		"state": "31337",
+		"attributes": {
+			"icon": "mdi:wifi",
+			"friendly_name": "iPhonevlad3 SSID"
+		},
+		"last_changed": "2025-10-27T07:41:13.997200+00:00",
+		"last_reported": "2025-10-27T07:41:13.997200+00:00",
+		"last_updated": "2025-10-27T07:41:13.997200+00:00",
+		"context": {
+			"id": "01K8J9TDCDBAWBVJG2HM35WK3X",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.iphonevlad3_floors_descended",
+		"state": "2",
+		"attributes": {
+			"unit_of_measurement": "floors",
+			"icon": "mdi:stairs-down",
+			"friendly_name": "iPhonevlad3 Floors Descended"
+		},
+		"last_changed": "2025-10-27T07:41:13.995761+00:00",
+		"last_reported": "2025-10-27T07:41:13.995761+00:00",
+		"last_updated": "2025-10-27T07:41:13.995761+00:00",
+		"context": {
+			"id": "01K8J9TDCB3F2226H1262EE6J0",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.iphonevlad3_floors_ascended",
+		"state": "2",
+		"attributes": {
+			"unit_of_measurement": "floors",
+			"icon": "mdi:stairs-up",
+			"friendly_name": "iPhonevlad3 Floors Ascended"
+		},
+		"last_changed": "2025-10-27T07:41:13.995524+00:00",
+		"last_reported": "2025-10-27T07:41:13.995524+00:00",
+		"last_updated": "2025-10-27T07:41:13.995524+00:00",
+		"context": {
+			"id": "01K8J9TDCBH3QYM9K0NWGB55W6",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.iphonevlad3_average_active_pace",
+		"state": "1",
+		"attributes": {
+			"unit_of_measurement": "m/s",
+			"icon": "mdi:speedometer",
+			"friendly_name": "iPhonevlad3 Average Active Pace"
+		},
+		"last_changed": "2025-10-25T10:09:38.447256+00:00",
+		"last_reported": "2025-10-25T10:09:38.447256+00:00",
+		"last_updated": "2025-10-25T10:09:38.447256+00:00",
+		"context": {
+			"id": "01K8DDGQ4FVJYB1DSZ6QNRAQGS",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.iphonevlad3_storage",
+		"state": "2.97",
+		"attributes": {
+			"Available": "4,84 ГБ",
+			"Available (Important)": "45,45 ГБ",
+			"Available (Opportunistic)": "3,80 ГБ",
+			"Total": "127,87 ГБ",
+			"unit_of_measurement": "% available",
+			"icon": "mdi:database",
+			"friendly_name": "iPhonevlad3 Storage"
+		},
+		"last_changed": "2025-10-27T07:46:14.609385+00:00",
+		"last_reported": "2025-10-27T07:46:14.609385+00:00",
+		"last_updated": "2025-10-27T07:46:14.609385+00:00",
+		"context": {
+			"id": "01K8JA3JYH7KB2HFFM75R9RG7K",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.iphonevlad3_last_update_trigger",
+		"state": "Periodic",
+		"attributes": {
+			"icon": "mdi:cellphone-wireless",
+			"friendly_name": "iPhonevlad3 Last Update Trigger"
+		},
+		"last_changed": "2025-10-27T07:46:14.612659+00:00",
+		"last_reported": "2025-10-27T07:46:14.612659+00:00",
+		"last_updated": "2025-10-27T07:46:14.612659+00:00",
+		"context": {
+			"id": "01K8JA3JYMNXC84669RH7GWE66",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.iphonevlad3_battery_level",
+		"state": "85",
+		"attributes": {
+			"unit_of_measurement": "%",
+			"device_class": "battery",
+			"icon": "mdi:battery-80",
+			"friendly_name": "iPhonevlad3 Battery Level"
+		},
+		"last_changed": "2025-10-27T07:41:13.996358+00:00",
+		"last_reported": "2025-10-27T07:41:13.996358+00:00",
+		"last_updated": "2025-10-27T07:41:13.996358+00:00",
+		"context": {
+			"id": "01K8J9TDCC1H720Z5J2B1N22PW",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.iphonevlad3_app_version",
+		"state": "2025.10.0",
+		"attributes": {
+			"icon": "mdi:cellphone",
+			"friendly_name": "iPhonevlad3 App Version"
+		},
+		"last_changed": "2025-10-25T10:09:38.448393+00:00",
+		"last_reported": "2025-10-25T10:09:38.448393+00:00",
+		"last_updated": "2025-10-25T10:09:38.448393+00:00",
+		"context": {
+			"id": "01K8DDGQ4GAQ5JMCXWSRK7H780",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.iphonevlad3_sim_2",
+		"state": "--",
+		"attributes": {
+			"Allows VoIP": true,
+			"Carrier ID": "0000000100000002",
+			"Carrier Name": "--",
+			"ISO Country Code": "--",
+			"Mobile Country Code": "65535",
+			"Mobile Network Code": "65535",
+			"icon": "mdi:sim",
+			"friendly_name": "iPhonevlad3 SIM 2"
+		},
+		"last_changed": "2025-10-25T10:09:38.448601+00:00",
+		"last_reported": "2025-10-25T10:09:38.448601+00:00",
+		"last_updated": "2025-10-25T10:09:38.448601+00:00",
+		"context": {
+			"id": "01K8DDGQ4GEVHKDPAS7WY3GF2D",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.iphonevlad3_geocoded_location",
+		"state": "Київ Київ\n02088\nУкраїна",
+		"attributes": {
+			"Administrative Area": "Київ",
+			"Areas Of Interest": "N/A",
+			"Country": "Україна",
+			"Inland Water": "N/A",
+			"ISO Country Code": "UA",
+			"Locality": "Київ",
+			"Location": [
+				50.37379820539253,
+				30.67610916708863
+			],
+			"Name": "02088",
+			"Ocean": "N/A",
+			"Postal Code": "02088",
+			"Sub Administrative Area": "N/A",
+			"Sub Locality": "N/A",
+			"Sub Thoroughfare": "N/A",
+			"Thoroughfare": "N/A",
+			"Time Zone": "Europe/Kyiv",
+			"Zones": [
+				"Home"
+			],
+			"icon": "mdi:map",
+			"friendly_name": "iPhonevlad3 Geocoded Location"
+		},
+		"last_changed": "2025-10-25T17:42:29.846304+00:00",
+		"last_reported": "2025-10-27T07:41:14.082620+00:00",
+		"last_updated": "2025-10-27T07:41:14.082620+00:00",
+		"context": {
+			"id": "01K8J9TDF2G4XYB5NG27PMYFYA",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.iphonevlad3_sim_1",
+		"state": "--",
+		"attributes": {
+			"Allows VoIP": true,
+			"Carrier ID": "0000000100000001",
+			"Carrier Name": "--",
+			"Current Radio Technology": "Long-Term Evolution (LTE)",
+			"ISO Country Code": "--",
+			"Mobile Country Code": "65535",
+			"Mobile Network Code": "65535",
+			"icon": "mdi:sim",
+			"friendly_name": "iPhonevlad3 SIM 1"
+		},
+		"last_changed": "2025-10-25T10:09:38.449127+00:00",
+		"last_reported": "2025-10-25T13:20:42.358480+00:00",
+		"last_updated": "2025-10-25T13:20:42.358480+00:00",
+		"context": {
+			"id": "01K8DREJBPS6VK6GG5QQ1BQSZW",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.iphonevlad3_location_permission",
+		"state": "Authorized when in use",
+		"attributes": {
+			"icon": "mdi:map",
+			"friendly_name": "iPhonevlad3 Location permission"
+		},
+		"last_changed": "2025-10-25T10:09:38.449344+00:00",
+		"last_reported": "2025-10-25T10:09:38.449344+00:00",
+		"last_updated": "2025-10-25T10:09:38.449344+00:00",
+		"context": {
+			"id": "01K8DDGQ4HQDCYE0N1789RD8EP",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.iphonevlad3_audio_output",
+		"state": "Built-in Speaker",
+		"attributes": {
+			"icon": "mdi:volume-high",
+			"friendly_name": "iPhonevlad3 Audio Output"
+		},
+		"last_changed": "2025-10-26T13:24:15.967388+00:00",
+		"last_reported": "2025-10-26T13:24:15.967388+00:00",
+		"last_updated": "2025-10-26T13:24:15.967388+00:00",
+		"context": {
+			"id": "01K8GB1SYZY304V2W1KFQ79PWY",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "binary_sensor.tetiana_iphone_focus_2",
+		"state": "off",
+		"attributes": {
+			"icon": "mdi:moon-waning-crescent",
+			"friendly_name": "Tetiana iPhone Focus"
+		},
+		"last_changed": "2025-10-27T05:39:42.304829+00:00",
+		"last_reported": "2025-10-27T05:39:42.304829+00:00",
+		"last_updated": "2025-10-27T05:39:42.304829+00:00",
+		"context": {
+			"id": "01K8J2VWK0A24RAR18187KQRYT",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "device_tracker.tetiana_iphone2",
+		"state": "home",
+		"attributes": {
+			"source_type": "gps",
+			"battery_level": 60,
+			"latitude": 50.37382799049067,
+			"longitude": 30.676201827820993,
+			"gps_accuracy": 5,
+			"altitude": 93.33759047055365,
+			"vertical_accuracy": 30,
+			"friendly_name": "Tetiana iPhone"
+		},
+		"last_changed": "2025-10-25T10:09:38.452422+00:00",
+		"last_reported": "2025-10-25T10:09:38.452422+00:00",
+		"last_updated": "2025-10-25T10:09:38.452422+00:00",
+		"context": {
+			"id": "01K8DDGQ4MKZZP28Y26GX7GRM4",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.tetiana_iphone_distance_2",
+		"state": "0",
+		"attributes": {
+			"unit_of_measurement": "m",
+			"icon": "mdi:hiking",
+			"friendly_name": "Tetiana iPhone Distance"
+		},
+		"last_changed": "2025-10-27T04:39:36.691001+00:00",
+		"last_reported": "2025-10-27T04:39:36.691001+00:00",
+		"last_updated": "2025-10-27T04:39:36.691001+00:00",
+		"context": {
+			"id": "01K8HZDVFKMCEMHAJS0T7V2HVP",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.tetiana_iphone_ssid_2",
+		"state": "Not Connected",
+		"attributes": {
+			"icon": "mdi:wifi-off",
+			"friendly_name": "Tetiana iPhone SSID"
+		},
+		"last_changed": "2025-10-25T10:09:38.453896+00:00",
+		"last_reported": "2025-10-25T10:09:38.453896+00:00",
+		"last_updated": "2025-10-25T10:09:38.453896+00:00",
+		"context": {
+			"id": "01K8DDGQ4NVZK4FM0KDDQGR8BJ",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.tetiana_iphone_bssid_2",
+		"state": "Not Connected",
+		"attributes": {
+			"icon": "mdi:wifi-off",
+			"friendly_name": "Tetiana iPhone BSSID"
+		},
+		"last_changed": "2025-10-25T10:09:38.454128+00:00",
+		"last_reported": "2025-10-25T10:09:38.454128+00:00",
+		"last_updated": "2025-10-25T10:09:38.454128+00:00",
+		"context": {
+			"id": "01K8DDGQ4PB1CFBNSMEC3P0GB3",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.tetiana_iphone_floors_descended_2",
+		"state": "0",
+		"attributes": {
+			"unit_of_measurement": "floors",
+			"icon": "mdi:stairs-down",
+			"friendly_name": "Tetiana iPhone Floors Descended"
+		},
+		"last_changed": "2025-10-26T04:48:44.356530+00:00",
+		"last_reported": "2025-10-26T04:48:44.356530+00:00",
+		"last_updated": "2025-10-26T04:48:44.356530+00:00",
+		"context": {
+			"id": "01K8FDHVA42VA8YEAEC57JHDBT",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.tetiana_iphone_average_active_pace_2",
+		"state": "1",
+		"attributes": {
+			"unit_of_measurement": "m/s",
+			"icon": "mdi:speedometer",
+			"friendly_name": "Tetiana iPhone Average Active Pace"
+		},
+		"last_changed": "2025-10-25T10:09:38.454574+00:00",
+		"last_reported": "2025-10-25T10:09:38.454574+00:00",
+		"last_updated": "2025-10-25T10:09:38.454574+00:00",
+		"context": {
+			"id": "01K8DDGQ4PZ9ERJFNTD5N2FFJR",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.tetiana_iphone_activity_2",
+		"state": "Unknown",
+		"attributes": {
+			"Confidence": "High",
+			"Types": [
+				"Unknown"
+			],
+			"icon": "mdi:help-circle",
+			"friendly_name": "Tetiana iPhone Activity"
+		},
+		"last_changed": "2025-10-27T04:39:36.690632+00:00",
+		"last_reported": "2025-10-27T04:39:36.690632+00:00",
+		"last_updated": "2025-10-27T04:39:36.690632+00:00",
+		"context": {
+			"id": "01K8HZDVFJ2SKCQYYG9YT4Q3SA",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.tetiana_iphone_steps_2",
+		"state": "0",
+		"attributes": {
+			"unit_of_measurement": "steps",
+			"icon": "mdi:walk",
+			"friendly_name": "Tetiana iPhone Steps"
+		},
+		"last_changed": "2025-10-27T04:39:36.691356+00:00",
+		"last_reported": "2025-10-27T04:39:36.691356+00:00",
+		"last_updated": "2025-10-27T04:39:36.691356+00:00",
+		"context": {
+			"id": "01K8HZDVFK9YW77S4G4ZTHM87N",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.tetiana_iphone_battery_state_2",
+		"state": "Not Charging",
+		"attributes": {
+			"Low Power Mode": true,
+			"icon": "mdi:battery-50",
+			"friendly_name": "Tetiana iPhone Battery State"
+		},
+		"last_changed": "2025-10-25T19:47:10.657578+00:00",
+		"last_reported": "2025-10-27T04:39:36.691758+00:00",
+		"last_updated": "2025-10-27T04:39:36.691758+00:00",
+		"context": {
+			"id": "01K8HZDVFKQMV9169PJRX9XS2A",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.tetiana_iphone_connection_type_2",
+		"state": "Wi-Fi",
+		"attributes": {
+			"icon": "mdi:wifi",
+			"friendly_name": "Tetiana iPhone Connection Type"
+		},
+		"last_changed": "2025-10-25T10:09:38.455638+00:00",
+		"last_reported": "2025-10-25T10:09:38.455638+00:00",
+		"last_updated": "2025-10-25T10:09:38.455638+00:00",
+		"context": {
+			"id": "01K8DDGQ4Q7V59ANAS0F268SQV",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.tetiana_iphone_battery_level_2",
+		"state": "50",
+		"attributes": {
+			"unit_of_measurement": "%",
+			"device_class": "battery",
+			"icon": "mdi:battery-50",
+			"friendly_name": "Tetiana iPhone Battery Level"
+		},
+		"last_changed": "2025-10-27T05:25:47.552537+00:00",
+		"last_reported": "2025-10-27T05:25:47.552537+00:00",
+		"last_updated": "2025-10-27T05:25:47.552537+00:00",
+		"context": {
+			"id": "01K8J22DD0B6360J4EGV1NE44W",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.tetiana_iphone_storage_2",
+		"state": "9.41",
+		"attributes": {
+			"Available": "12,52 ГБ",
+			"Available (Important)": "28,41 ГБ",
+			"Available (Opportunistic)": "12,03 ГБ",
+			"Total": "127,87 ГБ",
+			"unit_of_measurement": "% available",
+			"icon": "mdi:database",
+			"friendly_name": "Tetiana iPhone Storage"
+		},
+		"last_changed": "2025-10-27T05:39:42.303932+00:00",
+		"last_reported": "2025-10-27T05:39:42.303932+00:00",
+		"last_updated": "2025-10-27T05:39:42.303932+00:00",
+		"context": {
+			"id": "01K8J2VWJZC1F3GWB3H0Y9QV37",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.tetiana_iphone_floors_ascended_2",
+		"state": "0",
+		"attributes": {
+			"unit_of_measurement": "floors",
+			"icon": "mdi:stairs-up",
+			"friendly_name": "Tetiana iPhone Floors Ascended"
+		},
+		"last_changed": "2025-10-25T10:09:38.456303+00:00",
+		"last_reported": "2025-10-25T10:09:38.456303+00:00",
+		"last_updated": "2025-10-25T10:09:38.456303+00:00",
+		"context": {
+			"id": "01K8DDGQ4RT6VRQ6GX2M87XXFG",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.tetiana_iphone_sim_2_2",
+		"state": "--",
+		"attributes": {
+			"Allows VoIP": true,
+			"Carrier ID": "0000000100000002",
+			"Carrier Name": "--",
+			"Current Radio Technology": "Long-Term Evolution (LTE)",
+			"ISO Country Code": "--",
+			"Mobile Country Code": "65535",
+			"Mobile Network Code": "65535",
+			"icon": "mdi:sim",
+			"friendly_name": "Tetiana iPhone SIM 2"
+		},
+		"last_changed": "2025-10-25T10:09:38.456518+00:00",
+		"last_reported": "2025-10-25T10:09:38.456518+00:00",
+		"last_updated": "2025-10-25T10:09:38.456518+00:00",
+		"context": {
+			"id": "01K8DDGQ4RGP3PDJFTEMF7Z8G5",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.tetiana_iphone_sim_1_2",
+		"state": "--",
+		"attributes": {
+			"Allows VoIP": true,
+			"Carrier ID": "0000000100000001",
+			"Carrier Name": "--",
+			"Current Radio Technology": "Long-Term Evolution (LTE)",
+			"ISO Country Code": "--",
+			"Mobile Country Code": "65535",
+			"Mobile Network Code": "65535",
+			"icon": "mdi:sim",
+			"friendly_name": "Tetiana iPhone SIM 1"
+		},
+		"last_changed": "2025-10-25T10:09:38.456726+00:00",
+		"last_reported": "2025-10-25T10:09:38.456726+00:00",
+		"last_updated": "2025-10-25T10:09:38.456726+00:00",
+		"context": {
+			"id": "01K8DDGQ4R55KEZDPWNX2W5KQM",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.tetiana_iphone_geocoded_location_2",
+		"state": "Київ Київ\n02088\nУкраїна",
+		"attributes": {
+			"Administrative Area": "Київ",
+			"Areas Of Interest": "N/A",
+			"Country": "Україна",
+			"Inland Water": "N/A",
+			"ISO Country Code": "UA",
+			"Locality": "Київ",
+			"Location": [
+				50.37382394074346,
+				30.676213034628177
+			],
+			"Name": "02088",
+			"Ocean": "N/A",
+			"Postal Code": "02088",
+			"Sub Administrative Area": "N/A",
+			"Sub Locality": "N/A",
+			"Sub Thoroughfare": "N/A",
+			"Thoroughfare": "N/A",
+			"Time Zone": "Europe/Kyiv",
+			"Zones": [
+				"Home"
+			],
+			"icon": "mdi:map",
+			"friendly_name": "Tetiana iPhone Geocoded Location"
+		},
+		"last_changed": "2025-10-25T10:09:38.456973+00:00",
+		"last_reported": "2025-10-25T10:09:38.456973+00:00",
+		"last_updated": "2025-10-25T10:09:38.456973+00:00",
+		"context": {
+			"id": "01K8DDGQ4RSTF4AZEMAJGGXV23",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.tetiana_iphone_last_update_trigger_2",
+		"state": "Siri",
+		"attributes": {
+			"icon": "mdi:cellphone-wireless",
+			"friendly_name": "Tetiana iPhone Last Update Trigger"
+		},
+		"last_changed": "2025-10-25T19:35:40.248075+00:00",
+		"last_reported": "2025-10-25T19:35:40.248075+00:00",
+		"last_updated": "2025-10-25T19:35:40.248075+00:00",
+		"context": {
+			"id": "01K8EDX4YR9QZVD5DVVV7JSB0P",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.tetiana_iphone_watch_battery_level",
+		"state": "35",
+		"attributes": {
+			"unit_of_measurement": "%",
+			"device_class": "battery",
+			"icon": "mdi:battery-30",
+			"friendly_name": "Tetiana iPhone Watch Battery Level"
+		},
+		"last_changed": "2025-10-25T10:09:38.457959+00:00",
+		"last_reported": "2025-10-25T10:09:38.457959+00:00",
+		"last_updated": "2025-10-25T10:09:38.457959+00:00",
+		"context": {
+			"id": "01K8DDGQ4SJPGWNM2SZCKP3JMJ",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.tetiana_iphone_location_permission",
+		"state": "Authorized when in use",
+		"attributes": {
+			"icon": "mdi:map",
+			"friendly_name": "Tetiana iPhone Location permission"
+		},
+		"last_changed": "2025-10-25T10:09:38.458796+00:00",
+		"last_reported": "2025-10-25T10:09:38.458796+00:00",
+		"last_updated": "2025-10-25T10:09:38.458796+00:00",
+		"context": {
+			"id": "01K8DDGQ4TTT2B9SAVGT4WBG61",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.tetiana_iphone_app_version",
+		"state": "2025.10.0",
+		"attributes": {
+			"icon": "mdi:cellphone",
+			"friendly_name": "Tetiana iPhone App Version"
+		},
+		"last_changed": "2025-10-25T10:09:38.459343+00:00",
+		"last_reported": "2025-10-25T10:09:38.459343+00:00",
+		"last_updated": "2025-10-25T10:09:38.459343+00:00",
+		"context": {
+			"id": "01K8DDGQ4V2ZY1HKCTHXWYPF26",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.tetiana_iphone_watch_battery_state",
+		"state": "Not Charging",
+		"attributes": {
+			"icon": "mdi:battery-30",
+			"friendly_name": "Tetiana iPhone Watch Battery State"
+		},
+		"last_changed": "2025-10-25T10:09:38.459920+00:00",
+		"last_reported": "2025-10-25T10:09:38.459920+00:00",
+		"last_updated": "2025-10-25T10:09:38.459920+00:00",
+		"context": {
+			"id": "01K8DDGQ4VN4575954AV0FJJ8E",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.tetiana_iphone_audio_output",
+		"state": "Built-in Speaker",
+		"attributes": {
+			"icon": "mdi:volume-high",
+			"friendly_name": "Tetiana iPhone Audio Output"
+		},
+		"last_changed": "2025-10-25T10:09:38.460387+00:00",
+		"last_reported": "2025-10-25T10:09:38.460387+00:00",
+		"last_updated": "2025-10-25T10:09:38.460387+00:00",
+		"context": {
+			"id": "01K8DDGQ4W4T76HGS14J6R3ZAR",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "binary_sensor.ipad_vladislav_focus",
+		"state": "unavailable",
+		"attributes": {
+			"icon": "mdi:dots-square",
+			"friendly_name": "iPad vladislav Focus"
+		},
+		"last_changed": "2025-10-25T10:10:30.104351+00:00",
+		"last_reported": "2025-10-25T10:10:30.104351+00:00",
+		"last_updated": "2025-10-25T10:10:30.104351+00:00",
+		"context": {
+			"id": "01K8DDJ9JRHBMBZC8DHEZBD3W1",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "device_tracker.ipad_vladislav",
+		"state": "home",
+		"attributes": {
+			"source_type": "gps",
+			"battery_level": 100,
+			"latitude": 50.37379091320537,
+			"longitude": 30.676116334854985,
+			"gps_accuracy": 15,
+			"altitude": 93.85455322265625,
+			"vertical_accuracy": 8,
+			"friendly_name": "iPad vladislav"
+		},
+		"last_changed": "2025-10-26T11:03:44.203948+00:00",
+		"last_reported": "2025-10-26T11:03:44.203948+00:00",
+		"last_updated": "2025-10-26T11:03:44.203948+00:00",
+		"context": {
+			"id": "01K8G30FTBFB6JK3Y8VGFMA3HG",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.ipad_vladislav_activity",
+		"state": "unavailable",
+		"attributes": {
+			"icon": "mdi:dots-square",
+			"friendly_name": "iPad vladislav Activity"
+		},
+		"last_changed": "2025-10-25T10:09:38.464635+00:00",
+		"last_reported": "2025-10-25T10:09:38.464635+00:00",
+		"last_updated": "2025-10-25T10:09:38.464635+00:00",
+		"context": {
+			"id": "01K8DDGQ506C8NQBZD9GYVS1BP",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.ipad_vladislav_battery_level",
+		"state": "100",
+		"attributes": {
+			"unit_of_measurement": "%",
+			"device_class": "battery",
+			"icon": "mdi:battery",
+			"friendly_name": "iPad vladislav Battery Level"
+		},
+		"last_changed": "2025-10-26T22:54:11.684532+00:00",
+		"last_reported": "2025-10-26T22:54:11.684532+00:00",
+		"last_updated": "2025-10-26T22:54:11.684532+00:00",
+		"context": {
+			"id": "01K8HBNC74JKQHK30EE3CBN04S",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.ipad_vladislav_battery_state",
+		"state": "Full",
+		"attributes": {
+			"Low Power Mode": false,
+			"icon": "mdi:battery",
+			"friendly_name": "iPad vladislav Battery State"
+		},
+		"last_changed": "2025-10-26T22:54:11.684945+00:00",
+		"last_reported": "2025-10-26T22:54:11.684945+00:00",
+		"last_updated": "2025-10-26T22:54:11.684945+00:00",
+		"context": {
+			"id": "01K8HBNC74YV1HPEHSPG6M0G4D",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.ipad_vladislav_connection_type",
+		"state": "unavailable",
+		"attributes": {
+			"icon": "mdi:dots-square",
+			"friendly_name": "iPad vladislav Connection Type"
+		},
+		"last_changed": "2025-10-25T10:09:38.465780+00:00",
+		"last_reported": "2025-10-25T10:09:38.465780+00:00",
+		"last_updated": "2025-10-25T10:09:38.465780+00:00",
+		"context": {
+			"id": "01K8DDGQ51Z94WHFM9R1CPMXGQ",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.ipad_vladislav_sim_1",
+		"state": "unavailable",
+		"attributes": {
+			"icon": "mdi:dots-square",
+			"friendly_name": "iPad vladislav SIM 1"
+		},
+		"last_changed": "2025-10-25T10:09:38.466007+00:00",
+		"last_reported": "2025-10-25T10:09:38.466007+00:00",
+		"last_updated": "2025-10-25T10:09:38.466007+00:00",
+		"context": {
+			"id": "01K8DDGQ525Z8D8516D5AW2XKR",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.ipad_vladislav_geocoded_location",
+		"state": "unavailable",
+		"attributes": {
+			"icon": "mdi:dots-square",
+			"friendly_name": "iPad vladislav Geocoded Location"
+		},
+		"last_changed": "2025-10-25T10:09:38.466223+00:00",
+		"last_reported": "2025-10-25T10:09:38.466223+00:00",
+		"last_updated": "2025-10-25T10:09:38.466223+00:00",
+		"context": {
+			"id": "01K8DDGQ52J7V2R8XRP42WA978",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.ipad_vladislav_app_version",
+		"state": "2025.10.0",
+		"attributes": {
+			"icon": "mdi:cellphone",
+			"friendly_name": "iPad vladislav App Version"
+		},
+		"last_changed": "2025-10-25T10:09:38.466426+00:00",
+		"last_reported": "2025-10-25T10:09:38.466426+00:00",
+		"last_updated": "2025-10-25T10:09:38.466426+00:00",
+		"context": {
+			"id": "01K8DDGQ52ASMK6DP97JW15ZFG",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.ipad_vladislav_last_update_trigger",
+		"state": "unavailable",
+		"attributes": {
+			"icon": "mdi:dots-square",
+			"friendly_name": "iPad vladislav Last Update Trigger"
+		},
+		"last_changed": "2025-10-25T10:09:38.466634+00:00",
+		"last_reported": "2025-10-25T10:09:38.466634+00:00",
+		"last_updated": "2025-10-25T10:09:38.466634+00:00",
+		"context": {
+			"id": "01K8DDGQ52MCSZQD9DJJMTNYBT",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.ipad_vladislav_audio_output",
+		"state": "unavailable",
+		"attributes": {
+			"icon": "mdi:dots-square",
+			"friendly_name": "iPad vladislav Audio Output"
+		},
+		"last_changed": "2025-10-25T10:09:38.467126+00:00",
+		"last_reported": "2025-10-25T10:09:38.467126+00:00",
+		"last_updated": "2025-10-25T10:09:38.467126+00:00",
+		"context": {
+			"id": "01K8DDGQ5391C43VS0V89K9RZF",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.ipad_vladislav_location_permission",
+		"state": "Authorized Always",
+		"attributes": {
+			"icon": "mdi:map",
+			"friendly_name": "iPad vladislav Location permission"
+		},
+		"last_changed": "2025-10-25T10:09:38.467344+00:00",
+		"last_reported": "2025-10-25T10:09:38.467344+00:00",
+		"last_updated": "2025-10-25T10:09:38.467344+00:00",
+		"context": {
+			"id": "01K8DDGQ53F2SAXGMAAZCXGQC6",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.ipad_vladislav_storage",
+		"state": "unavailable",
+		"attributes": {
+			"unit_of_measurement": "% available",
+			"icon": "mdi:dots-square",
+			"friendly_name": "iPad vladislav Storage"
+		},
+		"last_changed": "2025-10-25T10:09:38.467551+00:00",
+		"last_reported": "2025-10-25T10:09:38.467551+00:00",
+		"last_updated": "2025-10-25T10:09:38.467551+00:00",
+		"context": {
+			"id": "01K8DDGQ53G5QZ9H9ZT0D1YMYV",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.ipad_vladislav_bssid",
+		"state": "unavailable",
+		"attributes": {
+			"icon": "mdi:dots-square",
+			"friendly_name": "iPad vladislav BSSID"
+		},
+		"last_changed": "2025-10-25T10:09:38.467887+00:00",
+		"last_reported": "2025-10-25T10:09:38.467887+00:00",
+		"last_updated": "2025-10-25T10:09:38.467887+00:00",
+		"context": {
+			"id": "01K8DDGQ53TJ3T8VY4X18QSGE4",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.ipad_vladislav_ssid",
+		"state": "unavailable",
+		"attributes": {
+			"icon": "mdi:dots-square",
+			"friendly_name": "iPad vladislav SSID"
+		},
+		"last_changed": "2025-10-25T10:09:38.468098+00:00",
+		"last_reported": "2025-10-25T10:09:38.468098+00:00",
+		"last_updated": "2025-10-25T10:09:38.468098+00:00",
+		"context": {
+			"id": "01K8DDGQ54G80CRMZBHBMYRDR5",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "binary_sensor.m_kiiv_unknown",
+		"state": "off",
+		"attributes": {
+			"attribution": "Data provided by Ukraine Alarm",
+			"device_class": "safety",
+			"friendly_name": "м. Київ Unknown"
+		},
+		"last_changed": "2025-10-26T03:10:26.044073+00:00",
+		"last_reported": "2025-10-26T03:10:26.044073+00:00",
+		"last_updated": "2025-10-26T03:10:26.044073+00:00",
+		"context": {
+			"id": "01K8F7XV7WJ32AAKBD2A35TE87",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "binary_sensor.m_kiiv_air",
+		"state": "off",
+		"attributes": {
+			"attribution": "Data provided by Ukraine Alarm",
+			"device_class": "safety",
+			"friendly_name": "м. Київ Air"
+		},
+		"last_changed": "2025-10-26T03:10:26.044368+00:00",
+		"last_reported": "2025-10-26T03:10:26.044368+00:00",
+		"last_updated": "2025-10-26T03:10:26.044368+00:00",
+		"context": {
+			"id": "01K8F7XV7WJZH3JC9BB94GRNV1",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "binary_sensor.m_kiiv_urban_fights",
+		"state": "off",
+		"attributes": {
+			"attribution": "Data provided by Ukraine Alarm",
+			"device_class": "safety",
+			"friendly_name": "м. Київ Urban fights"
+		},
+		"last_changed": "2025-10-26T03:10:26.044575+00:00",
+		"last_reported": "2025-10-26T03:10:26.044575+00:00",
+		"last_updated": "2025-10-26T03:10:26.044575+00:00",
+		"context": {
+			"id": "01K8F7XV7WQBXQA0RY008JXBC1",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "binary_sensor.m_kiiv_artillery",
+		"state": "off",
+		"attributes": {
+			"attribution": "Data provided by Ukraine Alarm",
+			"device_class": "safety",
+			"friendly_name": "м. Київ Artillery"
+		},
+		"last_changed": "2025-10-26T03:10:26.044906+00:00",
+		"last_reported": "2025-10-26T03:10:26.044906+00:00",
+		"last_updated": "2025-10-26T03:10:26.044906+00:00",
+		"context": {
+			"id": "01K8F7XV7WB9YCSCRMD3NQ4DT5",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "binary_sensor.m_kiiv_chemical",
+		"state": "off",
+		"attributes": {
+			"attribution": "Data provided by Ukraine Alarm",
+			"device_class": "safety",
+			"friendly_name": "м. Київ Chemical"
+		},
+		"last_changed": "2025-10-26T03:10:26.045017+00:00",
+		"last_reported": "2025-10-26T03:10:26.045017+00:00",
+		"last_updated": "2025-10-26T03:10:26.045017+00:00",
+		"context": {
+			"id": "01K8F7XV7XF9FV61K37XERWDM4",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "binary_sensor.m_kiiv_nuclear",
+		"state": "off",
+		"attributes": {
+			"attribution": "Data provided by Ukraine Alarm",
+			"device_class": "safety",
+			"friendly_name": "м. Київ Nuclear"
+		},
+		"last_changed": "2025-10-26T03:10:26.045109+00:00",
+		"last_reported": "2025-10-26T03:10:26.045109+00:00",
+		"last_updated": "2025-10-26T03:10:26.045109+00:00",
+		"context": {
+			"id": "01K8F7XV7XKJAQDEPD55C9D8Y5",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "todo.shopping_list",
+		"state": "7",
+		"attributes": {
+			"icon": "mdi:chef-hat",
+			"friendly_name": "Shopping List",
+			"supported_features": 15
+		},
+		"last_changed": "2025-10-25T10:09:38.480227+00:00",
+		"last_reported": "2025-10-25T10:09:38.480227+00:00",
+		"last_updated": "2025-10-25T10:09:38.480227+00:00",
+		"context": {
+			"id": "01K8DDGQ5G4GGN6TKZEVSAV4BM",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "weather.forecast_home",
+		"state": "cloudy",
+		"attributes": {
+			"temperature": 7.6,
+			"dew_point": 5.9,
+			"temperature_unit": "°C",
+			"humidity": 90,
+			"cloud_coverage": 100.0,
+			"uv_index": 0.7,
+			"pressure": 29.62,
+			"pressure_unit": "inHg",
+			"wind_bearing": 157.0,
+			"wind_speed": 7.6,
+			"wind_speed_unit": "km/h",
+			"visibility_unit": "km",
+			"precipitation_unit": "in",
+			"attribution": "Weather forecast from met.no, delivered by the Norwegian Meteorological Institute.",
+			"friendly_name": "Forecast Home",
+			"supported_features": 3
+		},
+		"last_changed": "2025-10-27T04:26:50.894083+00:00",
+		"last_reported": "2025-10-27T07:23:51.076063+00:00",
+		"last_updated": "2025-10-27T07:23:51.076063+00:00",
+		"context": {
+			"id": "01K8J8TJX46MMQ95KG7T151QTQ",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "calendar.yasno_group_4_2_outages_calendar",
+		"state": "off",
+		"attributes": {
+			"friendly_name": "Yasno Group 4.2 Outages Calendar"
+		},
+		"last_changed": "2025-10-26T12:10:23.880089+00:00",
+		"last_reported": "2025-10-26T12:10:23.880089+00:00",
+		"last_updated": "2025-10-26T12:10:23.880089+00:00",
+		"context": {
+			"id": "01K8G6THR8JVJKPTZWR0W9XYDW",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.yasno_group_4_2_electricity",
+		"state": "normal",
+		"attributes": {
+			"options": [
+				"normal",
+				"outage",
+				"possible"
+			],
+			"device_class": "enum",
+			"icon": "mdi:transmission-tower",
+			"friendly_name": "Yasno Group 4.2 Electricity"
+		},
+		"last_changed": "2025-10-26T12:10:23.880415+00:00",
+		"last_reported": "2025-10-26T12:10:23.880415+00:00",
+		"last_updated": "2025-10-26T12:10:23.880415+00:00",
+		"context": {
+			"id": "01K8G6THR8A70WDK1S3GACG574",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.yasno_group_4_2_next_outage",
+		"state": "unknown",
+		"attributes": {
+			"device_class": "timestamp",
+			"icon": "mdi:calendar-remove",
+			"friendly_name": "Yasno Group 4.2 Next Outage"
+		},
+		"last_changed": "2025-10-26T12:10:23.880580+00:00",
+		"last_reported": "2025-10-26T12:10:23.880580+00:00",
+		"last_updated": "2025-10-26T12:10:23.880580+00:00",
+		"context": {
+			"id": "01K8G6THR8KCK261CWWJCW6TXR",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.yasno_group_4_2_next_possible_outage",
+		"state": "unknown",
+		"attributes": {
+			"device_class": "timestamp",
+			"icon": "mdi:calendar-question",
+			"friendly_name": "Yasno Group 4.2 Next Possible Outage"
+		},
+		"last_changed": "2025-10-26T12:10:23.880722+00:00",
+		"last_reported": "2025-10-26T12:10:23.880722+00:00",
+		"last_updated": "2025-10-26T12:10:23.880722+00:00",
+		"context": {
+			"id": "01K8G6THR89YSHM3HVNB2KGE5Y",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.yasno_group_4_2_next_connectivity",
+		"state": "unknown",
+		"attributes": {
+			"device_class": "timestamp",
+			"icon": "mdi:calendar-check",
+			"friendly_name": "Yasno Group 4.2 Next Connectivity"
+		},
+		"last_changed": "2025-10-26T12:10:23.880855+00:00",
+		"last_reported": "2025-10-26T12:10:23.880855+00:00",
+		"last_updated": "2025-10-26T12:10:23.880855+00:00",
+		"context": {
+			"id": "01K8G6THR8RG6Q978QYY0P659F",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "binary_sensor.boiler_cloud_connection",
+		"state": "on",
+		"attributes": {
+			"device_class": "connectivity",
+			"friendly_name": "бойлер Cloud connection"
+		},
+		"last_changed": "2025-10-25T10:09:38.973984+00:00",
+		"last_reported": "2025-10-25T10:09:38.973984+00:00",
+		"last_updated": "2025-10-25T10:09:38.973984+00:00",
+		"context": {
+			"id": "01K8DDGQMXF0SQCH8S9GJV5SXK",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "number.boiler_turn_off_in",
+		"state": "120",
+		"attributes": {
+			"min": 0,
+			"max": 65536,
+			"step": 1.0,
+			"mode": "box",
+			"friendly_name": "бойлер Turn off in"
+		},
+		"last_changed": "2025-10-25T13:15:16.683804+00:00",
+		"last_reported": "2025-10-25T13:15:16.683804+00:00",
+		"last_updated": "2025-10-25T13:15:16.683804+00:00",
+		"context": {
+			"id": "01K8DR4MAB60X4MY6AT9Q6H49T",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.boiler_signal_level",
+		"state": "3",
+		"attributes": {
+			"state_class": "measurement",
+			"friendly_name": "бойлер Signal level"
+		},
+		"last_changed": "2025-10-25T10:09:38.997501+00:00",
+		"last_reported": "2025-10-25T10:09:38.997501+00:00",
+		"last_updated": "2025-10-25T10:09:38.997501+00:00",
+		"context": {
+			"id": "01K8DDGQNN7H4RFT15E4F5DB5N",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.boiler_auto_off_at",
+		"state": "unknown",
+		"attributes": {
+			"device_class": "timestamp",
+			"friendly_name": "бойлер Auto-off at"
+		},
+		"last_changed": "2025-10-25T10:09:38.998327+00:00",
+		"last_reported": "2025-10-25T10:09:38.998327+00:00",
+		"last_updated": "2025-10-25T10:09:38.998327+00:00",
+		"context": {
+			"id": "01K8DDGQNPCF0Q50109D3GWEJJ",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "switch.boiler",
+		"state": "on",
+		"attributes": {
+			"friendly_name": "бойлер"
+		},
+		"last_changed": "2025-10-27T06:00:05.684652+00:00",
+		"last_reported": "2025-10-27T06:00:05.684652+00:00",
+		"last_updated": "2025-10-27T06:00:05.684652+00:00",
+		"context": {
+			"id": "01K8J4179M6QVAEGX7S5FWQZWH",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "switch.boiler_auto_off_enabled",
+		"state": "off",
+		"attributes": {
+			"friendly_name": "бойлер Auto-off enabled"
+		},
+		"last_changed": "2025-10-25T13:15:16.684145+00:00",
+		"last_reported": "2025-10-25T13:15:16.684145+00:00",
+		"last_updated": "2025-10-25T13:15:16.684145+00:00",
+		"context": {
+			"id": "01K8DR4MACSRTH2WV12R6YK0A5",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "switch.boiler_auto_update_enabled",
+		"state": "on",
+		"attributes": {
+			"friendly_name": "бойлер Auto-update enabled"
+		},
+		"last_changed": "2025-10-25T10:09:39.002333+00:00",
+		"last_reported": "2025-10-25T10:09:39.002333+00:00",
+		"last_updated": "2025-10-25T10:09:39.002333+00:00",
+		"context": {
+			"id": "01K8DDGQNT3VSA3GE89HQN4JX5",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "switch.boiler_led",
+		"state": "on",
+		"attributes": {
+			"friendly_name": "бойлер LED"
+		},
+		"last_changed": "2025-10-25T10:09:39.002653+00:00",
+		"last_reported": "2025-10-25T10:09:39.002653+00:00",
+		"last_updated": "2025-10-25T10:09:39.002653+00:00",
+		"context": {
+			"id": "01K8DDGQNTX11AM7CTMV3M7J19",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "binary_sensor.boiler_drugii_cloud_connection",
+		"state": "on",
+		"attributes": {
+			"device_class": "connectivity",
+			"friendly_name": "бойлер другий Cloud connection"
+		},
+		"last_changed": "2025-10-25T10:09:39.006048+00:00",
+		"last_reported": "2025-10-25T10:09:39.006048+00:00",
+		"last_updated": "2025-10-25T10:09:39.006048+00:00",
+		"context": {
+			"id": "01K8DDGQNY9H65T9S3HTC6D6BP",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "number.boiler_drugii_turn_off_in",
+		"state": "120",
+		"attributes": {
+			"min": 0,
+			"max": 65536,
+			"step": 1.0,
+			"mode": "box",
+			"friendly_name": "бойлер другий Turn off in"
+		},
+		"last_changed": "2025-10-25T13:15:16.606820+00:00",
+		"last_reported": "2025-10-25T13:15:16.606820+00:00",
+		"last_updated": "2025-10-25T13:15:16.606820+00:00",
+		"context": {
+			"id": "01K8DR4M7YTHREGA1P3KBQ8W57",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.boiler_drugii_signal_level",
+		"state": "2",
+		"attributes": {
+			"state_class": "measurement",
+			"friendly_name": "бойлер другий Signal level"
+		},
+		"last_changed": "2025-10-25T10:09:39.013345+00:00",
+		"last_reported": "2025-10-25T10:09:39.013345+00:00",
+		"last_updated": "2025-10-25T10:09:39.013345+00:00",
+		"context": {
+			"id": "01K8DDGQP57NG32CR01ZGS59T0",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.boiler_drugii_auto_off_at",
+		"state": "unknown",
+		"attributes": {
+			"device_class": "timestamp",
+			"friendly_name": "бойлер другий Auto-off at"
+		},
+		"last_changed": "2025-10-25T10:09:39.014612+00:00",
+		"last_reported": "2025-10-25T10:09:39.014612+00:00",
+		"last_updated": "2025-10-25T10:09:39.014612+00:00",
+		"context": {
+			"id": "01K8DDGQP6QDD7ZK1RBG7D6J0W",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "switch.boiler_drugii",
+		"state": "off",
+		"attributes": {
+			"friendly_name": "бойлер другий"
+		},
+		"last_changed": "2025-10-26T14:59:05.612967+00:00",
+		"last_reported": "2025-10-26T14:59:05.612967+00:00",
+		"last_updated": "2025-10-26T14:59:05.612967+00:00",
+		"context": {
+			"id": "01K8GGFE8C0WKCFABJ5S42V78Y",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "switch.boiler_drugii_auto_off_enabled",
+		"state": "off",
+		"attributes": {
+			"friendly_name": "бойлер другий Auto-off enabled"
+		},
+		"last_changed": "2025-10-25T13:15:16.607167+00:00",
+		"last_reported": "2025-10-25T13:15:16.607167+00:00",
+		"last_updated": "2025-10-25T13:15:16.607167+00:00",
+		"context": {
+			"id": "01K8DR4M7ZCN38ZJ8ED3C8RETW",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "switch.boiler_drugii_auto_update_enabled",
+		"state": "on",
+		"attributes": {
+			"friendly_name": "бойлер другий Auto-update enabled"
+		},
+		"last_changed": "2025-10-25T10:09:39.020063+00:00",
+		"last_reported": "2025-10-25T10:09:39.020063+00:00",
+		"last_updated": "2025-10-25T10:09:39.020063+00:00",
+		"context": {
+			"id": "01K8DDGQPCVE1NPY4T9EP8STNY",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "switch.boiler_drugii_led",
+		"state": "on",
+		"attributes": {
+			"friendly_name": "бойлер другий LED"
+		},
+		"last_changed": "2025-10-25T10:09:39.023151+00:00",
+		"last_reported": "2025-10-25T10:09:39.023151+00:00",
+		"last_updated": "2025-10-25T10:09:39.023151+00:00",
+		"context": {
+			"id": "01K8DDGQPFC41MYFPTE3WZY60C",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "binary_sensor.podacha_dtek_cloud_connection",
+		"state": "on",
+		"attributes": {
+			"device_class": "connectivity",
+			"friendly_name": "подача дтек Cloud connection"
+		},
+		"last_changed": "2025-10-25T10:09:39.034198+00:00",
+		"last_reported": "2025-10-25T10:09:39.034198+00:00",
+		"last_updated": "2025-10-25T10:09:39.034198+00:00",
+		"context": {
+			"id": "01K8DDGQPTN9JAXERDK99MS897",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "number.podacha_dtek_turn_off_in",
+		"state": "120",
+		"attributes": {
+			"min": 0,
+			"max": 65536,
+			"step": 1.0,
+			"mode": "box",
+			"friendly_name": "подача дтек Turn off in"
+		},
+		"last_changed": "2025-10-25T13:15:16.870462+00:00",
+		"last_reported": "2025-10-25T13:15:16.870462+00:00",
+		"last_updated": "2025-10-25T13:15:16.870462+00:00",
+		"context": {
+			"id": "01K8DR4MG6WX2PSZ15REJ0R3CJ",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.podacha_dtek_signal_level",
+		"state": "3",
+		"attributes": {
+			"state_class": "measurement",
+			"friendly_name": "подача дтек Signal level"
+		},
+		"last_changed": "2025-10-25T10:09:39.040477+00:00",
+		"last_reported": "2025-10-25T10:09:39.040477+00:00",
+		"last_updated": "2025-10-25T10:09:39.040477+00:00",
+		"context": {
+			"id": "01K8DDGQQ0M8W1J3AJCJHE7J4R",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.podacha_dtek_auto_off_at",
+		"state": "unknown",
+		"attributes": {
+			"device_class": "timestamp",
+			"friendly_name": "подача дтек Auto-off at"
+		},
+		"last_changed": "2025-10-25T10:09:39.041141+00:00",
+		"last_reported": "2025-10-25T10:09:39.041141+00:00",
+		"last_updated": "2025-10-25T10:09:39.041141+00:00",
+		"context": {
+			"id": "01K8DDGQQ1A7AMQ1ZWJW2CQM09",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "switch.podacha_dtek",
+		"state": "on",
+		"attributes": {
+			"friendly_name": "подача дтек"
+		},
+		"last_changed": "2025-10-25T10:09:39.042142+00:00",
+		"last_reported": "2025-10-25T10:09:39.042142+00:00",
+		"last_updated": "2025-10-25T10:09:39.042142+00:00",
+		"context": {
+			"id": "01K8DDGQQ2KX62X4HN7J36T2X0",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "switch.podacha_dtek_auto_off_enabled",
+		"state": "off",
+		"attributes": {
+			"friendly_name": "подача дтек Auto-off enabled"
+		},
+		"last_changed": "2025-10-25T13:15:16.870935+00:00",
+		"last_reported": "2025-10-25T13:15:16.870935+00:00",
+		"last_updated": "2025-10-25T13:15:16.870935+00:00",
+		"context": {
+			"id": "01K8DR4MG6NB6N3QY5CYC3HEBQ",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "switch.podacha_dtek_auto_update_enabled",
+		"state": "on",
+		"attributes": {
+			"friendly_name": "подача дтек Auto-update enabled"
+		},
+		"last_changed": "2025-10-25T10:09:39.042597+00:00",
+		"last_reported": "2025-10-25T10:09:39.042597+00:00",
+		"last_updated": "2025-10-25T10:09:39.042597+00:00",
+		"context": {
+			"id": "01K8DDGQQ2J8RPNNM6T8RNFART",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "switch.podacha_dtek_led",
+		"state": "on",
+		"attributes": {
+			"friendly_name": "подача дтек LED"
+		},
+		"last_changed": "2025-10-25T10:09:39.042879+00:00",
+		"last_reported": "2025-10-25T10:09:39.042879+00:00",
+		"last_updated": "2025-10-25T10:09:39.042879+00:00",
+		"context": {
+			"id": "01K8DDGQQ2G2P2FA1DS1KR25A3",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "binary_sensor.faust_cloud_connection",
+		"state": "on",
+		"attributes": {
+			"device_class": "connectivity",
+			"friendly_name": "фауст Cloud connection"
+		},
+		"last_changed": "2025-10-25T10:09:39.044973+00:00",
+		"last_reported": "2025-10-25T10:09:39.044973+00:00",
+		"last_updated": "2025-10-25T10:09:39.044973+00:00",
+		"context": {
+			"id": "01K8DDGQQ4GY115Z7G9BNM1EFJ",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "number.faust_turn_off_in",
+		"state": "120",
+		"attributes": {
+			"min": 0,
+			"max": 65536,
+			"step": 1.0,
+			"mode": "box",
+			"friendly_name": "фауст Turn off in"
+		},
+		"last_changed": "2025-10-25T13:15:16.877450+00:00",
+		"last_reported": "2025-10-25T13:15:16.877450+00:00",
+		"last_updated": "2025-10-25T13:15:16.877450+00:00",
+		"context": {
+			"id": "01K8DR4MGDS0VYDRPKDQS5RAPT",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.faust_signal_level",
+		"state": "3",
+		"attributes": {
+			"state_class": "measurement",
+			"friendly_name": "фауст Signal level"
+		},
+		"last_changed": "2025-10-25T10:09:39.048201+00:00",
+		"last_reported": "2025-10-25T10:09:39.048201+00:00",
+		"last_updated": "2025-10-25T10:09:39.048201+00:00",
+		"context": {
+			"id": "01K8DDGQQ81WNQH2A2RDGFJEQC",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.faust_auto_off_at",
+		"state": "unknown",
+		"attributes": {
+			"device_class": "timestamp",
+			"friendly_name": "фауст Auto-off at"
+		},
+		"last_changed": "2025-10-25T10:09:39.050335+00:00",
+		"last_reported": "2025-10-25T10:09:39.050335+00:00",
+		"last_updated": "2025-10-25T10:09:39.050335+00:00",
+		"context": {
+			"id": "01K8DDGQQA1JECX9F7R3H5W8SM",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "switch.faust",
+		"state": "on",
+		"attributes": {
+			"friendly_name": "фауст"
+		},
+		"last_changed": "2025-10-25T10:09:39.051485+00:00",
+		"last_reported": "2025-10-25T10:09:39.051485+00:00",
+		"last_updated": "2025-10-25T10:09:39.051485+00:00",
+		"context": {
+			"id": "01K8DDGQQBZW9JDJCX9EMR1X13",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "switch.faust_auto_off_enabled",
+		"state": "off",
+		"attributes": {
+			"friendly_name": "фауст Auto-off enabled"
+		},
+		"last_changed": "2025-10-25T13:15:16.877910+00:00",
+		"last_reported": "2025-10-25T13:15:16.877910+00:00",
+		"last_updated": "2025-10-25T13:15:16.877910+00:00",
+		"context": {
+			"id": "01K8DR4MGDSZYMSYKTG7Z0NZQD",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "switch.faust_auto_update_enabled",
+		"state": "on",
+		"attributes": {
+			"friendly_name": "фауст Auto-update enabled"
+		},
+		"last_changed": "2025-10-25T10:09:39.052247+00:00",
+		"last_reported": "2025-10-25T10:09:39.052247+00:00",
+		"last_updated": "2025-10-25T10:09:39.052247+00:00",
+		"context": {
+			"id": "01K8DDGQQCQPBFSTZ4EVPTC775",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "switch.faust_led",
+		"state": "on",
+		"attributes": {
+			"friendly_name": "фауст LED"
+		},
+		"last_changed": "2025-10-25T10:09:39.052456+00:00",
+		"last_reported": "2025-10-25T10:09:39.052456+00:00",
+		"last_updated": "2025-10-25T10:09:39.052456+00:00",
+		"context": {
+			"id": "01K8DDGQQC6MK2YTAZ84G6GWA3",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "binary_sensor.kislotnik_cloud_connection",
+		"state": "on",
+		"attributes": {
+			"device_class": "connectivity",
+			"friendly_name": "кіслотник Cloud connection"
+		},
+		"last_changed": "2025-10-25T10:09:39.054063+00:00",
+		"last_reported": "2025-10-25T10:09:39.054063+00:00",
+		"last_updated": "2025-10-25T10:09:39.054063+00:00",
+		"context": {
+			"id": "01K8DDGQQE7E1DNCG4JMWV6SXG",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "number.kislotnik_turn_off_in",
+		"state": "120",
+		"attributes": {
+			"min": 0,
+			"max": 65536,
+			"step": 1.0,
+			"mode": "box",
+			"friendly_name": "кіслотник Turn off in"
+		},
+		"last_changed": "2025-10-25T13:15:16.597792+00:00",
+		"last_reported": "2025-10-25T13:15:16.597792+00:00",
+		"last_updated": "2025-10-25T13:15:16.597792+00:00",
+		"context": {
+			"id": "01K8DR4M7N8Q6C34RT0YJJRC4S",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.kislotnik_signal_level",
+		"state": "3",
+		"attributes": {
+			"state_class": "measurement",
+			"friendly_name": "кіслотник Signal level"
+		},
+		"last_changed": "2025-10-25T10:09:39.057498+00:00",
+		"last_reported": "2025-10-25T10:09:39.057498+00:00",
+		"last_updated": "2025-10-25T10:09:39.057498+00:00",
+		"context": {
+			"id": "01K8DDGQQHASJGTVM6CKDFB8C2",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.kislotnik_auto_off_at",
+		"state": "unknown",
+		"attributes": {
+			"device_class": "timestamp",
+			"friendly_name": "кіслотник Auto-off at"
+		},
+		"last_changed": "2025-10-25T10:09:39.058144+00:00",
+		"last_reported": "2025-10-25T10:09:39.058144+00:00",
+		"last_updated": "2025-10-25T10:09:39.058144+00:00",
+		"context": {
+			"id": "01K8DDGQQJ6WEQNY90GARG9Q7M",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "switch.kislotnik",
+		"state": "off",
+		"attributes": {
+			"friendly_name": "кіслотник"
+		},
+		"last_changed": "2025-10-26T11:00:06.894326+00:00",
+		"last_reported": "2025-10-26T11:00:06.894326+00:00",
+		"last_updated": "2025-10-26T11:00:06.894326+00:00",
+		"context": {
+			"id": "01K8G2SVKEA4AE9GGCT09B4SSS",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "switch.kislotnik_auto_off_enabled",
+		"state": "off",
+		"attributes": {
+			"friendly_name": "кіслотник Auto-off enabled"
+		},
+		"last_changed": "2025-10-25T13:15:16.598154+00:00",
+		"last_reported": "2025-10-25T13:15:16.598154+00:00",
+		"last_updated": "2025-10-25T13:15:16.598154+00:00",
+		"context": {
+			"id": "01K8DR4M7P4M1TJXV4X5G6W53B",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "switch.kislotnik_auto_update_enabled",
+		"state": "on",
+		"attributes": {
+			"friendly_name": "кіслотник Auto-update enabled"
+		},
+		"last_changed": "2025-10-25T10:09:39.062253+00:00",
+		"last_reported": "2025-10-25T10:09:39.062253+00:00",
+		"last_updated": "2025-10-25T10:09:39.062253+00:00",
+		"context": {
+			"id": "01K8DDGQQPPBW3BZKR50A5DGR7",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "switch.kislotnik_led",
+		"state": "on",
+		"attributes": {
+			"friendly_name": "кіслотник LED"
+		},
+		"last_changed": "2025-10-25T10:09:39.062508+00:00",
+		"last_reported": "2025-10-25T10:09:39.062508+00:00",
+		"last_updated": "2025-10-25T10:09:39.062508+00:00",
+		"context": {
+			"id": "01K8DDGQQP8ENGTZHQ319J9JHT",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "binary_sensor.poliv_1_cloud_connection",
+		"state": "on",
+		"attributes": {
+			"device_class": "connectivity",
+			"friendly_name": "Гараж 2 Cloud connection"
+		},
+		"last_changed": "2025-10-25T10:09:39.065901+00:00",
+		"last_reported": "2025-10-25T10:09:39.065901+00:00",
+		"last_updated": "2025-10-25T10:09:39.065901+00:00",
+		"context": {
+			"id": "01K8DDGQQSQ3889B2KX3QWGPT5",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "binary_sensor.poliv_1_overheated",
+		"state": "off",
+		"attributes": {
+			"device_class": "problem",
+			"friendly_name": "Гараж 2 Overheated"
+		},
+		"last_changed": "2025-10-25T10:09:39.066185+00:00",
+		"last_reported": "2025-10-25T10:09:39.066185+00:00",
+		"last_updated": "2025-10-25T10:09:39.066185+00:00",
+		"context": {
+			"id": "01K8DDGQQTR51VGKVN6AX8VDGA",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "number.poliv_1_turn_off_in",
+		"state": "120",
+		"attributes": {
+			"min": 0,
+			"max": 65536,
+			"step": 1.0,
+			"mode": "box",
+			"friendly_name": "Гараж 2 Turn off in"
+		},
+		"last_changed": "2025-10-25T21:46:27.757160+00:00",
+		"last_reported": "2025-10-25T21:46:27.757160+00:00",
+		"last_updated": "2025-10-25T21:46:27.757160+00:00",
+		"context": {
+			"id": "01K8ENCMHDS4T5TFN7JTDNTASK",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.poliv_1_signal_level",
+		"state": "3",
+		"attributes": {
+			"state_class": "measurement",
+			"friendly_name": "Гараж 2 Signal level"
+		},
+		"last_changed": "2025-10-25T10:09:39.068639+00:00",
+		"last_reported": "2025-10-25T10:09:39.068639+00:00",
+		"last_updated": "2025-10-25T10:09:39.068639+00:00",
+		"context": {
+			"id": "01K8DDGQQWMCRSGCFQAPCVZM9X",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.poliv_1_auto_off_at",
+		"state": "unknown",
+		"attributes": {
+			"device_class": "timestamp",
+			"friendly_name": "Гараж 2 Auto-off at"
+		},
+		"last_changed": "2025-10-25T10:09:39.070942+00:00",
+		"last_reported": "2025-10-25T10:09:39.070942+00:00",
+		"last_updated": "2025-10-25T10:09:39.070942+00:00",
+		"context": {
+			"id": "01K8DDGQQYF7YWFDDHKZ0SY466",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "switch.poliv_1",
+		"state": "off",
+		"attributes": {
+			"friendly_name": "Гараж 2"
+		},
+		"last_changed": "2025-10-25T10:09:39.072166+00:00",
+		"last_reported": "2025-10-25T10:09:39.072166+00:00",
+		"last_updated": "2025-10-25T10:09:39.072166+00:00",
+		"context": {
+			"id": "01K8DDGQR0MJ5CK4QMB3JQX7NS",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "switch.poliv_1_auto_off_enabled",
+		"state": "off",
+		"attributes": {
+			"friendly_name": "Гараж 2 Auto-off enabled"
+		},
+		"last_changed": "2025-10-25T21:46:27.757551+00:00",
+		"last_reported": "2025-10-25T21:46:27.757551+00:00",
+		"last_updated": "2025-10-25T21:46:27.757551+00:00",
+		"context": {
+			"id": "01K8ENCMHD4EPA1M5G40E6PPDJ",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "switch.poliv_1_led",
+		"state": "on",
+		"attributes": {
+			"friendly_name": "Гараж 2 LED"
+		},
+		"last_changed": "2025-10-25T10:09:39.072969+00:00",
+		"last_reported": "2025-10-25T10:09:39.072969+00:00",
+		"last_updated": "2025-10-25T10:09:39.072969+00:00",
+		"context": {
+			"id": "01K8DDGQR0EQM2G0WAFMQSPRYC",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "binary_sensor.poliv_3_cloud_connection",
+		"state": "on",
+		"attributes": {
+			"device_class": "connectivity",
+			"friendly_name": "гараж Cloud connection"
+		},
+		"last_changed": "2025-10-25T11:00:21.642115+00:00",
+		"last_reported": "2025-10-25T11:00:28.813175+00:00",
+		"last_updated": "2025-10-25T11:00:21.642115+00:00",
+		"context": {
+			"id": "01K8DGDK0ART3DK1J5459ZGF4F",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "binary_sensor.poliv_3_overheated",
+		"state": "off",
+		"attributes": {
+			"device_class": "problem",
+			"friendly_name": "гараж Overheated"
+		},
+		"last_changed": "2025-10-25T11:00:21.642210+00:00",
+		"last_reported": "2025-10-25T11:00:28.813227+00:00",
+		"last_updated": "2025-10-25T11:00:21.642210+00:00",
+		"context": {
+			"id": "01K8DGDK0ACTPJFN30N7WANFEE",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "number.garazh_turn_off_in",
+		"state": "120",
+		"attributes": {
+			"min": 0,
+			"max": 65536,
+			"step": 1.0,
+			"mode": "box",
+			"friendly_name": "гараж Turn off in"
+		},
+		"last_changed": "2025-10-25T11:00:21.642362+00:00",
+		"last_reported": "2025-10-25T11:00:28.813318+00:00",
+		"last_updated": "2025-10-25T11:00:21.642362+00:00",
+		"context": {
+			"id": "01K8DGDK0AE52G1JWV6486BAZY",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.poliv_3_signal_level",
+		"state": "3",
+		"attributes": {
+			"state_class": "measurement",
+			"friendly_name": "гараж Signal level"
+		},
+		"last_changed": "2025-10-25T11:00:21.642441+00:00",
+		"last_reported": "2025-10-25T11:00:28.813387+00:00",
+		"last_updated": "2025-10-25T11:00:21.642441+00:00",
+		"context": {
+			"id": "01K8DGDK0A8J4HMXEGPFWDY88P",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.garazh_auto_off_at",
+		"state": "unknown",
+		"attributes": {
+			"device_class": "timestamp",
+			"friendly_name": "гараж Auto-off at"
+		},
+		"last_changed": "2025-10-25T11:00:21.642488+00:00",
+		"last_reported": "2025-10-25T11:00:28.813423+00:00",
+		"last_updated": "2025-10-25T11:00:21.642488+00:00",
+		"context": {
+			"id": "01K8DGDK0A3Z0DKKYV91R6X1T6",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "switch.poliv_3",
+		"state": "off",
+		"attributes": {
+			"friendly_name": "гараж"
+		},
+		"last_changed": "2025-10-26T14:14:06.775438+00:00",
+		"last_reported": "2025-10-26T14:14:06.775438+00:00",
+		"last_updated": "2025-10-26T14:14:06.775438+00:00",
+		"context": {
+			"id": "01K8GDX2NQAC9E47ZC1QR34NPG",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "switch.garazh_auto_off_enabled",
+		"state": "off",
+		"attributes": {
+			"friendly_name": "гараж Auto-off enabled"
+		},
+		"last_changed": "2025-10-25T11:00:21.642578+00:00",
+		"last_reported": "2025-10-25T11:00:28.813497+00:00",
+		"last_updated": "2025-10-25T11:00:21.642578+00:00",
+		"context": {
+			"id": "01K8DGDK0AGZCNXEEYXY9W10MZ",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "switch.poliv_3_led",
+		"state": "on",
+		"attributes": {
+			"friendly_name": "гараж LED"
+		},
+		"last_changed": "2025-10-25T11:00:21.642619+00:00",
+		"last_reported": "2025-10-25T11:00:28.813525+00:00",
+		"last_updated": "2025-10-25T11:00:21.642619+00:00",
+		"context": {
+			"id": "01K8DGDK0ASRQZBXQ3G4AFDBRY",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "select.boiler_drugii_power_on_behavior",
+		"state": "last",
+		"attributes": {
+			"options": [
+				"power_off",
+				"power_on",
+				"last"
+			],
+			"friendly_name": "Перший клапан Power on behavior"
+		},
+		"last_changed": "2025-10-25T10:09:45.981045+00:00",
+		"last_reported": "2025-10-25T10:09:45.981045+00:00",
+		"last_updated": "2025-10-25T10:09:45.981045+00:00",
+		"context": {
+			"id": "01K8DDGYFXZRPDN9E4WXGNK44K",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "select.boiler_drugii_indicator_light_mode",
+		"state": "relay",
+		"attributes": {
+			"options": [
+				"relay",
+				"pos",
+				"none"
+			],
+			"friendly_name": "Перший клапан Indicator light mode"
+		},
+		"last_changed": "2025-10-25T10:09:45.981415+00:00",
+		"last_reported": "2025-10-25T10:09:45.981415+00:00",
+		"last_updated": "2025-10-25T10:09:45.981415+00:00",
+		"context": {
+			"id": "01K8DDGYFXTASK6PSHZYQA2RKS",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "select.detektor_dtek_power_on_behavior",
+		"state": "last",
+		"attributes": {
+			"options": [
+				"power_off",
+				"power_on",
+				"last"
+			],
+			"friendly_name": "Контактор ел котел Power on behavior"
+		},
+		"last_changed": "2025-10-25T10:09:45.981864+00:00",
+		"last_reported": "2025-10-25T10:09:45.981864+00:00",
+		"last_updated": "2025-10-25T10:09:45.981864+00:00",
+		"context": {
+			"id": "01K8DDGYFXKWMKHNNE4EPHPWW6",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "select.detektor_dtek_indicator_light_mode",
+		"state": "relay",
+		"attributes": {
+			"options": [
+				"relay",
+				"pos",
+				"none"
+			],
+			"friendly_name": "Контактор ел котел Indicator light mode"
+		},
+		"last_changed": "2025-10-25T10:09:45.982106+00:00",
+		"last_reported": "2025-10-25T10:09:45.982106+00:00",
+		"last_updated": "2025-10-25T10:09:45.982106+00:00",
+		"context": {
+			"id": "01K8DDGYFYV1H7A9VX28P42ZMD",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "select.boiler_klapan_power_on_behavior",
+		"state": "power_off",
+		"attributes": {
+			"options": [
+				"power_off",
+				"power_on",
+				"last"
+			],
+			"friendly_name": "Гостьова клапан Power on behavior"
+		},
+		"last_changed": "2025-10-25T10:09:45.982936+00:00",
+		"last_reported": "2025-10-25T10:09:45.982936+00:00",
+		"last_updated": "2025-10-25T10:09:45.982936+00:00",
+		"context": {
+			"id": "01K8DDGYFYQSGNDC4R06H9XZTW",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "select.boiler_klapan_indicator_light_mode",
+		"state": "relay",
+		"attributes": {
+			"options": [
+				"relay",
+				"pos",
+				"none"
+			],
+			"friendly_name": "Гостьова клапан Indicator light mode"
+		},
+		"last_changed": "2025-10-25T10:09:45.983180+00:00",
+		"last_reported": "2025-10-25T10:09:45.983180+00:00",
+		"last_updated": "2025-10-25T10:09:45.983180+00:00",
+		"context": {
+			"id": "01K8DDGYFZNR8V70KTKGTTD0QQ",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "select.tverdopalivnii_power_on_behavior",
+		"state": "last",
+		"attributes": {
+			"options": [
+				"power_off",
+				"power_on",
+				"last"
+			],
+			"friendly_name": "Твердопаливний  Power on behavior"
+		},
+		"last_changed": "2025-10-25T10:09:45.985476+00:00",
+		"last_reported": "2025-10-25T10:09:45.985476+00:00",
+		"last_updated": "2025-10-25T10:09:45.985476+00:00",
+		"context": {
+			"id": "01K8DDGYG18TMCBCNVHQNP5JP8",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "select.tverdopalivnii_indicator_light_mode",
+		"state": "relay",
+		"attributes": {
+			"options": [
+				"relay",
+				"pos",
+				"none"
+			],
+			"friendly_name": "Твердопаливний  Indicator light mode"
+		},
+		"last_changed": "2025-10-25T10:09:45.985864+00:00",
+		"last_reported": "2025-10-25T10:09:45.985864+00:00",
+		"last_updated": "2025-10-25T10:09:45.985864+00:00",
+		"context": {
+			"id": "01K8DDGYG1GG3ZECTAHJYTH1JM",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "select.drugii_klapan_power_on_behavior",
+		"state": "last",
+		"attributes": {
+			"options": [
+				"power_off",
+				"power_on",
+				"last"
+			],
+			"friendly_name": "Другий клапан Power on behavior"
+		},
+		"last_changed": "2025-10-25T10:09:45.986176+00:00",
+		"last_reported": "2025-10-25T10:09:45.986176+00:00",
+		"last_updated": "2025-10-25T10:09:45.986176+00:00",
+		"context": {
+			"id": "01K8DDGYG2FXYJ2C2MMD5B624C",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "select.drugii_klapan_indicator_light_mode",
+		"state": "relay",
+		"attributes": {
+			"options": [
+				"relay",
+				"pos",
+				"none"
+			],
+			"friendly_name": "Другий клапан Indicator light mode"
+		},
+		"last_changed": "2025-10-25T10:09:45.986387+00:00",
+		"last_reported": "2025-10-25T10:09:45.986387+00:00",
+		"last_updated": "2025-10-25T10:09:45.986387+00:00",
+		"context": {
+			"id": "01K8DDGYG2JRHAJG0KFCCTWTR7",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "select.teplii_pol_power_on_behavior",
+		"state": "last",
+		"attributes": {
+			"options": [
+				"power_off",
+				"power_on",
+				"last"
+			],
+			"friendly_name": "Теплий пол Power on behavior"
+		},
+		"last_changed": "2025-10-25T10:09:45.986656+00:00",
+		"last_reported": "2025-10-25T10:09:45.986656+00:00",
+		"last_updated": "2025-10-25T10:09:45.986656+00:00",
+		"context": {
+			"id": "01K8DDGYG2FCD0M3PHX6HE6WK3",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "select.garazhavto_power_on_behavior",
+		"state": "last",
+		"attributes": {
+			"options": [
+				"power_off",
+				"power_on",
+				"last"
+			],
+			"friendly_name": "Гаражавто Power on behavior"
+		},
+		"last_changed": "2025-10-25T10:09:45.987000+00:00",
+		"last_reported": "2025-10-25T10:09:45.987000+00:00",
+		"last_updated": "2025-10-25T10:09:45.987000+00:00",
+		"context": {
+			"id": "01K8DDGYG28TM3NBGE755YR6XS",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "select.generator_tumanu_power_on_behavior",
+		"state": "last",
+		"attributes": {
+			"options": [
+				"power_off",
+				"power_on",
+				"last"
+			],
+			"friendly_name": "Кухня клапан Power on behavior"
+		},
+		"last_changed": "2025-10-25T10:51:04.519123+00:00",
+		"last_reported": "2025-10-25T10:51:22.333884+00:00",
+		"last_updated": "2025-10-25T10:51:04.519123+00:00",
+		"context": {
+			"id": "01K8DFWJY7TSXMAA113PMR5YV3",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.temperatura_i_vologist_drugii_poverkh_temperature",
+		"state": "21.9",
+		"attributes": {
+			"state_class": "measurement",
+			"unit_of_measurement": "°C",
+			"device_class": "temperature",
+			"friendly_name": "Th дитяча Temperature"
+		},
+		"last_changed": "2025-10-27T07:27:26.331054+00:00",
+		"last_reported": "2025-10-27T07:27:26.331054+00:00",
+		"last_updated": "2025-10-27T07:27:26.331054+00:00",
+		"context": {
+			"id": "01K8J9153VEP4T0FWEKQMCH8GD",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.temperatura_i_vologist_drugii_poverkh_humidity",
+		"state": "63.0",
+		"attributes": {
+			"state_class": "measurement",
+			"unit_of_measurement": "%",
+			"device_class": "humidity",
+			"friendly_name": "Th дитяча Humidity"
+		},
+		"last_changed": "2025-10-27T07:08:39.731290+00:00",
+		"last_reported": "2025-10-27T07:08:39.731290+00:00",
+		"last_updated": "2025-10-27T07:08:39.731290+00:00",
+		"context": {
+			"id": "01K8J7YRXKRSPBYBZ490BT3WY6",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.temperatura_i_vologist_drugii_poverkh_battery_state",
+		"state": "high",
+		"attributes": {
+			"friendly_name": "Th дитяча Battery state"
+		},
+		"last_changed": "2025-10-25T10:09:45.989903+00:00",
+		"last_reported": "2025-10-25T10:09:45.989903+00:00",
+		"last_updated": "2025-10-25T10:09:45.989903+00:00",
+		"context": {
+			"id": "01K8DDGYG5QW36R5XHMANMT5K8",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.kontaktor_el_kotel_total_energy",
+		"state": "0.001",
+		"attributes": {
+			"state_class": "total_increasing",
+			"friendly_name": "Контактор ел котел Total energy"
+		},
+		"last_changed": "2025-10-25T10:09:45.990429+00:00",
+		"last_reported": "2025-10-25T10:09:45.990429+00:00",
+		"last_updated": "2025-10-25T10:09:45.990429+00:00",
+		"context": {
+			"id": "01K8DDGYG61EER9557WXC2CRR2",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.boiler_klapan_total_energy",
+		"state": "0.001",
+		"attributes": {
+			"state_class": "total_increasing",
+			"friendly_name": "Гостьова клапан Total energy"
+		},
+		"last_changed": "2025-10-25T10:09:45.990875+00:00",
+		"last_reported": "2025-10-25T10:09:45.990875+00:00",
+		"last_updated": "2025-10-25T10:09:45.990875+00:00",
+		"context": {
+			"id": "01K8DDGYG6M2F9DMBBSRT58WBK",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.tverdopalivnii_total_energy",
+		"state": "0.015",
+		"attributes": {
+			"state_class": "total_increasing",
+			"friendly_name": "Твердопаливний  Total energy"
+		},
+		"last_changed": "2025-10-25T13:35:29.329772+00:00",
+		"last_reported": "2025-10-25T13:35:29.329772+00:00",
+		"last_updated": "2025-10-25T13:35:29.329772+00:00",
+		"context": {
+			"id": "01K8DS9MHHDQ8104223Y9SJ2XM",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.gostova_th2_temperature",
+		"state": "22.5",
+		"attributes": {
+			"state_class": "measurement",
+			"unit_of_measurement": "°C",
+			"device_class": "temperature",
+			"friendly_name": "Гостьова th2 Temperature"
+		},
+		"last_changed": "2025-10-27T06:58:01.603786+00:00",
+		"last_reported": "2025-10-27T06:58:01.603786+00:00",
+		"last_updated": "2025-10-27T06:58:01.603786+00:00",
+		"context": {
+			"id": "01K8J7B9R3MX97DSPRR60AQ0PX",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.gostova_th2_humidity",
+		"state": "64.0",
+		"attributes": {
+			"state_class": "measurement",
+			"unit_of_measurement": "%",
+			"device_class": "humidity",
+			"friendly_name": "Гостьова th2 Humidity"
+		},
+		"last_changed": "2025-10-27T07:13:39.898393+00:00",
+		"last_reported": "2025-10-27T07:13:39.898393+00:00",
+		"last_updated": "2025-10-27T07:13:39.898393+00:00",
+		"context": {
+			"id": "01K8J87Y1TP515CYTENR1YWJ7E",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.gostova_th2_battery",
+		"state": "100.0",
+		"attributes": {
+			"state_class": "measurement",
+			"unit_of_measurement": "%",
+			"device_class": "battery",
+			"friendly_name": "Гостьова th2 Battery"
+		},
+		"last_changed": "2025-10-25T10:09:45.992511+00:00",
+		"last_reported": "2025-10-25T10:09:45.992511+00:00",
+		"last_updated": "2025-10-25T10:09:45.992511+00:00",
+		"context": {
+			"id": "01K8DDGYG8006GR0X4ZMZQ5X1A",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.gostova_th2_battery_state",
+		"state": "high",
+		"attributes": {
+			"friendly_name": "Гостьова th2 Battery state"
+		},
+		"last_changed": "2025-10-25T10:09:45.992778+00:00",
+		"last_reported": "2025-10-25T10:09:45.992778+00:00",
+		"last_updated": "2025-10-25T10:09:45.992778+00:00",
+		"context": {
+			"id": "01K8DDGYG8S2X0B2583HMYY20F",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.drugii_th2_temperature",
+		"state": "22.9",
+		"attributes": {
+			"state_class": "measurement",
+			"unit_of_measurement": "°C",
+			"device_class": "temperature",
+			"friendly_name": "Другий th2 Temperature"
+		},
+		"last_changed": "2025-10-27T07:18:45.650213+00:00",
+		"last_reported": "2025-10-27T07:18:45.650213+00:00",
+		"last_updated": "2025-10-27T07:18:45.650213+00:00",
+		"context": {
+			"id": "01K8J8H8MJEH4VVFDGTA0MNCSE",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.drugii_th2_humidity",
+		"state": "65.0",
+		"attributes": {
+			"state_class": "measurement",
+			"unit_of_measurement": "%",
+			"device_class": "humidity",
+			"friendly_name": "Другий th2 Humidity"
+		},
+		"last_changed": "2025-10-27T07:34:54.230419+00:00",
+		"last_reported": "2025-10-27T07:34:54.230419+00:00",
+		"last_updated": "2025-10-27T07:34:54.230419+00:00",
+		"context": {
+			"id": "01K8J9ETGP6VNAQ4PHNKBCKABK",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.drugii_th2_battery",
+		"state": "100.0",
+		"attributes": {
+			"state_class": "measurement",
+			"unit_of_measurement": "%",
+			"device_class": "battery",
+			"friendly_name": "Другий th2 Battery"
+		},
+		"last_changed": "2025-10-25T10:09:45.995057+00:00",
+		"last_reported": "2025-10-25T10:09:45.995057+00:00",
+		"last_updated": "2025-10-25T10:09:45.995057+00:00",
+		"context": {
+			"id": "01K8DDGYGBJ6EPK2TSTM274W3D",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.drugii_th2_battery_state",
+		"state": "high",
+		"attributes": {
+			"friendly_name": "Другий th2 Battery state"
+		},
+		"last_changed": "2025-10-25T10:09:45.995512+00:00",
+		"last_reported": "2025-10-25T10:09:45.995512+00:00",
+		"last_updated": "2025-10-25T10:09:45.995512+00:00",
+		"context": {
+			"id": "01K8DDGYGB2PFZ75553HD2RG2Z",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.drugii_klapan_total_energy",
+		"state": "0.002",
+		"attributes": {
+			"state_class": "total_increasing",
+			"friendly_name": "Другий клапан Total energy"
+		},
+		"last_changed": "2025-10-27T06:04:12.782587+00:00",
+		"last_reported": "2025-10-27T06:04:12.782587+00:00",
+		"last_updated": "2025-10-27T06:04:12.782587+00:00",
+		"context": {
+			"id": "01K8J48RKEK4CMC61KAM9DF19K",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.teplii_pol_total_energy",
+		"state": "0.014",
+		"attributes": {
+			"state_class": "total_increasing",
+			"friendly_name": "Теплий пол Total energy"
+		},
+		"last_changed": "2025-10-25T10:09:45.997082+00:00",
+		"last_reported": "2025-10-25T10:09:45.997082+00:00",
+		"last_updated": "2025-10-25T10:09:45.997082+00:00",
+		"context": {
+			"id": "01K8DDGYGDGBEX3GREHQG696BJ",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.garazhavto_total_energy",
+		"state": "0.001",
+		"attributes": {
+			"state_class": "total_increasing",
+			"friendly_name": "Гаражавто Total energy"
+		},
+		"last_changed": "2025-10-25T10:09:45.998022+00:00",
+		"last_reported": "2025-10-25T10:09:45.998022+00:00",
+		"last_updated": "2025-10-25T10:09:45.998022+00:00",
+		"context": {
+			"id": "01K8DDGYGEQBQBNNHW4T8NPJTX",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.mama_th2_temperature",
+		"state": "22.4",
+		"attributes": {
+			"state_class": "measurement",
+			"unit_of_measurement": "°C",
+			"device_class": "temperature",
+			"friendly_name": "Мама th2 Temperature"
+		},
+		"last_changed": "2025-10-27T06:51:08.208209+00:00",
+		"last_reported": "2025-10-27T06:51:08.208209+00:00",
+		"last_updated": "2025-10-27T06:51:08.208209+00:00",
+		"context": {
+			"id": "01K8J6YP1GXKAB0AGVB7S0QK50",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.mama_th2_humidity",
+		"state": "62.0",
+		"attributes": {
+			"state_class": "measurement",
+			"unit_of_measurement": "%",
+			"device_class": "humidity",
+			"friendly_name": "Мама th2 Humidity"
+		},
+		"last_changed": "2025-10-27T01:51:05.442222+00:00",
+		"last_reported": "2025-10-27T01:51:05.442222+00:00",
+		"last_updated": "2025-10-27T01:51:05.442222+00:00",
+		"context": {
+			"id": "01K8HNS972QZWRD6BSWP5JKNS2",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.mama_th2_battery_state",
+		"state": "high",
+		"attributes": {
+			"friendly_name": "Мама th2 Battery state"
+		},
+		"last_changed": "2025-10-25T10:09:45.999104+00:00",
+		"last_reported": "2025-10-25T10:09:45.999104+00:00",
+		"last_updated": "2025-10-25T10:09:45.999104+00:00",
+		"context": {
+			"id": "01K8DDGYGFCZ6JHHRWV2P0M3TF",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.kukhnia_th2_temperature",
+		"state": "23.6",
+		"attributes": {
+			"state_class": "measurement",
+			"unit_of_measurement": "°C",
+			"device_class": "temperature",
+			"friendly_name": "Кухня th2 Temperature"
+		},
+		"last_changed": "2025-10-27T06:55:08.264831+00:00",
+		"last_reported": "2025-10-27T06:55:08.264831+00:00",
+		"last_updated": "2025-10-27T06:55:08.264831+00:00",
+		"context": {
+			"id": "01K8J760F8SH42Y8MJV98JQJ1W",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.kukhnia_th2_humidity",
+		"state": "58.0",
+		"attributes": {
+			"state_class": "measurement",
+			"unit_of_measurement": "%",
+			"device_class": "humidity",
+			"friendly_name": "Кухня th2 Humidity"
+		},
+		"last_changed": "2025-10-27T06:55:08.265067+00:00",
+		"last_reported": "2025-10-27T06:55:08.265067+00:00",
+		"last_updated": "2025-10-27T06:55:08.265067+00:00",
+		"context": {
+			"id": "01K8J760F9G4Y48E987XEY8CRM",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.kukhnia_th2_battery_state",
+		"state": "high",
+		"attributes": {
+			"friendly_name": "Кухня th2 Battery state"
+		},
+		"last_changed": "2025-10-25T10:09:46.000202+00:00",
+		"last_reported": "2025-10-25T10:09:46.000202+00:00",
+		"last_updated": "2025-10-25T10:09:46.000202+00:00",
+		"context": {
+			"id": "01K8DDGYGGFQ13H1R6B000GEDQ",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.optika_total_energy",
+		"state": "0.001",
+		"attributes": {
+			"state_class": "total_increasing",
+			"friendly_name": "Кухня клапан Total energy"
+		},
+		"last_changed": "2025-10-27T05:31:15.410874+00:00",
+		"last_reported": "2025-10-27T05:31:15.410874+00:00",
+		"last_updated": "2025-10-27T05:31:15.410874+00:00",
+		"context": {
+			"id": "01K8J2CDJJAH0PBY6K00BF246K",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "switch.temperatura_i_vologist_drugii_poverkh_switch",
+		"state": "on",
+		"attributes": {
+			"device_class": "outlet",
+			"friendly_name": "Th дитяча Switch"
+		},
+		"last_changed": "2025-10-25T10:09:46.002070+00:00",
+		"last_reported": "2025-10-25T10:09:46.002070+00:00",
+		"last_updated": "2025-10-25T10:09:46.002070+00:00",
+		"context": {
+			"id": "01K8DDGYGJKHXKPAX8MQPP76PN",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "switch.boiler_drugii_child_lock",
+		"state": "off",
+		"attributes": {
+			"friendly_name": "Перший клапан Child lock"
+		},
+		"last_changed": "2025-10-25T10:09:46.002348+00:00",
+		"last_reported": "2025-10-25T10:09:46.002348+00:00",
+		"last_updated": "2025-10-25T10:09:46.002348+00:00",
+		"context": {
+			"id": "01K8DDGYGJGEMDNXDJJDBHNQXH",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "switch.boiler_drugii_socket_1",
+		"state": "off",
+		"attributes": {
+			"device_class": "outlet",
+			"friendly_name": "Перший клапан Socket 1"
+		},
+		"last_changed": "2025-10-27T05:57:14.250505+00:00",
+		"last_reported": "2025-10-27T05:57:14.250505+00:00",
+		"last_updated": "2025-10-27T05:57:14.250505+00:00",
+		"context": {
+			"id": "01K8J3VZWAM7618AEZTGWH0QVM",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "switch.detektor_dtek_child_lock",
+		"state": "off",
+		"attributes": {
+			"friendly_name": "Контактор ел котел Child lock"
+		},
+		"last_changed": "2025-10-25T10:09:46.002861+00:00",
+		"last_reported": "2025-10-25T10:09:46.002861+00:00",
+		"last_updated": "2025-10-25T10:09:46.002861+00:00",
+		"context": {
+			"id": "01K8DDGYGJ0BB9GYS0NH9EBEEN",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "switch.detektor_dtek_socket_1",
+		"state": "off",
+		"attributes": {
+			"device_class": "outlet",
+			"friendly_name": "Контактор ел котел Socket 1"
+		},
+		"last_changed": "2025-10-27T05:56:57.764310+00:00",
+		"last_reported": "2025-10-27T05:56:57.764310+00:00",
+		"last_updated": "2025-10-27T05:56:57.764310+00:00",
+		"context": {
+			"id": "01K8J3VFS4M9TNPTY45NZBJFBF",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "switch.boiler_klapan_child_lock",
+		"state": "off",
+		"attributes": {
+			"friendly_name": "Гостьова клапан Child lock"
+		},
+		"last_changed": "2025-10-25T10:09:46.003779+00:00",
+		"last_reported": "2025-10-25T10:09:46.003779+00:00",
+		"last_updated": "2025-10-25T10:09:46.003779+00:00",
+		"context": {
+			"id": "01K8DDGYGKJZFBNDS26CQ0EM3S",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "switch.boiler_klapan_socket_1",
+		"state": "off",
+		"attributes": {
+			"device_class": "outlet",
+			"friendly_name": "Гостьова клапан Socket 1"
+		},
+		"last_changed": "2025-10-27T05:38:49.954190+00:00",
+		"last_reported": "2025-10-27T05:38:49.954190+00:00",
+		"last_updated": "2025-10-27T05:38:49.954190+00:00",
+		"context": {
+			"id": "01K8J2T9F2PJ9HS148PCWKJHME",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "switch.tverdopalivnii_child_lock",
+		"state": "off",
+		"attributes": {
+			"friendly_name": "Твердопаливний  Child lock"
+		},
+		"last_changed": "2025-10-25T10:09:46.004198+00:00",
+		"last_reported": "2025-10-25T10:09:46.004198+00:00",
+		"last_updated": "2025-10-25T10:09:46.004198+00:00",
+		"context": {
+			"id": "01K8DDGYGM4KMEANJCHN2MH19H",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "switch.tverdopalivnii_socket_1",
+		"state": "off",
+		"attributes": {
+			"device_class": "outlet",
+			"friendly_name": "Твердопаливний  Socket 1"
+		},
+		"last_changed": "2025-10-25T13:18:11.547483+00:00",
+		"last_reported": "2025-10-25T13:18:11.547483+00:00",
+		"last_updated": "2025-10-25T13:18:11.547483+00:00",
+		"context": {
+			"id": "01K8DR9Z2VFRKFSQ9R80P8YFKX",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "switch.drugii_klapan_child_lock",
+		"state": "off",
+		"attributes": {
+			"friendly_name": "Другий клапан Child lock"
+		},
+		"last_changed": "2025-10-25T10:09:46.004812+00:00",
+		"last_reported": "2025-10-25T10:09:46.004812+00:00",
+		"last_updated": "2025-10-25T10:09:46.004812+00:00",
+		"context": {
+			"id": "01K8DDGYGMK5J73HTS8Z46JTKF",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "switch.drugii_klapan_socket_1",
+		"state": "off",
+		"attributes": {
+			"device_class": "outlet",
+			"friendly_name": "Другий клапан Socket 1"
+		},
+		"last_changed": "2025-10-27T05:53:04.516954+00:00",
+		"last_reported": "2025-10-27T05:53:04.516954+00:00",
+		"last_updated": "2025-10-27T05:53:04.516954+00:00",
+		"context": {
+			"id": "01K8J3MC04EK21H47AST6GKECX",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "switch.teplii_pol_child_lock",
+		"state": "off",
+		"attributes": {
+			"friendly_name": "Теплий пол Child lock"
+		},
+		"last_changed": "2025-10-25T10:09:46.005318+00:00",
+		"last_reported": "2025-10-25T10:09:46.005318+00:00",
+		"last_updated": "2025-10-25T10:09:46.005318+00:00",
+		"context": {
+			"id": "01K8DDGYGNNJM64KACK7FNCHT8",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "switch.teplii_pol_socket_1",
+		"state": "off",
+		"attributes": {
+			"device_class": "outlet",
+			"friendly_name": "Теплий пол Socket 1"
+		},
+		"last_changed": "2025-10-25T10:09:46.005619+00:00",
+		"last_reported": "2025-10-25T10:09:46.005619+00:00",
+		"last_updated": "2025-10-25T10:09:46.005619+00:00",
+		"context": {
+			"id": "01K8DDGYGNXFWMBF5060P4QA0Y",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "switch.garazhavto_child_lock",
+		"state": "off",
+		"attributes": {
+			"friendly_name": "Гаражавто Child lock"
+		},
+		"last_changed": "2025-10-27T03:59:27.256900+00:00",
+		"last_reported": "2025-10-27T03:59:27.256900+00:00",
+		"last_updated": "2025-10-27T03:59:27.256900+00:00",
+		"context": {
+			"id": "01K8HX4AGRFD2CDRCZCX61F7PD",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "switch.garazhavto_socket_1",
+		"state": "off",
+		"attributes": {
+			"device_class": "outlet",
+			"friendly_name": "Гаражавто Socket 1"
+		},
+		"last_changed": "2025-10-26T12:59:01.204084+00:00",
+		"last_reported": "2025-10-26T12:59:01.204084+00:00",
+		"last_updated": "2025-10-26T12:59:01.204084+00:00",
+		"context": {
+			"id": "01K8G9KJPM5EKX76TXGMT6KH70",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "switch.generator_tumanu_child_lock",
+		"state": "off",
+		"attributes": {
+			"friendly_name": "Кухня клапан Child lock"
+		},
+		"last_changed": "2025-10-25T10:51:04.519448+00:00",
+		"last_reported": "2025-10-25T10:51:22.334025+00:00",
+		"last_updated": "2025-10-25T10:51:04.519448+00:00",
+		"context": {
+			"id": "01K8DFWJY7GKF6KGGF5JQNWNAA",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "switch.generator_tumanu_socket_1",
+		"state": "off",
+		"attributes": {
+			"device_class": "outlet",
+			"friendly_name": "Кухня клапан Socket 1"
+		},
+		"last_changed": "2025-10-27T05:13:32.493942+00:00",
+		"last_reported": "2025-10-27T05:13:32.493942+00:00",
+		"last_updated": "2025-10-27T05:13:32.493942+00:00",
+		"context": {
+			"id": "01K8J1BZJDQ1TYQE3TSZRQJNYZ",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "media_player.televizor_u_spalni",
+		"state": "unavailable",
+		"attributes": {
+			"restored": true,
+			"supported_features": 152461
+		},
+		"last_changed": "2025-10-25T10:09:52.609862+00:00",
+		"last_reported": "2025-10-25T10:09:52.609862+00:00",
+		"last_updated": "2025-10-25T10:09:52.609862+00:00",
+		"context": {
+			"id": "01K8DDH4Z1QW9TPRHHYRXV1VS8",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "media_player.shield",
+		"state": "unavailable",
+		"attributes": {
+			"restored": true,
+			"supported_features": 131968
+		},
+		"last_changed": "2025-10-25T10:09:52.609911+00:00",
+		"last_reported": "2025-10-25T10:09:52.609911+00:00",
+		"last_updated": "2025-10-25T10:09:52.609911+00:00",
+		"context": {
+			"id": "01K8DDH4Z1CEKWDQ4WM1QXY73Q",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "binary_sensor.boiler_overheated",
+		"state": "unavailable",
+		"attributes": {
+			"restored": true,
+			"device_class": "problem",
+			"friendly_name": "Overheated",
+			"supported_features": 0
+		},
+		"last_changed": "2025-10-25T10:09:52.609937+00:00",
+		"last_reported": "2025-10-25T10:09:52.609937+00:00",
+		"last_updated": "2025-10-25T10:09:52.609937+00:00",
+		"context": {
+			"id": "01K8DDH4Z1MPG5ZGNNDF0V9P7B",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "binary_sensor.boiler_update",
+		"state": "unavailable",
+		"attributes": {
+			"restored": true,
+			"device_class": "update",
+			"friendly_name": "Update",
+			"supported_features": 0
+		},
+		"last_changed": "2025-10-25T10:09:52.609959+00:00",
+		"last_reported": "2025-10-25T10:09:52.609959+00:00",
+		"last_updated": "2025-10-25T10:09:52.609959+00:00",
+		"context": {
+			"id": "01K8DDH4Z1HGV97DBX2NEHRVG3",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "binary_sensor.boiler_drugii_overheated",
+		"state": "unavailable",
+		"attributes": {
+			"restored": true,
+			"device_class": "problem",
+			"friendly_name": "Overheated",
+			"supported_features": 0
+		},
+		"last_changed": "2025-10-25T10:09:52.609979+00:00",
+		"last_reported": "2025-10-25T10:09:52.609979+00:00",
+		"last_updated": "2025-10-25T10:09:52.609979+00:00",
+		"context": {
+			"id": "01K8DDH4Z1Y9Y9FR1VZSYYHFWF",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "binary_sensor.boiler_drugii_update",
+		"state": "unavailable",
+		"attributes": {
+			"restored": true,
+			"device_class": "update",
+			"friendly_name": "Update",
+			"supported_features": 0
+		},
+		"last_changed": "2025-10-25T10:09:52.610038+00:00",
+		"last_reported": "2025-10-25T10:09:52.610038+00:00",
+		"last_updated": "2025-10-25T10:09:52.610038+00:00",
+		"context": {
+			"id": "01K8DDH4Z2J4PY3RKR4578FJ9T",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "binary_sensor.optika_overheated",
+		"state": "unavailable",
+		"attributes": {
+			"restored": true,
+			"device_class": "problem",
+			"friendly_name": "Overheated",
+			"supported_features": 0
+		},
+		"last_changed": "2025-10-25T10:09:52.610061+00:00",
+		"last_reported": "2025-10-25T10:09:52.610061+00:00",
+		"last_updated": "2025-10-25T10:09:52.610061+00:00",
+		"context": {
+			"id": "01K8DDH4Z2QZ1YM89F5JNHE16S",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "binary_sensor.optika_cloud_connection",
+		"state": "on",
+		"attributes": {
+			"device_class": "connectivity",
+			"friendly_name": "детектор дтек Cloud connection"
+		},
+		"last_changed": "2025-10-25T10:12:12.765522+00:00",
+		"last_reported": "2025-10-25T10:12:23.341773+00:00",
+		"last_updated": "2025-10-25T10:12:12.765522+00:00",
+		"context": {
+			"id": "01K8DDNDTXZHPJ0QNXD43DVP23",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "binary_sensor.optika_update",
+		"state": "unavailable",
+		"attributes": {
+			"restored": true,
+			"device_class": "update",
+			"friendly_name": "Update",
+			"supported_features": 0
+		},
+		"last_changed": "2025-10-25T10:09:52.610096+00:00",
+		"last_reported": "2025-10-25T10:09:52.610096+00:00",
+		"last_updated": "2025-10-25T10:09:52.610096+00:00",
+		"context": {
+			"id": "01K8DDH4Z2T6GZVYQ832RTK113",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "number.optika_turn_off_in",
+		"state": "120",
+		"attributes": {
+			"min": 0,
+			"max": 65536,
+			"step": 1.0,
+			"mode": "box",
+			"friendly_name": "детектор дтек Turn off in"
+		},
+		"last_changed": "2025-10-25T13:15:17.132914+00:00",
+		"last_reported": "2025-10-25T13:15:17.132914+00:00",
+		"last_updated": "2025-10-25T13:15:17.132914+00:00",
+		"context": {
+			"id": "01K8DR4MRC67K2ABSE05JBZVJM",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.optika_signal_level",
+		"state": "3",
+		"attributes": {
+			"state_class": "measurement",
+			"friendly_name": "детектор дтек Signal level"
+		},
+		"last_changed": "2025-10-25T10:12:12.769063+00:00",
+		"last_reported": "2025-10-25T10:12:23.341959+00:00",
+		"last_updated": "2025-10-25T10:12:12.769063+00:00",
+		"context": {
+			"id": "01K8DDNDV1CRJK603QX9DR86N8",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "sensor.optika_auto_off_at",
+		"state": "unknown",
+		"attributes": {
+			"device_class": "timestamp",
+			"friendly_name": "детектор дтек Auto-off at"
+		},
+		"last_changed": "2025-10-25T10:12:12.769774+00:00",
+		"last_reported": "2025-10-25T10:12:23.341997+00:00",
+		"last_updated": "2025-10-25T10:12:12.769774+00:00",
+		"context": {
+			"id": "01K8DDNDV1J6Q59C5SFQA5QPFW",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "switch.optika",
+		"state": "on",
+		"attributes": {
+			"friendly_name": "детектор дтек"
+		},
+		"last_changed": "2025-10-25T10:12:12.770697+00:00",
+		"last_reported": "2025-10-25T10:12:23.342040+00:00",
+		"last_updated": "2025-10-25T10:12:12.770697+00:00",
+		"context": {
+			"id": "01K8DDNDV21K4M2V34QYY9BZXT",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "switch.optika_auto_off_enabled",
+		"state": "off",
+		"attributes": {
+			"friendly_name": "детектор дтек Auto-off enabled"
+		},
+		"last_changed": "2025-10-25T13:15:17.133284+00:00",
+		"last_reported": "2025-10-25T13:15:17.133284+00:00",
+		"last_updated": "2025-10-25T13:15:17.133284+00:00",
+		"context": {
+			"id": "01K8DR4MRDWKA7N0CQYYWH5PEX",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "switch.optika_auto_update_enabled",
+		"state": "on",
+		"attributes": {
+			"friendly_name": "детектор дтек Auto-update enabled"
+		},
+		"last_changed": "2025-10-25T10:12:12.772324+00:00",
+		"last_reported": "2025-10-25T10:12:23.342106+00:00",
+		"last_updated": "2025-10-25T10:12:12.772324+00:00",
+		"context": {
+			"id": "01K8DDNDV4JTYNVTRYQ783DV39",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "switch.optika_led",
+		"state": "on",
+		"attributes": {
+			"friendly_name": "детектор дтек LED"
+		},
+		"last_changed": "2025-10-25T10:12:12.772547+00:00",
+		"last_reported": "2025-10-25T10:12:23.342141+00:00",
+		"last_updated": "2025-10-25T10:12:12.772547+00:00",
+		"context": {
+			"id": "01K8DDNDV4XRVW9DG99XMW2S33",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "binary_sensor.poliv_1_update",
+		"state": "unavailable",
+		"attributes": {
+			"restored": true,
+			"device_class": "update",
+			"friendly_name": "Update",
+			"supported_features": 0
+		},
+		"last_changed": "2025-10-25T10:09:52.610332+00:00",
+		"last_reported": "2025-10-25T10:09:52.610332+00:00",
+		"last_updated": "2025-10-25T10:09:52.610332+00:00",
+		"context": {
+			"id": "01K8DDH4Z27WKV8HNJ0JM1YRB4",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "binary_sensor.poliv_3_update",
+		"state": "unavailable",
+		"attributes": {
+			"restored": true,
+			"device_class": "update",
+			"friendly_name": "Update",
+			"supported_features": 0
+		},
+		"last_changed": "2025-10-25T10:09:52.610352+00:00",
+		"last_reported": "2025-10-25T10:09:52.610352+00:00",
+		"last_updated": "2025-10-25T10:09:52.610352+00:00",
+		"context": {
+			"id": "01K8DDH4Z27XX64MCEFP0K5YED",
+			"parent_id": null,
+			"user_id": null
+		}
+	},
+	{
+		"entity_id": "update.visionos_ios_26_liquid_glass_theme_update",
+		"state": "unavailable",
+		"attributes": {
+			"restored": true,
+			"friendly_name": "visionOS & iOS 26 Liquid Glass Theme update",
+			"supported_features": 23
+		},
+		"last_changed": "2025-10-25T10:09:52.610426+00:00",
+		"last_reported": "2025-10-25T10:09:52.610426+00:00",
+		"last_updated": "2025-10-25T10:09:52.610426+00:00",
+		"context": {
+			"id": "01K8DDH4Z2ZTDT799DXR0STNC8",
+			"parent_id": null,
+			"user_id": null
+		}
+	}
+]
