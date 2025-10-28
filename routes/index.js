@@ -68,21 +68,26 @@ const getStatus = async () => {
             state.status = 'na';
         })
 
-    await getEntityState('sensor.yasno_group_4_2_next_connectivity')
-        .then((response) => {
-            state.nextConnectivity = response.data.state;
-        })
+        try {
+            await getEntityState('sensor.yasno_group_4_2_next_connectivity')
+                    .then((response) => {
+                        state.nextConnectivity = response.data.state;
+                    })
 
-    await getEntityState('sensor.yasno_group_4_2_next_outage')
-        .then((response) => {
-            state.nextOutage = response.data.state;
-        })
+            await getEntityState('sensor.yasno_group_4_2_next_outage')
+                .then((response) => {
+                    state.nextOutage = response.data.state;
+                })
 
-    await getEntityState('sensor.yasno_group_4_2_next_possible_outage')
-        .then((response) => {
-            state.nextPossibleOutage = response.data.state;
-        })
-        console.log('done')
+            await getEntityState('sensor.yasno_group_4_2_next_possible_outage')
+                .then((response) => {
+                    state.nextPossibleOutage = response.data.state;
+                })
+                console.log('done')
+        } catch (error) {
+            console.error('Error fetching entity states:', error);
+        }
+    
 
     // - entity: sensor.yasno_group_4_2_next_connectivity
     //         name: Наступне підключення

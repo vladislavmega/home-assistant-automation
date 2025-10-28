@@ -51,12 +51,6 @@ views:
           - type: history-graph
             entities:
               - entity: binary_sensor.m_kiiv_air
-          - type: entities
-            entities:
-              - entity: sensor.yasno_group_4_2_next_connectivity
-                name: Підключення
-              - entity: sensor.yasno_group_4_2_next_outage
-                name: Відключення
       - type: vertical-stack
         cards:
           - type: vertical-stack
@@ -390,14 +384,6 @@ views:
           - entity: sensor.temperatura_i_vologist_drugii_poverkh_temperature
             name: Temperature
         title: Th дитяча
-      - type: entities
-        entities:
-          - entity: sensor.yasno_group_4_2_next_connectivity
-            name: Наступне підключення
-          - entity: sensor.yasno_group_4_2_next_outage
-            name: Наступне відключення
-          - entity: sensor.yasno_group_4_2_next_possible_outage
-            name: Наступне можливе відключення
       - type: vertical-stack
         cards:
           - square: false
@@ -467,3 +453,9 @@ views:
                 show_header_toggle: false
                 state_color: false
                 title: Дитяча
+      - type: entities
+        entities:
+          - entity: sensor.drugii_th2_temperature
+            name: ' '
+        title: Другий th2
+        show_header_toggle: false
