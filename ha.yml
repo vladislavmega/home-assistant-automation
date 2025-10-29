@@ -218,69 +218,34 @@ views:
             type: grid
             columns: 2
             cards:
-              - type: entities
-                entities:
-                  - entity: sensor.kukhnia_th2_temperature
-                    secondary_info: none
-                    name: ' '
-                  - entity: sensor.kukhnia_th2_humidity
-                    secondary_info: none
-                    name: ' '
-                show_header_toggle: false
+              - type: entity
+                entity: sensor.kukhnia_th2_temperature
+                name: Кухня
                 state_color: false
-                title: Кухня
-              - type: entities
-                entities:
-                  - entity: sensor.gostova_th2_temperature
-                    secondary_info: none
-                    name: ' '
-                  - entity: sensor.gostova_th2_humidity
-                    secondary_info: none
-                    name: ' '
-                show_header_toggle: false
+              - type: entity
+                entity: sensor.gostova_th2_temperature
+                name: Гостьова
                 state_color: false
-                title: Гостьова
           - square: false
             type: grid
             columns: 2
             cards:
-              - type: entities
-                entities:
-                  - entity: sensor.mama_th2_temperature
-                    secondary_info: none
-                    name: ' '
-                  - entity: sensor.mama_th2_humidity
-                    secondary_info: none
-                    name: ' '
-                show_header_toggle: false
+              - type: entity
+                entity: sensor.mama_th2_temperature
+                name: Мама
                 state_color: false
-                title: Мама
-              - type: entities
-                entities:
-                  - entity: sensor.drugii_th2_temperature
-                    secondary_info: none
-                    name: ' '
-                  - entity: sensor.drugii_th2_humidity
-                    secondary_info: none
-                    name: ' '
-                show_header_toggle: false
+              - type: entity
+                entity: sensor.drugii_th2_temperature
+                name: Другий
                 state_color: false
-                title: Другий
           - square: false
             type: grid
             columns: 2
             cards:
-              - type: entities
-                entities:
-                  - entity: sensor.temperatura_i_vologist_drugii_poverkh_temperature
-                    secondary_info: none
-                    name: ' '
-                  - entity: sensor.temperatura_i_vologist_drugii_poverkh_humidity
-                    secondary_info: none
-                    name: ' '
-                show_header_toggle: false
+              - type: entity
+                entity: sensor.temperatura_i_vologist_drugii_poverkh_temperature
+                name: Дитяча
                 state_color: false
-                title: Дитяча
     badges: []
   - title: testpanel
     path: testpanel
