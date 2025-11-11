@@ -29,7 +29,7 @@ const getState = () => {
         nextEvent = '';
     } else {
         const eventName = (state.status === 'available') ? 'Відключення' : 'Підключення';
-        nextEvent = `${eventName} ${moment(nextEvent).fromNow()}`;
+        nextEvent = `${eventName} о ${moment(nextEvent).format('HH:mm')}`;
     }
 
     return {

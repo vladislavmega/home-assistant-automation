@@ -149,6 +149,13 @@ views:
                     show_state: false
                     tap_action:
                       action: toggle
+                    confirmation:
+                      text:  >
+                        {% if is_state('switch.boiler_drugii', 'off') %}
+                          Інший перемикач вимкнено. Увімкнути бойлер попри це?
+                        {% else %}
+                          Ви впевнені, що хочете перемкнути бойлер?
+                        {% endif %}
                   - show_name: true
                     show_icon: true
                     type: button
