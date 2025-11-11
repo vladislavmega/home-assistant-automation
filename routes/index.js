@@ -125,7 +125,7 @@ router.get('/home', function (req, res, next) {
 router.get('/state', function (req, res, next) {
     res.send({
         ...getState(),
-        lastChange: moment(state.lastChange).format('HH:mm DD-MM')
+        lastChange: moment(state.lastChange).format('HH:mm D MMMM')
     });
 });
 
