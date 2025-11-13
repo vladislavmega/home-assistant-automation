@@ -7,11 +7,7 @@
 </head>
 <body class="<%= status %>">
     <div class="center">
-        <% if(status === 'available'){ %>
-            <h1>Є СВІТЛО <br /><span class="since" style="font-size: 70px">З <%= lastChange %></span></h1>
-        <% } else{ %>
-            <h1>НЕМАЄ СВІТЛА <br /><span class="since" style="font-size: 70px">З <%= lastChange %></span></h1>
-        <% } %>
+        <h1><%= statusText %> <br /><span class="since" style="font-size: 70px">З <%= lastChange %></span></h1>
     </div>
 </body>
 </html>

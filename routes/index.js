@@ -11,6 +11,7 @@ const state = {
     nextConnectivity: 'unknown',
     nextOutage: 'unknown',
     nextPossibleOutage: 'unknown',
+    yasnoStatus: 'unknown'
 }
 
 const getState = () => {
@@ -32,10 +33,24 @@ const getState = () => {
         nextEvent = `${eventName} о ${moment(nextEvent).format('HH:mm')}`;
     }
 
+    let statusText = ''
+    if (state.status === 'available') {
+        statusText = 'Є ДТЕК';
+    }
+
+    if (state.status === 'na' && state.yasnoStatus === 'outage') {
+        statusText = 'НЕМА ДТЕК';
+    }
+
+    if (state.status === 'na' && state.yasnoStatus !== 'outage') {   
+        statusText = 'МОЖЛИВО ВИБИЛО';
+    }
+
     return {
         ...state,
         nextEvent,
-    };
+        statusText,
+    }
 };
 
 const HA_URL = "http://homeassistant.local:8123"; // або http://192.168.1.x:8123
@@ -83,18 +98,15 @@ const getStatus = async () => {
                 .then((response) => {
                     state.nextPossibleOutage = response.data.state;
                 })
+
+            await getEntityState('sensor.yasno_group_4_2_electricity')
+                .then((response) => {
+                    state.yasnoStatus = response.data.state;
+                })
                 console.log('done')
         } catch (error) {
             console.error('Error fetching entity states:', error);
         }
-    
-
-    // - entity: sensor.yasno_group_4_2_next_connectivity
-    //         name: Наступне підключення
-    //       - entity: sensor.yasno_group_4_2_next_outage
-    //         name: Наступне відключення
-    //       - entity: sensor.yasno_group_4_2_next_possible_outage
-    //         name: Наступне можливе відключення
 }
 
 setInterval(async () => {

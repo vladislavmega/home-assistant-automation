@@ -24,43 +24,64 @@ views:
               - condition: state
                 entity: switch.optika
                 state_not: 'on'
-          - type: history-graph
-            entities:
-              - entity: switch.optika
             logarithmic_scale: false
-      - type: vertical-stack
-        cards:
-          - clock_style: analog
-            clock_size: large
-            show_seconds: true
-            no_background: false
-            border: true
-            ticks: minute
-            face_style: numbers_upright
-            type: clock
-            seconds_motion: continuous
-          - type: iframe
-            url: https://alerts.in.ua/?kiosk&showThreats&showWarnings
-            aspect_ration: 50
           - type: entities
             entities:
-              - entity: binary_sensor.m_kiiv_air
-                secondary_info: last-changed
-            state_color: true
-            show_header_toggle: false
-          - type: history-graph
+              - entity: automation.nova_avtomatizatsiia_3
+                icon: mdi:stove
+              - entity: automation.vikl_kotel
+                icon: mdi:stove
+              - entity: automation.vkl_gostova
+                icon: mdi:pipe-valve
+              - entity: automation.vikl_gostova
+                icon: mdi:pipe-valve
+              - entity: automation.vkl_kukhnia
+                icon: mdi:pipe-valve
+              - entity: automation.nova_avtomatizatsiia_2
+                icon: mdi:pipe-valve
+              - entity: automation.vkl_drugii
+                icon: mdi:pipe-valve
+              - entity: automation.vikl_drugii
+                icon: mdi:pipe-valve
+              - entity: automation.vkl_pershii
+                icon: mdi:pipe-valve
+              - entity: automation.vikl_pershii
+                icon: mdi:pipe-valve
+              - entity: automation.vkliuchit_teplii_pol_bo_zharko_na_drugomu
+                icon: mdi:pipe
+              - entity: automation.zakhist_vikl_el_kotel
+                icon: mdi:close-octagon
+      - type: vertical-stack
+        cards:
+          - type: entities
             entities:
-              - entity: binary_sensor.m_kiiv_air
+              - entity: automation.vkliuchit_boiler_pershii
+                icon: mdi:water-boiler
+              - entity: automation.vimknuti_boiler_pershii
+                icon: mdi:water-boiler
+              - entity: automation.vkliuchit_boiler_drugii
+                icon: mdi:water-boiler
+              - entity: automation.vikliuchit_boiler_drugii
+                icon: mdi:water-boiler
+              - entity: automation.vimknuti_zariad_avto
+                icon: mdi:car
+              - entity: automation.vkliuchit_zariad_avto
+                icon: mdi:car
+              - entity: automation.vimknuti_zariad_avto_bo_nema_dtek
+                name: 'Захист: Виключить заряд авто'
+                icon: mdi:close-octagon
+              - entity: automation.nova_avtomatizatsiia
+                icon: mdi:weather-pouring
       - type: vertical-stack
         cards:
           - type: vertical-stack
             cards:
-              - show_current: true
-                show_forecast: true
-                type: weather-forecast
-                entity: weather.forecast_home
-                forecast_type: hourly
-                name: ' '
+              - type: iframe
+                url: https://alerts.in.ua/?kiosk&showThreats&showWarnings
+                aspect_ration: 50
+              - type: history-graph
+                entities:
+                  - entity: binary_sensor.m_kiiv_air
       - type: vertical-stack
         cards:
           - square: false
@@ -134,6 +155,15 @@ views:
                 show_state: false
                 tap_action:
                   action: toggle
+              - show_name: true
+                show_icon: true
+                type: button
+                name: Гольф
+                entity: switch.garazhavto_socket_1
+                icon: mdi:power
+                show_state: false
+                tap_action:
+                  action: toggle
           - type: vertical-stack
             cards:
               - square: false
@@ -150,7 +180,7 @@ views:
                     tap_action:
                       action: toggle
                     confirmation:
-                      text:  >
+                      text: |
                         {% if is_state('switch.boiler_drugii', 'off') %}
                           Інший перемикач вимкнено. Увімкнути бойлер попри це?
                         {% else %}
@@ -178,7 +208,7 @@ views:
                     show_icon: true
                     type: button
                     name: Гараж 1
-                    entity: switch.poliv_3
+                    entity: switch.garazh_1_nova
                     icon: mdi:power
                     show_state: false
                     tap_action:
@@ -197,24 +227,6 @@ views:
                     type: button
                     name: ДТЕК
                     entity: switch.podacha_dtek
-                    icon: mdi:power
-                    show_state: false
-                    tap_action:
-                      action: toggle
-                  - show_name: true
-                    show_icon: true
-                    type: button
-                    name: Гольф
-                    entity: switch.garazhavto_socket_1
-                    icon: mdi:power
-                    show_state: false
-                    tap_action:
-                      action: toggle
-                  - show_name: true
-                    show_icon: true
-                    type: button
-                    name: Кіслотник
-                    entity: switch.kislotnik
                     icon: mdi:power
                     show_state: false
                     tap_action:
@@ -264,170 +276,64 @@ views:
     type: masonry
     theme: Nordic Blue Dark
     cards:
-      - square: false
-        type: grid
-        columns: 3
-        cards:
-          - type: entities
-            entities:
-              - entity: sensor.kukhnia_th2_temperature
-                secondary_info: none
-                name: ' '
-              - entity: sensor.kukhnia_th2_humidity
-                secondary_info: none
-                name: ' '
-            show_header_toggle: false
-            state_color: false
-            title: кухня
-          - type: entities
-            entities:
-              - entity: sensor.gostova_th2_temperature
-                secondary_info: none
-                name: ' '
-              - entity: sensor.gostova_th2_humidity
-                secondary_info: none
-                name: ' '
-            show_header_toggle: false
-            state_color: false
-            title: гостьова
-          - type: entities
-            entities:
-              - entity: sensor.mama_th2_temperature
-                secondary_info: none
-                name: ' '
-              - entity: sensor.mama_th2_humidity
-                secondary_info: none
-                name: ' '
-            show_header_toggle: false
-            state_color: false
-            title: мама
-      - square: false
-        type: grid
-        columns: 3
-        cards:
-          - type: entities
-            entities:
-              - entity: sensor.drugii_th2_temperature
-                secondary_info: none
-                name: ' '
-              - entity: sensor.drugii_th2_humidity
-                secondary_info: none
-                name: ' '
-            show_header_toggle: false
-            state_color: false
-            title: другий
-          - type: entities
-            entities:
-              - entity: sensor.drugii_th2_temperature
-                secondary_info: none
-                name: ' '
-              - entity: sensor.drugii_th2_humidity
-                secondary_info: none
-                name: ' '
-            show_header_toggle: false
-            state_color: false
-            title: другий
-          - type: entities
-            entities:
-              - entity: sensor.drugii_th2_temperature
-                secondary_info: none
-                name: ' '
-              - entity: sensor.drugii_th2_humidity
-                secondary_info: none
-                name: ' '
-            show_header_toggle: false
-            state_color: false
-            title: другий
       - type: entities
         entities:
-          - entity: sensor.garazhavto_total_energy
-            name: Total energy
-        title: Гаражавто
-      - type: history-graph
-        entities:
-          - entity: switch.optika
-          - entity: sensor.yasno_group_4_2_next_outage
-        logarithmic_scale: false
-        hours_to_show: 12
-      - type: entities
-        entities:
-          - entity: sensor.temperatura_i_vologist_drugii_poverkh_humidity
-            name: Humidity
-          - entity: sensor.temperatura_i_vologist_drugii_poverkh_temperature
-            name: Temperature
-        title: Th дитяча
-      - type: vertical-stack
-        cards:
-          - square: false
-            type: grid
-            columns: 2
-            cards:
-              - type: entities
-                entities:
-                  - entity: sensor.kukhnia_th2_temperature
-                    secondary_info: none
-                    name: ' '
-                  - entity: sensor.kukhnia_th2_humidity
-                    secondary_info: none
-                    name: ' '
-                show_header_toggle: false
-                state_color: false
-                title: Кухня
-              - type: entities
-                entities:
-                  - entity: sensor.gostova_th2_temperature
-                    secondary_info: none
-                    name: ' '
-                  - entity: sensor.gostova_th2_humidity
-                    secondary_info: none
-                    name: ' '
-                show_header_toggle: false
-                state_color: false
-                title: Гостьова
-          - square: false
-            type: grid
-            columns: 2
-            cards:
-              - type: entities
-                entities:
-                  - entity: sensor.mama_th2_temperature
-                    secondary_info: none
-                    name: ' '
-                  - entity: sensor.mama_th2_humidity
-                    secondary_info: none
-                    name: ' '
-                show_header_toggle: false
-                state_color: false
-                title: Мама
-              - type: entities
-                entities:
-                  - entity: sensor.drugii_th2_temperature
-                    secondary_info: none
-                    name: ' '
-                  - entity: sensor.drugii_th2_humidity
-                    secondary_info: none
-                    name: ' '
-                show_header_toggle: false
-                state_color: false
-                title: Другий
-          - square: false
-            type: grid
-            columns: 2
-            cards:
-              - type: entities
-                entities:
-                  - entity: sensor.temperatura_i_vologist_drugii_poverkh_temperature
-                    secondary_info: none
-                    name: ' '
-                  - entity: sensor.temperatura_i_vologist_drugii_poverkh_humidity
-                    secondary_info: none
-                    name: ' '
-                show_header_toggle: false
-                state_color: false
-                title: Дитяча
-      - type: entities
-        entities:
-          - entity: sensor.drugii_th2_temperature
-            name: ' '
-        title: Другий th2
+          - entity: automation.nova_avtomatizatsiia_3
+            icon: mdi:stove
+          - entity: automation.vikl_kotel
+            icon: mdi:stove
+          - entity: automation.vkl_gostova
+            icon: mdi:pipe-valve
+          - entity: automation.vikl_gostova
+            icon: mdi:pipe-valve
+          - entity: automation.vkl_kukhnia
+            icon: mdi:pipe-valve
+          - entity: automation.nova_avtomatizatsiia_2
+            icon: mdi:pipe-valve
+          - entity: automation.vkl_drugii
+            icon: mdi:pipe-valve
+          - entity: automation.vikl_drugii
+            icon: mdi:pipe-valve
+          - entity: automation.vkl_pershii
+            icon: mdi:pipe-valve
+          - entity: automation.vikl_pershii
+            icon: mdi:pipe-valve
+          - entity: automation.vkliuchit_teplii_pol_bo_zharko_na_drugomu
+            icon: mdi:pipe
+          - entity: automation.zakhist_vikl_el_kotel
+            icon: mdi:close-octagon
+        title: Автоматизації Опалення
         show_header_toggle: false
+      - type: entities
+        entities:
+          - entity: automation.vkliuchit_boiler_pershii
+            icon: mdi:water-boiler
+          - entity: automation.vimknuti_boiler_pershii
+            icon: mdi:water-boiler
+          - entity: automation.vkliuchit_boiler_drugii
+            icon: mdi:water-boiler
+          - entity: automation.vikliuchit_boiler_drugii
+            icon: mdi:water-boiler
+          - entity: automation.vimknuti_zariad_avto
+            icon: mdi:car
+          - entity: automation.vkliuchit_zariad_avto
+            icon: mdi:car
+          - entity: automation.vimknuti_zariad_avto_bo_nema_dtek
+            name: 'Захист: Виключить заряд авто'
+            icon: mdi:close-octagon
+          - entity: automation.nova_avtomatizatsiia
+            icon: mdi:weather-pouring
+        title: Інші Автоматизації
+      - type: entities
+        entities:
+          - entity: sensor.yasno_group_4_2_electricity
+            name: Electricity
+          - entity: sensor.yasno_group_4_2_next_connectivity
+            name: Next Connectivity
+          - entity: sensor.yasno_group_4_2_next_outage
+            name: Next Outage
+          - entity: sensor.yasno_group_4_2_next_possible_outage
+            name: Next Possible Outage
+          - entity: calendar.yasno_group_4_2_outages_calendar
+            name: Outages Calendar
+        title: Yasno Group 4.2
