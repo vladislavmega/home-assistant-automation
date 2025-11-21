@@ -11,7 +11,8 @@ const state = {
     nextConnectivity: 'unknown',
     nextOutage: 'unknown',
     nextPossibleOutage: 'unknown',
-    yasnoStatus: 'unknown'
+    yasnoStatus: 'unknown',
+    plannedState: '',
 }
 
 const getState = () => {
@@ -44,6 +45,10 @@ const getState = () => {
 
     if (state.status === 'na' && state.yasnoStatus !== 'outage') {   
         statusText = 'МОЖЛИВО ВИБИЛО';
+    }
+
+    if (state.status === 'na' && state.plannedState !== 'schedule_applies') {
+        statusText = 'ГРАФІК НЕ ДІЄ';
     }
 
     return {
@@ -104,6 +109,13 @@ const getStatus = async () => {
                     state.yasnoStatus = response.data.state;
                 })
                 console.log('done')
+
+            await getEntityState('sensor.yasno_kiiv_dtek_4_2_status_today')
+                .then((response) => {
+                    state.plannedState = response.data.state;
+                    console.log(response.data.state)
+                })
+                
         } catch (error) {
             console.error('Error fetching entity states:', error);
         }
