@@ -84,22 +84,22 @@ const getStatus = async () => {
         })
 
         try {
-            await getEntityState('sensor.yasno_group_4_2_next_connectivity')
+            await getEntityState('sensor.yasno_kiiv_dtek_4_2_next_connectivity')
                     .then((response) => {
                         state.nextConnectivity = response.data.state;
                     })
 
-            await getEntityState('sensor.yasno_group_4_2_next_outage')
+            await getEntityState('sensor.yasno_kiiv_dtek_4_2_next_planned_outage')
                 .then((response) => {
                     state.nextOutage = response.data.state;
                 })
 
-            await getEntityState('sensor.yasno_group_4_2_next_possible_outage')
+            await getEntityState('sensor.yasno_kiiv_dtek_4_2_next_probable_outage')
                 .then((response) => {
                     state.nextPossibleOutage = response.data.state;
                 })
 
-            await getEntityState('sensor.yasno_group_4_2_electricity')
+            await getEntityState('sensor.yasno_kiiv_dtek_4_2_electricity')
                 .then((response) => {
                     state.yasnoStatus = response.data.state;
                 })

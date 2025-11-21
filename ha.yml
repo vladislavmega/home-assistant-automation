@@ -337,3 +337,29 @@ views:
           - entity: calendar.yasno_group_4_2_outages_calendar
             name: Outages Calendar
         title: Yasno Group 4.2
+      - type: entities
+        entities:
+          - entity: switch.optika_auto_off_enabled
+            name: Auto-off enabled
+          - entity: switch.optika_auto_update_enabled
+            name: Auto-update enabled
+          - entity: switch.optika_led
+            name: LED
+          - entity: number.optika_turn_off_in
+            name: Turn off in
+        title: детектор дтек
+      - type: entities
+        entities:
+          - entity: sensor.yasno_kiiv_dtek_4_2_electricity
+            name: Electricity
+          - entity: sensor.yasno_kiiv_dtek_4_2_next_connectivity
+            name: Next Connectivity
+          - entity: sensor.yasno_kiiv_dtek_4_2_next_planned_outage
+            name: Next Planned Outage
+          - entity: sensor.yasno_kiiv_dtek_4_2_next_probable_outage
+            name: Next Probable Outage
+          - entity: calendar.yasno_kiiv_dtek_4_2_planned_outages
+            name: Planned Outages
+          - entity: calendar.yasno_kiiv_dtek_4_2_probable_outages
+            name: Probable Outages
+        title: Yasno Київ ДТЕК 4.2
