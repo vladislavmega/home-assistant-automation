@@ -25,20 +25,18 @@ views:
                 entity: switch.optika
                 state_not: 'on'
             logarithmic_scale: false
+          - graph: line
+            type: sensor
+            entity: sensor.jk_bms_jk_bms_soc
+            detail: 2
+            name: Батарея
+            hours_to_show: 12
           - type: entities
             entities:
               - entity: automation.nova_avtomatizatsiia_3
                 icon: mdi:stove
               - entity: automation.vikl_kotel
                 icon: mdi:stove
-              - entity: automation.vkl_gostova
-                icon: mdi:pipe-valve
-              - entity: automation.vikl_gostova
-                icon: mdi:pipe-valve
-              - entity: automation.vkl_kukhnia
-                icon: mdi:pipe-valve
-              - entity: automation.nova_avtomatizatsiia_2
-                icon: mdi:pipe-valve
               - entity: automation.vkl_drugii
                 icon: mdi:pipe-valve
               - entity: automation.vikl_drugii
@@ -123,7 +121,7 @@ views:
                 show_icon: true
                 type: button
                 name: Гостьова
-                entity: switch.boiler_klapan_socket_1
+                entity: switch.smart_p01_switch_1
                 icon: mdi:power
                 show_state: false
                 tap_action:
@@ -326,19 +324,6 @@ views:
         title: Інші Автоматизації
       - type: entities
         entities:
-          - entity: sensor.yasno_group_4_2_electricity
-            name: Electricity
-          - entity: sensor.yasno_group_4_2_next_connectivity
-            name: Next Connectivity
-          - entity: sensor.yasno_group_4_2_next_outage
-            name: Next Outage
-          - entity: sensor.yasno_group_4_2_next_possible_outage
-            name: Next Possible Outage
-          - entity: calendar.yasno_group_4_2_outages_calendar
-            name: Outages Calendar
-        title: Yasno Group 4.2
-      - type: entities
-        entities:
           - entity: switch.optika_auto_off_enabled
             name: Auto-off enabled
           - entity: switch.optika_auto_update_enabled
@@ -363,3 +348,58 @@ views:
           - entity: calendar.yasno_kiiv_dtek_4_2_probable_outages
             name: Probable Outages
         title: Yasno Київ ДТЕК 4.2
+      - type: entities
+        entities:
+          - entity: sensor.yasno_kiiv_dtek_4_2_schedule_updated_on
+            name: Schedule Updated On
+          - entity: sensor.yasno_kiiv_dtek_4_2_status_today
+            name: Status Today
+          - entity: sensor.yasno_kiiv_dtek_4_2_status_tomorrow
+            name: Status Tomorrow
+        title: Yasno Київ ДТЕК 4.2
+      - initial_view: dayGridDay
+        type: calendar
+        entities:
+          - calendar.yasno_kiiv_dtek_4_2_planned_outages
+          - calendar.yasno_kiiv_dtek_4_2_probable_outages
+        card_mod:
+          style:
+            ha-full-calendar:
+              $: |
+                /* Ховає верхню панель FullCalendar:
+                   заголовок + prev/next/today + перемикачі виду */
+                .fc-header-toolbar {
+                  display: none !important;
+                }
+            .: |
+              /* На всякий випадок ховає Lovelace header, якщо з’явиться */
+              .card-header {
+                display: none !important;
+              }
+              ha-card {
+                padding-top: 0 !important;
+              }
+      - type: entities
+        entities:
+          - entity: sensor.jk_bms_jk_bms_current
+            name: Jk-bms Current
+          - entity: sensor.jk_bms_jk_bms_operation_status
+            name: Jk-bms operation status
+          - entity: sensor.jk_bms_jk_bms_power
+            name: Jk-bms Power
+          - entity: sensor.jk_bms_jk_bms_soc
+            name: Jk-bms SOC
+          - entity: sensor.jk_bms_jk_bms_total_voltage
+            name: Jk-bms total voltage
+        title: jk-bms
+      - graph: line
+        type: sensor
+        entity: sensor.jk_bms_jk_bms_soc
+        detail: 2
+        name: Батарея
+        hours_to_show: 12
+      - type: entities
+        entities:
+          - entity: switch.smart_p01_switch_1
+            name: Switch 1
+        title: Гостьова клапан нова
