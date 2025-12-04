@@ -1,0 +1,79 @@
+alias: Керування бойлером за міською мережею (06-10)
+description: >
+  Вікно роботи бойлера з 06:00 до 10:00.
+  О 06:00 вмикає бойлер, якщо є міська мережа.
+  У вікні 06:00–10:00 змінює стан бойлера разом зі станом міської мережі.
+  О 10:00 вимикає бойлер і далі не вмикає до наступного дня.
+mode: single
+
+trigger:
+  # Початок вікна
+  - id: start_window
+    platform: time
+    at: "07:00:00"
+
+  # Зміна стану міської мережі
+  - id: grid_change
+    platform: state
+    entity_id: switch.optika    # 🔁 ЗАМІНИ на свій датчик/розетку міської мережі
+
+  # Кінець вікна
+  - id: end_window
+    platform: time
+    at: "11:00:00"
+
+condition: []
+
+action:
+  - choose:
+      # 1. О 06:00 — старт вікна
+      - conditions:
+          - condition: trigger
+            id: start_window
+        sequence:
+          - if:
+              - condition: state
+                entity_id: switch.optika   # 🔁 ЗАМІНИ
+                state: "on"
+            then:
+              - service: switch.turn_on
+                target:
+                  entity_id: switch.boiler     # 🔁 ЗАМІНИ на розетку бойлера
+            else:
+              - service: switch.turn_off
+                target:
+                  entity_id: switch.boiler
+
+      # 2. Зміна стану міської мережі в межах 06:00–10:00
+      - conditions:
+          - condition: trigger
+            id: grid_change
+          - condition: time
+            after: "06:00:00"
+            before: "10:00:00"   # тобто до 10:00, 10:00 вже не входить
+        sequence:
+          - choose:
+              # Якщо мережа з'явилась — вмикаємо бойлер
+              - conditions:
+                  - condition: state
+                    entity_id: switch.city_power
+                    state: "on"
+                sequence:
+                  - service: switch.turn_on
+                    target:
+                      entity_id: switch.boiler
+
+            # Якщо мережі немає — вимикаємо бойлер
+            default:
+              - service: switch.turn_off
+                target:
+                  entity_id: switch.boiler
+
+      # 3. О 10:00 — жорстко вимикаємо бойлер
+      - conditions:
+          - condition: trigger
+            id: end_window
+        sequence:
+          - service: switch.turn_off
+            target:
+              entity_id: switch.boiler

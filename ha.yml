@@ -31,6 +31,12 @@ views:
             detail: 2
             name: Батарея
             hours_to_show: 12
+          - graph: line
+            type: sensor
+            entity: sensor.boiler_ds18b20_temperatura_kotla
+            detail: 2
+            hours_to_show: 12
+            name: Твердопаливний котел
           - type: entities
             entities:
               - entity: automation.nova_avtomatizatsiia_3

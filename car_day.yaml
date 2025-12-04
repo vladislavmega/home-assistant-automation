@@ -1,0 +1,62 @@
+alias: Керування заряд авто за міською мережею (11-15)
+description: >
+  Вікно роботи зарядки авто з 11:00 до 15:00. О 11:00 вмикає заряд авто, якщо є
+  міська мережа. У вікні 11:00–14:59 змінює стан заряду авто разом зі станом міської
+  мережі. О 14:59 вимикає заряд і далі не вмикає до наступного дня.
+triggers:
+  - id: start_window
+    at: "11:00:00"
+    trigger: time
+  - id: grid_change
+    entity_id: switch.optika
+    trigger: state
+  - id: end_window
+    at: "14:59:00"
+    trigger: time
+conditions: []
+actions:
+  - choose:
+      - conditions:
+          - condition: trigger
+            id: start_window
+        sequence:
+          - if:
+              - condition: state
+                entity_id: switch.optika
+                state: "on"
+            then:
+              - target:
+                  entity_id: switch.garazhavto_socket_1
+                action: switch.turn_on
+            else:
+              - target:
+                  entity_id: switch.garazhavto_socket_1
+                action: switch.turn_off
+      - conditions:
+          - condition: trigger
+            id: grid_change
+          - condition: time
+            after: "11:00:00"
+            before: "14:59:00"
+        sequence:
+          - choose:
+              - conditions:
+                  - condition: state
+                    entity_id: switch.city_power
+                    state: "on"
+                sequence:
+                  - target:
+                      entity_id: switch.garazhavto_socket_1
+                    action: switch.turn_on
+            default:
+              - target:
+                  entity_id: switch.garazhavto_socket_1
+                action: switch.turn_off
+      - conditions:
+          - condition: trigger
+            id: end_window
+        sequence:
+          - target:
+              entity_id: switch.garazhavto_socket_1
+            action: switch.turn_off
+mode: single
