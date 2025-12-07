@@ -409,3 +409,270 @@ views:
           - entity: switch.smart_p01_switch_1
             name: Switch 1
         title: Гостьова клапан нова
+  - title: Home2
+    theme: Nordic Blue Dark
+    hide_toolbar: true
+    hide_sidebar: true
+    cards:
+      - type: vertical-stack
+        cards:
+          - type: iframe
+            url: https://light.cherrypink.toys/home
+            aspect_ratio: 40%
+            visibility:
+              - condition: state
+                entity: switch.optika
+                state: 'on'
+          - type: iframe
+            url: https://light.cherrypink.toys/home?yellow=1
+            aspect_ratio: 40%
+            visibility:
+              - condition: state
+                entity: switch.optika
+                state_not: 'on'
+            logarithmic_scale: false
+          - graph: line
+            type: sensor
+            entity: sensor.jk_bms_jk_bms_soc
+            detail: 2
+            name: Батарея
+            hours_to_show: 12
+          - graph: line
+            type: sensor
+            entity: sensor.boiler_ds18b20_temperatura_kotla
+            detail: 2
+            hours_to_show: 12
+            name: Твердопаливний котел
+          - type: entities
+            entities:
+              - entity: automation.nova_avtomatizatsiia_3
+                icon: mdi:stove
+              - entity: automation.vikl_kotel
+                icon: mdi:stove
+              - entity: automation.vkl_drugii
+                icon: mdi:pipe-valve
+              - entity: automation.vikl_drugii
+                icon: mdi:pipe-valve
+              - entity: automation.vkl_pershii
+                icon: mdi:pipe-valve
+              - entity: automation.vikl_pershii
+                icon: mdi:pipe-valve
+              - entity: automation.vkliuchit_teplii_pol_bo_zharko_na_drugomu
+                icon: mdi:pipe
+              - entity: automation.zakhist_vikl_el_kotel
+                icon: mdi:close-octagon
+      - type: vertical-stack
+        cards:
+          - type: entities
+            entities:
+              - entity: automation.vkliuchit_boiler_pershii
+                icon: mdi:water-boiler
+              - entity: automation.vimknuti_boiler_pershii
+                icon: mdi:water-boiler
+              - entity: automation.vkliuchit_boiler_drugii
+                icon: mdi:water-boiler
+              - entity: automation.vikliuchit_boiler_drugii
+                icon: mdi:water-boiler
+              - entity: automation.vimknuti_zariad_avto
+                icon: mdi:car
+              - entity: automation.vkliuchit_zariad_avto
+                icon: mdi:car
+              - entity: automation.vimknuti_zariad_avto_bo_nema_dtek
+                name: 'Захист: Виключить заряд авто'
+                icon: mdi:close-octagon
+              - entity: automation.nova_avtomatizatsiia
+                icon: mdi:weather-pouring
+      - type: vertical-stack
+        cards:
+          - type: vertical-stack
+            cards:
+              - type: iframe
+                url: https://alerts.in.ua/?kiosk&showThreats&showWarnings
+                aspect_ration: 50
+              - type: history-graph
+                entities:
+                  - entity: binary_sensor.m_kiiv_air
+      - type: vertical-stack
+        cards:
+          - square: false
+            type: grid
+            columns: 2
+            cards:
+              - show_name: true
+                show_icon: true
+                type: button
+                name: ЕЛЕКТРО
+                entity: switch.detektor_dtek_socket_1
+                icon: mdi:power
+                show_state: false
+                tap_action:
+                  action: toggle
+              - show_name: true
+                show_icon: true
+                type: button
+                name: Дрова
+                entity: switch.tverdopalivnii_socket_1
+                icon: mdi:power
+                show_state: false
+                tap_action:
+                  action: toggle
+          - type: grid
+            columns: 3
+            square: false
+            cards:
+              - show_name: true
+                show_icon: true
+                type: button
+                name: Перший
+                entity: switch.boiler_drugii_socket_1
+                icon: mdi:power
+                show_state: false
+                tap_action:
+                  action: toggle
+              - show_name: true
+                show_icon: true
+                type: button
+                name: Гостьова
+                entity: switch.smart_p01_switch_1
+                icon: mdi:power
+                show_state: false
+                tap_action:
+                  action: toggle
+              - show_name: true
+                show_icon: true
+                type: button
+                name: Кухня
+                entity: switch.generator_tumanu_socket_1
+                icon: mdi:power
+                show_state: false
+                tap_action:
+                  action: toggle
+              - show_name: true
+                show_icon: true
+                type: button
+                name: Підлога
+                entity: switch.teplii_pol_socket_1
+                icon: mdi:power
+                show_state: false
+                tap_action:
+                  action: toggle
+              - show_name: true
+                show_icon: true
+                type: button
+                name: Другий
+                entity: switch.drugii_klapan_socket_1
+                icon: mdi:power
+                show_state: false
+                tap_action:
+                  action: toggle
+              - show_name: true
+                show_icon: true
+                type: button
+                name: Гольф
+                entity: switch.garazhavto_socket_1
+                icon: mdi:power
+                show_state: false
+                tap_action:
+                  action: toggle
+          - type: vertical-stack
+            cards:
+              - square: false
+                type: grid
+                columns: 3
+                cards:
+                  - show_name: true
+                    show_icon: true
+                    type: button
+                    name: Бойлер 1
+                    entity: switch.boiler
+                    icon: mdi:power
+                    show_state: false
+                    tap_action:
+                      action: toggle
+                    confirmation:
+                      text: |
+                        {% if is_state('switch.boiler_drugii', 'off') %}
+                          Інший перемикач вимкнено. Увімкнути бойлер попри це?
+                        {% else %}
+                          Ви впевнені, що хочете перемкнути бойлер?
+                        {% endif %}
+                  - show_name: true
+                    show_icon: true
+                    type: button
+                    name: Бойлер 2
+                    entity: switch.boiler_drugii
+                    icon: mdi:power
+                    show_state: false
+                    tap_action:
+                      action: toggle
+                  - show_name: true
+                    show_icon: true
+                    type: button
+                    name: Оптика
+                    entity: switch.faust
+                    icon: mdi:power
+                    show_state: false
+                    tap_action:
+                      action: toggle
+                  - show_name: true
+                    show_icon: true
+                    type: button
+                    name: Гараж 1
+                    entity: switch.garazh_1_nova
+                    icon: mdi:power
+                    show_state: false
+                    tap_action:
+                      action: toggle
+                  - show_name: true
+                    show_icon: true
+                    type: button
+                    name: Гараж 2
+                    entity: switch.poliv_1
+                    icon: mdi:power
+                    show_state: false
+                    tap_action:
+                      action: toggle
+                  - show_name: true
+                    show_icon: true
+                    type: button
+                    name: ДТЕК
+                    entity: switch.podacha_dtek
+                    icon: mdi:power
+                    show_state: false
+                    tap_action:
+                      action: toggle
+      - type: vertical-stack
+        cards:
+          - square: false
+            type: grid
+            columns: 2
+            cards:
+              - type: entity
+                entity: sensor.kukhnia_th2_temperature
+                name: Кухня
+                state_color: false
+              - type: entity
+                entity: sensor.gostova_th2_temperature
+                name: Гостьова
+                state_color: false
+          - square: false
+            type: grid
+            columns: 2
+            cards:
+              - type: entity
+                entity: sensor.mama_th2_temperature
+                name: Мама
+                state_color: false
+              - type: entity
+                entity: sensor.drugii_th2_temperature
+                name: Другий
+                state_color: false
+          - square: false
+            type: grid
+            columns: 2
+            cards:
+              - type: entity
+                entity: sensor.temperatura_i_vologist_drugii_poverkh_temperature
+                name: Дитяча
+                state_color: false
+    badges: []

@@ -39,6 +39,10 @@ const getState = () => {
         statusText = 'Є ДТЕК';
     }
 
+    if (state.status === 'available' && state.yasnoStatus === 'outage') {
+        statusText = 'ЗАРАЗ ВІДКЛЮЧАТЬ';
+    }
+
     if (state.status === 'na' && state.yasnoStatus === 'outage') {
         statusText = 'НЕМА ДТЕК';
     }
