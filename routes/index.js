@@ -14,6 +14,7 @@ const state = {
     yasnoStatus: 'unknown',
     plannedState: '',
     ips: '',
+    battery: '',
 }
 
 const getIps = async () => {
@@ -142,6 +143,11 @@ const getStatus = async () => {
                 .then((response) => {
                     state.plannedState = response.data.state;
                     console.log(response.data.state)
+                })
+
+            await getEntityState('sensor.torchunchick_battery')
+                .then((response) => {
+                    state.battery = `🔋 ${response.data.state}%`;
                 })
                 
         } catch (error) {

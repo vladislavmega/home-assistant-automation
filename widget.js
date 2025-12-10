@@ -1,6 +1,3 @@
-// Scriptable widget for power availability status.
-// Refactored for clarity, robustness, and performance.
-
 const colors = {
     available: {
         textColor: "ffffff",
@@ -20,11 +17,10 @@ const colors = {
     },
 };
 
-const ROUTER_URL = "http://192.168.88.1:8027";
-const BOILER_URL = "https://light.cherrypink.toys/state";
+const BACKEND_URL = "https://light.cherrypink.toys/state";
 const ISPINFO_URL = "https://ipinfo.io/?token=0846ac66067f27";
 const TIMEOUT_SHORT = 5; // seconds
-const TIMEOUT_MEDIUM = 10; // seconds
+
 
 function safeColor(hex) {
     try {
@@ -35,12 +31,28 @@ function safeColor(hex) {
     }
 }
 
-function drawHeader(message, listWidget, textColor) {
-    const title = listWidget.addText(`⚡️${message || "—"}`);
+// Draw header and battery on the same horizontal row so it doesn't affect vertical flow.
+function drawHeader(message, listWidget, textColor, batteryState = "") {
+    const row = listWidget.addStack();
+    row.layoutHorizontally();
+    row.centerAlignContent();
+    row.setPadding(0, 0, 0, 0);
+
+    const title = row.addText(`⚡️${message || "—"}`);
     title.font = Font.boldRoundedSystemFont(18);
-    listWidget.addSpacer();
     title.textColor = safeColor(textColor);
+
+    row.addSpacer(); // push battery to the right within the same row
+
+    const battery = row.addText(batteryState);
+    battery.font = Font.mediumSystemFont(16);
+    battery.textColor = safeColor(textColor);
+
+    listWidget.addSpacer(4);
 }
+
+// Deprecated: battery is now rendered within header row to avoid shifting content.
+function drawBattery() {}
 
 function drawSince(message, listWidget, textColor) {
     const title = listWidget.addText(message ? `з ${message}` : "з —");
@@ -50,14 +62,14 @@ function drawSince(message, listWidget, textColor) {
 }
 
 function drawNextEvent(message, listWidget, textColor) {
-    const title = listWidget.addText(message || "—");
+    const title = listWidget.addText(message);
     title.font = Font.boldRoundedSystemFont(15);
     listWidget.addSpacer();
     title.textColor = safeColor(textColor);
 }
 
 function drawISP(message, listWidget, textColor) {
-    const title = listWidget.addText(message || "Невідомо");
+    const title = listWidget.addText(message);
     title.font = Font.mediumSystemFont(15);
     listWidget.addSpacer();
     title.textColor = safeColor(textColor);
@@ -85,25 +97,27 @@ function drawWidgetBackgroundGradient(listWidget, activeColors) {
 }
 
 async function getStatus() {
-    const req = new Request(BOILER_URL);
+    const req = new Request(BACKEND_URL);
     req.allowInsecureRequest = true;
     req.timeoutInterval = TIMEOUT_SHORT;
     try {
-        const json = await req.loadJSON();
-        return json
+        const json = await req.loadJSON(); 
+        
+        return json;
     } catch (e) {
+        // Fallback structure for UI stability
         return {
-            "status": "gray",
-            "lastChange": "",
-            "nextConnectivity": "",
-            "nextOutage": "",
-            "nextPossibleOutage": "",
-            "yasnoStatus": "",
-            "plannedState": "",
-            "ips": "",
-            "nextEvent": "",
-            "statusText": ""
-        }
+            status: "gray",
+            lastChange: "",
+            nextConnectivity: "",
+            nextOutage: "",
+            nextPossibleOutage: "",
+            yasnoStatus: "",
+            plannedState: "",
+            ips: "",
+            nextEvent: "",
+            statusText: "",
+        };
     }
 }
 
@@ -111,11 +125,10 @@ async function run() {
     const listWidget = new ListWidget();
     try {
         const status = await getStatus();
-
-        const activeColors = colors[status.status];
+        const activeColors = colors[status.status] || colors.gray;
         const { textColor } = activeColors;
 
-        drawHeader(status.statusText, listWidget, textColor);
+        drawHeader(status.statusText, listWidget, textColor, status.battery);
         drawSince(status.lastChange, listWidget, textColor);
         drawNextEvent(status.nextEvent, listWidget, textColor);
         drawISP(status.ips, listWidget, textColor);
@@ -127,10 +140,9 @@ async function run() {
             listWidget.presentMedium();
         }
     } catch (e) {
-        // In case of unexpected failure, present a minimal widget.
-        const activeColors = colors.notInNetwork;
+        const activeColors = colors.gray;
         const { textColor } = activeColors;
-        drawHeader("Помилка", listWidget, textColor);
+        drawHeader("Помилка", listWidget, textColor, '');
         drawISP("Невідомо", listWidget, textColor);
         drawCurrentTime(listWidget, textColor);
         drawWidgetBackgroundGradient(listWidget, activeColors);
