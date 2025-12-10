@@ -13,6 +13,29 @@ const state = {
     nextPossibleOutage: 'unknown',
     yasnoStatus: 'unknown',
     plannedState: '',
+    ips: '',
+}
+
+const getIps = async () => {
+    const ipInfoUrl = 'https://ipinfo.io/?token=0846ac66067f27';
+    try {
+        const respsons = await axios.get(ipInfoUrl, { timeout: 5000 });
+        const ispSource = respsons.data;
+        const hostname = (ispSource.hostname || "").toLowerCase();
+        const org = (ispSource.org || "").toLowerCase();
+    
+        if (hostname.includes("starlink") || org.includes("starlink")) {
+            state.ips = "📡 Starlink";
+        } else if (org.includes("lifecell")) {
+            state.ips = "📱 Lifecell";
+        } else if (hostname.includes("faust") || org.includes("faust") || org.includes("fiber") || org.includes("optics")) {
+            state.ips = "🏚️ Оптика";
+        } else if (ispSource.ip) {
+            state.ips = ispSource.org || ispSource.ip;
+        }
+    } catch (error) {
+        console.error('Error fetching IP info:', error);
+    }
 }
 
 const getState = () => {
@@ -75,6 +98,7 @@ async function getEntityState(entityId) {
 }
 
 const getStatus = async () => {
+    await getIps();
     await axios
         .get(`http://192.168.88.25`, {
             timeout: 1000 * 5,
